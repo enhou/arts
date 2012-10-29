@@ -56,10 +56,3 @@
 .index-header-bottom .nav-wrapper .menu-right a {
 	letter-spacing: 0.12em;
 }
-.show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer .viewall-title {
-	float: left;
-	padding-left: 280px;
-}
-.show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer #index-event-list-more-text {
-	width: 90px;
-}

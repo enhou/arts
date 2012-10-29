@@ -405,33 +405,26 @@
 	padding: 23px 0;
 	float: left;
 	background: #decc89;
+	text-align: center;
+	position: relative;
 }
 
 .show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer .viewall:hover {
 	background: #e4d796;
 }
 
-.show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer span {
-	display: inline-block;
-}
-
-.show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer .viewall-title {
-	float: left;
-	padding-left: 230px;
-}
-
 .show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer #index-event-list-more-text {
-	white-space: nowrap;
-	float: left;
-	width: 170px;
+		display: inline;
 }
 
 .show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer .viewall .viewall-arrow {
-	margin: 9px 0 0 5px;
-	float: left;
+	display: inline;
 	border-top: 6px solid #9a7b7a;
 	border-left: 6px solid transparent;
 	border-right: 6px solid transparent;
+	position: absolute;
+	top: 32px;
+	margin-left: 10px;
 }
 
 .show-box-content .wrapper .sidebar .sidebar-video-body {
