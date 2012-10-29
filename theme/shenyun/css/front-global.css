@@ -1,0 +1,510 @@
+/*geleral all articles page for news reviews features*/
+.pageViewT,
+.pageViewTDisable {
+    border-radius: 5px;
+}
+
+.general-article-list-section {
+    margin-top: 20px;
+}
+
+.general-article-list-article-separator {
+    border-top:1px solid #E6E6E7;
+    float:left;
+    height:1px;
+    margin-bottom:20px;
+    margin-top:20px;
+    width:560px;
+}
+
+
+.general-article-list-info {
+    float:left;
+    border: #e8e7e7 solid 1px;
+    border-top: #e8e7e7 solid 0px;
+    margin-top:-1px;
+    width: 565px;
+}
+
+
+.general-article-list-info-one {
+    float:left;
+    width: 560px;
+    overflow:hidden;
+    text-align:left;
+}
+
+
+
+.general-article-list-info-one img{
+    float:left;
+    width:129px;
+    overflow:hidden;
+    margin-top: 3px;
+}
+
+.general-article-list-info-text {
+    float:left;
+    margin-left:20px;
+    width:407px;
+}
+
+.general-article-list-info-text-title {
+    clear:both;
+    float:left;
+    font-size:16px;
+    margin-bottom:3px;
+    width:100%;
+    font-weight:bold;
+    color: #404040;
+}
+
+
+.general-article-list-info-text-title a:link,
+.general-article-list-info-text-title a:visited
+{
+    color: #404040;
+}
+
+.general-article-list-info-text-title a:hover
+{
+    color:#1E6CB4;
+    text-decoration: none;
+}
+
+
+.general-article-list-info-text-name {
+    clear:both;
+    float:left;
+    font-size:12px;
+    width:100%;
+    margin-top: 10px;
+
+}
+
+.general-article-list-info-description {
+    margin-top: 10px;
+    float:left;
+    width: 100%;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.top-upcoming-shows-city {
+    margin-top: 10px;
+}
+
+
+.body-guestbook {
+
+    background: #a88d58 url(/image/front/body-bg-guestbook.jpg) no-repeat top center;
+    min-height: 500px;
+
+}
+
+.guestbook-left-wrapper-box {
+    width: 618px;
+    float: left;
+    margin-bottom: 20px;
+    min-height: 200px;
+    background-image: url(/image/front/guestbook-trans-bg.png);
+    border: solid 1px #ecdcac;
+    text-align: left;
+
+
+}
+
+#guestbook-left-wrapper {
+    width: 618px;
+    float: left;
+    margin: 30px 20px 40px 30px;
+}
+
+
+#guestbook-section-title {
+    font-size: 20px;
+    float:left;
+    margin: 20px 0 0 30px;
+    padding: 0;
+}
+
+#guestbook-left-post-form {
+    width: 540px;
+    float: left;
+    margin: 10px 0 0 30px;
+    text-align: left;
+
+}
+
+#guestbook-left-post-form label {
+    width: 120px;
+    float: left;
+}
+
+
+#subscription-left-post-form {
+    width: 500px;
+    float: left;
+    margin: 10px 0 0 30px;
+    text-align: left;
+    border-right: 1px solid #B18A4D;
+
+}
+
+#subscription-left-post-form label {
+    width: 120px;
+    float: left;
+}
+
+
+#guestbook-left-messages {
+    width: 100%;
+    float: left;
+    margin: 0 0 0 0;
+
+}
+
+#guestbook-left-by-latest-featured {
+    float: left;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+#guestbook-left-by-performance {
+    float: right;
+}
+
+#guestbook-message {
+    float: left;
+    margin: 30px 0 0 30px;
+    width: 540px;
+}
+
+#guestbook-right-wrapper {
+    width: 300px;
+    float: left;
+    margin: 30px 30px 40px 0px;
+    min-height: 200px;
+}
+
+#guestbook-right-show-info {
+    width: 298px;
+    border: solid 1px #ecdcac;
+    float: left;
+    margin: 0;
+    min-height: 300px;
+    background-image: url(/image/front/guestbook-trans-bg.png);
+}
+
+#guestbook-right-reviews {
+    margin: 20px 0 0 0;
+    width: 300px;
+    height: 200px;
+    float: left;
+    background-image: url(/image/front/guestbook-reviews-bg.png);
+}
+
+#guestbook-page-center-content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.body-guestbook {
+    background-color: #a88d58;
+}
+
+#guestbook-right-show-info-inner-wrapper {
+    margin: 10px 9px 0 9px;
+    width: 280px;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.guestbook-upcoming-shows-one-item a:link,
+.guestbook-upcoming-shows-one-item a:visited,
+#guestbook-left-by-latest-featured a:link,
+#guestbook-left-by-latest-featured a:visited
+{
+    color:#8A826A;
+}
+
+#guestbook-left-by-latest-featured a.current:link,
+#guestbook-left-by-latest-featured a.current:visited
+{
+    color:#404040;
+    font-weight: bold;
+}
+
+#guestbook-upcoming-shows-text {
+    width: 130px;
+    float:left;
+}
+
+#guestbook-upcoming-shows-items {
+    width: 130px;
+    float: left;
+    text-align: left;
+}
+
+#guestbook-right-wrapper {
+    text-align: left;
+}
+
+#guestbook-upcoming-shows-wrapper {
+    margin: 10px 0 0 0;
+}
+
+#guestbook-right-reviews-content-wrapper {
+    margin: 10px 0 0 20px
+}
+
+.guestbook-reviews-tab-one-item {
+    float: left;
+    margin: 10px 0 10px 0;
+    width: 270px;
+}
+
+.guestbook-reviews-tab-one-item-testmonial
+{
+    color: #404040;
+    font-size: 11px;
+}
+
+.guestbook-reviews-tab-one-item-img {
+    float: left;
+    width: 120px;
+}
+
+.guestbook-reviews-tab-one-item-testmonial {
+    margin: 0 0 10px 15px;
+    width: 130px;
+    float: left;
+}
+
+#guestbook-reviews-tab-menu a {
+    color: #404040;
+}
+
+.guestbook-reviews-tab-one-item-author {
+    margin: 0 0 10px 15px;
+    width: 150px;
+    float: left;
+    color: #8a826a;
+    font-size: 11px;
+}
+
+.guestbook-reviews-see-all {
+    float: right;
+    margin-right: 10px;
+}
+
+a.guestbook-reviews-see-all:link,
+a.guestbook-reviews-see-all:visited {
+    color: #404040;
+}
+
+.guestbook-reviews-tab-one-item-title {
+    margin: 0 0 10px 15px;
+    width: 130px;
+    float: left;
+}
+
+.guestbook-reviews-tab-one-item-title a:link,
+.guestbook-reviews-tab-one-item-title a:visited {
+    color: #404040;
+}
+
+#guestbook-reviews-tab-menu-wrapper {
+    border-bottom: 2px solid #f0eac5;
+    margin: 19px 0 0 0;
+    padding: 0;
+    width: 270px;
+
+}
+
+#guestbook-reviews-tab-menu{
+
+    list-style: none outside none;
+    padding: 0;
+    margin:0;
+
+}
+
+#guestbook-reviews-tab-menu li {
+    padding: 6px;
+    background: #d0c18e;
+    float:left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-right: 2px;
+}
+
+#guestbook-reviews-tab-menu li.current {
+    background: #f0eac5;
+}
+
+
+.body-tickets {
+    background: #a88d58 url(/image/front/body-bg-tickets-new.jpg) no-repeat top center;
+    height: 540px;
+
+}
+
+.body-subscription {
+    background: #a88d58 url(/image/front/body-bg-tickets-new.jpg) no-repeat top center;
+    height: 540px;
+
+}
+
+#tickets-page-center-content-wrapper, #subscription-page-center-content-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+
+#tickets-left-wrapper, #subscription-left-wrapper {
+    width: 620px;
+    float: left;
+    margin: 30px 20px 40px 30px;
+    min-height: 200px;
+    text-align: left;
+
+}
+
+#tickets-left-content-wrapper, #subscription-left-content-wrapper {
+    float:left;
+    margin: 40px 0 0 70px;
+}
+#tickets-page-title {
+    float: left;
+    font-size: 20px;
+    margin: 0;
+
+}
+
+#tickets-right-wrapper, #subscription-right-wrapper {
+    width: 300px;
+    float: left;
+    margin: 30px 30px 40px 0px;
+    min-height: 200px;
+    text-align: left;
+}
+
+
+
+#footer-content-page-links-small-right {
+    float: right;
+    font-size: 12px;
+    margin: 20px 0 0 30px;
+
+}
+
+#footer-content-page-links-small-right a{
+    color: #855C1D;
+}
+
+#tickets-country-selection {
+    float: left;
+    margin: 10px 0 0 0;
+    width: 200px;
+}
+
+#tickets-date-selection {
+    float: left;
+    margin: 10px 0 0 50px;
+}
+
+#tickets-calendar-header {
+    background: #ede4b5;
+    float: left;
+    height: 30px;
+    width: 540px;
+    margin: 10px 0 0 0;
+}
+
+#tickets-country {
+    float: left;
+    margin: 10px 0 0 20px;
+    color: #817a4d;
+}
+
+#tickets-sort-by {
+    float: right;
+    margin: 10px 246px 0 auto;
+    font-size: 12px;
+}
+
+.tickets-calendar-item {
+    float: left;
+    width: 540px;
+    overflow: hidden;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-bottom: #eadfa2 solid 1px;
+    font-size: 12px;
+}
+
+.tickets-calendar-item city{
+    width: 250px;
+    float: left;
+    margin-left: 20px;
+}
+
+.tickets-calendar-item date{
+    width: 160px;
+    float: left;
+}
+
+.tickets-calendar-item saleStatus{
+    width: 80px;
+    float: left;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+#tickets-right-nearby-cities {
+    margin-top: 108px;
+    float: left;
+    color: #77787b;
+}
+
+.tickets-right-one-city {
+    float: left;
+    margin-top: 15px;
+    width: 200px;
+}
+
+#tickets-event-list-pagination {
+    float: right;
+    margin: -10px 10px 0 0;
+}
+
+.tickets-right-one-city img {
+    float: left;
+    margin-right: 10px;
+}
+
+.tickets-right-one-city-name {
+    float: left;
+    width: 100px;
+}
+
+.tickets-right-one-city-name a:link {
+    color: #414042;
+}
+
+.tickets-right-one-city-misc-info {
+    color: #77787b;
+    font-size: 11px;
+    width: 100px;
+    float: left;
+    margin-top: 4px;
+}
+
+#tickets-right-world-tour-map {
+    float: left;
+    margin-top: 30px;
+}

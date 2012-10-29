@@ -1,0 +1,47 @@
+/*
+body{font-family: arial, sans-serif;
+}
+*/
+.os_mac {
+font-family: "Hiragino Sans GB","Hiragino Sans GB W3";
+}
+.show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .column-c .btn-brown {
+	width: auto;
+}
+.mid-btn {
+	padding: 17px 19px 1px;	
+}
+.show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .column-b {
+	padding: 0 20px 0 0;	
+}
+
+.index-show-box .bottom-fold-panel .curve-down .info {
+	margin-top: -4px;
+}
+.finderFoot .laber {
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	padding: 0 6px 0;
+	letter-spacing: 0.15em;
+}
+#menu-select-city-purple .tix-finder {
+	width: 100px;
+	padding: 8px 0 10px 24px;
+	letter-spacing: 0.08em;	
+}
+#top-nav-clean-menu-purple li.has-dropdown .dropdown-wrapper {
+	position: absolute;
+	top: 100%;
+	left: -14px;
+	font-size: 13px;
+	line-height: 1.375em;
+	text-align: left;
+	letter-spacing: 0.1em;	
+}
+#menu-select-city-purple .dropTitleA {
+	letter-spacing: 0.2em;
+}
+#scrollable-city-list-purple .grid3col-wrapper .list-wrap a {
+	font-size: 13px;letter-spacing: 0.12em;
+}

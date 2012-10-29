@@ -1,0 +1,5593 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Helvetica, Helvetica Neue, Arial, Verdana, sans-serif;
+    background: #3a175b;
+    margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+    padding: 0;
+    text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+    color: #404040;
+    font-size:13px;
+}
+
+.body {
+    background:#f5f3e5 url(/image/front/en-us/body-bg-general.jpg) no-repeat scroll center top;
+}
+
+p {
+    line-height:20px;
+}
+
+/*default links*/
+a:link {
+    text-decoration: none;
+    color: #1e6cb4;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #1e6cb4;
+}
+
+a:hover {
+    text-decoration: underline;
+    /*color: #999900;*/
+}
+
+
+.dark-link a:link {
+    text-decoration: none;
+    color: #404040;
+}
+
+.dark-link a:visited {
+    text-decoration: none;
+    color: #404040;
+}
+
+.dark-link a:hover {
+    text-decoration: none;
+    color: #404040;
+}
+
+.light-dark {
+    color: #888888;
+}
+
+.light-grey {
+    color: #abaaaa;
+}
+.pagination {
+    margin-top:20px;
+    float:left;
+}
+
+.hand {cursor:pointer;cursor:hand}
+
+.underline {
+    text-decoration: underline;
+}
+
+img {
+    border:0;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.input-box {
+    height:17px;
+    border:#000000 solid 1px;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.vspace5 {
+    float:left;
+    clear:both;
+    height:5px;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.vspace10 {
+    float:left;
+    clear:both;
+    height:10px;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.items-paginator {
+    float:left;
+    height:30px;
+    margin-top: 20px;
+}
+
+.paginate-displaying{
+    margin-right:15px;
+    font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-style:italic;
+    font-size: 12px;
+    color:#777777;
+}
+
+.pageViewT {
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    border:1px solid;
+    padding:3px 6px;
+    text-decoration:none;
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:#dfdfdf;
+    border-color:#E3E3E3;
+    font-size:12px;
+}
+
+.pageViewT:hover {
+    border-color:#D54321;
+    color:#D54E21;
+
+}
+
+.pageViewTDisable {
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    border:1px solid;
+    padding:3px 6px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:12px;
+    line-height: 25px;
+}
+
+
+
+#container {
+    width: 100%;  /* this will create a container 80% of the browser width */
+    background: #FFFFFF;
+    margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+    /* border: 1px solid #000000; */
+    text-align: left; /* this overrides the text-align: center on the body element. */
+}
+#header {
+    background-color: #DDDDDD;
+    background-image: url(/image/front/top_nav_bg_narrow_find_ticket.jpg);
+    background-repeat: repeat-x;
+    height: 91px;
+    padding: 0;
+    text-align:center;
+}
+
+#top-nav-clean {
+    width: 1000px;
+    height:91px;
+    margin:0 auto;
+}
+
+#top-log-nav-wrapper {
+    height: 32px;
+    width: 1000px;
+    float:left;
+    background-image: url(/image/front/top-nav-clean-menu-bg.jpg);
+    position:relative
+}
+
+#top-nav-clean-menu {
+    float:left;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 250px;
+    width: 570px;
+    height: 32px;
+    text-align: center;
+}
+
+#top-right-misc {
+    float:left;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 0 0;
+    width: 190px;
+    height: 90px;
+    position: relative;
+}
+
+
+
+#top-nav-clean-menu a {
+    display: block;
+    float:left;
+    text-indent: -900%;
+    margin-left:40px;
+    outline: none;
+}
+
+
+#top-nav-clean-menu .tickets {
+    float:left;
+
+    margin-left:0;
+    width: 51px;
+    height: 30px;
+    background:  url(/image/front/en-us/menu-tickets.png) no-repeat;
+
+}
+
+/*
+#top-nav-clean-menu .the-company {
+	float:left;
+
+	width: 95px;
+	height: 30px;
+	background: url(/image/front/en-us/menu-the-company.png) no-repeat;
+
+}
+
+#top-nav-clean-menu .the-performance {
+	float:left;
+
+	width: 124px;
+	height: 30px;
+	background: url(/image/front/en-us/menu-the-performance.png) no-repeat;
+
+}
+
+
+#top-nav-clean-menu .behind-the-scenes {
+	display:block;
+	float:left;
+
+	width: 128px;
+	height: 30px;
+	background: url(/image/front/en-us/menu-behind-the-scenes.png) no-repeat;
+
+}
+
+
+#top-nav-clean-menu .fan-area {
+
+	width: 65px;
+	height: 30px;
+	background: url(/image/front/en-us/menu-fan-area.png) no-repeat;
+
+}
+*/
+#top-nav-clean-menu .about-us {
+    width: 65px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-about-us.png) no-repeat;
+}
+
+#top-nav-clean-menu .learn {
+    width: 40px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-learn.png) no-repeat;
+}
+
+
+
+#top-nav-clean-menu .videos {
+    width: 46px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-videos.png) no-repeat;
+}
+
+#top-nav-clean-menu .news {
+
+    width: 37px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-news.png) no-repeat;
+
+}
+
+#top-nav-clean-menu .support-us {
+
+    width: 75px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-support-us.png) no-repeat;
+
+}
+
+#top-nav-clean-menu .shop {
+
+    width: 34px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-shop.png) no-repeat;
+
+}
+
+#top-nav-clean-menu .mnews {
+
+    width: 62px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-support.png) no-repeat;
+
+}
+
+#top-nav-clean-menu .mupcomingshows {
+
+    width: 62px;
+    height: 30px;
+    background: url(/image/front/en-us/menu-support.png) no-repeat;
+
+}
+
+#top-nav-clean-menu a:hover , #top-nav-clean-menu .active{
+    background-position: left bottom;
+}
+
+
+#body {
+    text-align:center;
+    /* background-color: #f5f3e5; */
+    background-color: #f8f6ea;
+}
+
+.body-yellow-neath {
+    padding: 0 0 164px 0;
+    background: #FFFFFF url(/image/front/en-us/body-neath-bg.jpg) bottom no-repeat;
+}
+
+#footer {
+    background-color: #bbaa40;
+    background-image: url(/image/front/bottom_nav_bg_narrow-find-ticket.jpg);
+    height: 203px;
+    padding: 0;
+    text-align:center;
+}
+
+#col-2-left-s {
+    float: left;
+    width: 270px;
+    margin:0;
+}
+
+#col-2-right-b {
+    float: right;
+    width: 710px;
+    margin:0 0 0 20px;
+}
+
+
+#col-2-left-b {
+    float: left;
+    width: 650px;
+    margin-left: 75px;
+}
+
+#col-2-right-s {
+    float: right;
+    width: 260px;
+    margin:0 0 0 15px;
+}
+
+
+
+#col-2-left-s-menu {
+    position:absolute;
+    top:288px;
+    margin-left:81px;
+    width:178px;
+    /*
+	float: left;
+	margin: 288px 0 0 81px;
+	*/
+}
+
+
+#col-2-left-s-menu-fix-upper {
+
+    float: left;
+    margin: 105px 0 0 81px;
+
+}
+
+
+#col-2-right-b-box {
+    float:left;
+    background:#ffffff url(/image/front/en-us/body_videos_more_right_col_top.jpg) no-repeat top left;
+    width: 646px;
+    border: #a87826 solid 3px;
+    margin: 288px auto auto 5px;
+}
+
+.clear {
+    float: left;
+    clear:both;
+}
+
+.clearNoFloat {
+    clear:both;
+}
+
+
+/*****tours and tickets****/
+.body-tours-and-tickets {
+    background: url(/image/front/en-us/body-tours-and-tickets-bg.jpg) no-repeat top center;
+    height: 560px;
+    min-width: 1000px;
+}
+
+#body-tours-and-tickets-main {
+    height: 560px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.body-tours-and-tickets-global-tour {
+    background:#eaf5ff;
+
+}
+
+.body-tours-and-tickets-calendar {
+    background:#f7f6ea  url(/image/front/body-bg-golden-pattern.jpg) no-repeat top center;
+}
+
+/*****end tours and tickets****/
+
+/*****review page****/
+.body-reviews {
+    background-image: #ffffff;
+    height: 593px;
+    text-align:center;
+}
+
+
+#body-reviews-main {
+    background-image: url(/image/front/en-us/body_pic_reviews.jpg);
+    height: 593px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.body-reviews #video-image {
+    width: 150px;
+    height: 85px;
+    margin: 200px auto auto 180px;
+    float:left;
+}
+
+
+.body-reviews #video-watch-link {
+    width: 80px;
+    height: 12px;
+    margin: 268px auto auto 20px;
+    float:left;
+}
+
+#reviews-more {
+    position:absolute;
+    width: 170px;
+    height: 30px;
+    margin: 382px auto auto 830px;
+
+    float:left;
+}
+
+
+.body-reviews img {
+    border: none;
+}
+
+
+
+/*********/
+
+/*****videos****/
+#body-videos-main {
+    background-image: url(/image/front/en-us/body_pic_videos.jpg);
+    height: 593px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#videos-enter-gallery {
+    position:absolute;
+    width: 170px;
+    height: 30px;
+    margin: 382px auto auto 830px;
+
+    float:left;
+}
+
+#videos-enter-gallery img {
+    border: none;
+}
+
+#videos-section {
+    float: left;
+    margin: 172px auto auto 184px;
+    width: 234px;
+
+}
+
+.videos-one-video {
+    float: left;
+    margin-bottom: 25px;
+    width: 234px;
+
+}
+
+.videos-one-video img {
+    float: left;
+    margin: 0 auto auto 0;
+    border:0;
+    width:162px;
+    height:89px;
+}
+
+.videos-one-video-text {
+    margin:5px 0 0 0;
+    float:left;
+    width: 234px;
+    border-bottom:#818386 solid 1px;
+}
+
+.videos-one-video-text-title {
+    float: left;
+    font-size: 12px;
+    font-weight:bold;
+    color: #274ed1;
+}
+
+.videos-one-video-text-time {
+    float: right;
+    font-size: 13px;
+    color: #5c5c5f;
+}
+/*****end videos****/
+
+
+/*****videos more****/
+#body-videos-more-main {
+    background: #ffffff url(/image/front/en-us/body_pic_videos_more.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#videos-more-video-section {
+    margin-top: 118px;
+    float: left;
+    width: 642px;
+}
+
+.videos-more-one-video {
+    float:left;
+    width: 538px;
+    margin: 20px auto 20px 35px;
+}
+
+.videos-more-one-video-text {
+    float:right;
+    width: 322px;
+}
+
+
+.videos-more-one-video img{
+    float: left;
+    width:162px;
+    height:89px;
+}
+
+.videos-more-one-video-title {
+    text-align:left;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.videos-more-one-video-description {
+    text-align:left;
+    font-size: 12px;
+}
+
+#videos-more-subscription-form {
+    position:absolute;
+    float: left;
+    margin: 153px auto auto 452px;
+}
+
+#videos-more-subscription-form #videos-more-email {
+    float:left;
+    width: 130px;
+    height: 18px;
+    padding: 0;
+    border: none;
+
+}
+
+#videos-more-subscription-form #videos-more-submit-img {
+    float:right;
+    border: none;
+
+}
+
+#col-2-right-b-top-category {
+    float:left;
+    font-size:14px;
+    margin-top:80px;
+    margin-left:5px;
+}
+
+#col-2-right-b-top-category-short {
+    float:left;
+    font-size:14px;
+    margin-top:80px;
+    margin-left:5px;
+}
+
+
+.videos-content-video-section-top-bg {
+    background:url(/image/front/en-us/videos-content-video-section-top-bg.jpg) top no-repeat;
+}
+
+#col-2-right-b-content-title-big{
+    position:absolute;
+    margin: 50px auto auto 35px;
+    font-size: 30px;
+}
+
+.content-title-big-video-more-color{
+    color: #d7d1e6;
+}
+
+#col-2-right-b-content-title-small {
+    position:absolute;
+    margin: 85px auto auto 35px;
+    font-size: 14px;
+    color: #d7d1e6;
+}
+
+.content-title-small-video-more a {
+    color: #d7d1e6;
+}
+/*****end videos more****/
+
+
+/*****news****/
+#body-news-main {
+    background-image: url(/image/front/en-us/body_pic_news.jpg);
+    height: 601px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#news-more-news {
+    position:absolute;
+    width: 170px;
+    height: 30px;
+    margin: 380px auto auto 820px;
+
+    float:left;
+}
+
+#news-section {
+    text-align:left;
+    float: left;
+    margin: 225px auto auto 176px;
+    width: 288px;
+}
+
+#news-section p{
+    float:left;
+    font-size:12px;
+    margin:3px 0;
+    overflow:hidden;
+    padding:0 0 0 20px;
+
+}
+
+#news-section .video {
+    background:transparent url(/image/front/en-us/video_icon.jpg) no-repeat scroll;
+}
+/*****end news****/
+
+/*****tabs********/
+
+
+.page-toptabs-2col-lbrs-content-quote {
+    float:left;
+    width:298px;
+    height:200px;
+    border:1px solid #CABF8B;
+}
+
+.page-toptabs-2col-lbrs-content-quote-title {
+    float:left;
+    width:298px;
+    height:29px;
+    background: url(/image/front/tours-and-tickets-city-right-quote-title-bg.jpg);
+    color: #666040;
+    text-align:center;
+    padding:0;
+    margin:0;
+}
+
+.page-toptabs-2col-lbrs-content-quote-title a{
+    color: #666040;
+}
+
+
+.page-toptabs-2col-lbrs-content-quote-title p {
+    padding:0;
+    margin:0;
+    float:left;
+    width:300px;
+    margin-top:5px;
+    font-size: 12px;
+}
+
+
+.page-toptabs-2col-lbrs-content-quote-content {
+    float:left;
+    width:300px;
+    height:171px;
+}
+
+.page-toptabs-2col-lbrs-content-gift {
+    width: 305px;
+    height: 109px;
+    background: #ffffff url(/image/front/right-col-gift-bg.jpg) no-repeat top center;
+    padding: 2px;
+    border: #bfc0c0 solid 1px;
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-content-gift-text-bigger {
+    float:left;
+    margin: 15px 0 0 185px;
+    color: #5b3e78;
+    font-size: 22px;
+}
+
+.page-toptabs-2col-lbrs-content-gift-text-bigger a{
+    color: #5b3e78;
+}
+
+
+.page-toptabs-2col-lbrs-content-gift-text-smaller {
+    float:left;
+    margin:0 0 0 185px;
+    color: #817739;
+    font-size: 10px;
+}
+
+
+.page-toptabs-2col-lbrs-content-gift-text-smaller a{
+    color: #817739;
+}
+
+.page-toptabs-2col-lbrs-content-tickets {
+    width: 305px;
+    height: 109px;
+    background: #ffffff url(/image/front/right-col-tickets-bg.jpg) no-repeat top center;
+    padding: 2px;
+    border: #bfc0c0 solid 1px;
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-content-tickets-text-bigger {
+    float:left;
+    margin: 15px 0 0 142px;
+    color: #5b3e78;
+    font-size: 22px;
+}
+
+.page-toptabs-2col-lbrs-content-tickets-text-bigger a{
+    color: #5b3e78;
+}
+
+
+.page-toptabs-2col-lbrs-content-tickets-text-smaller {
+    float:left;
+    margin:0 0 0 142px;
+    color: #817739;
+    font-size: 10px;
+}
+
+
+.page-toptabs-2col-lbrs-content-tickets-text-smaller a{
+    color: #817739;
+}
+
+.scrollable {
+
+    position:relative;
+    overflow:hidden;
+    width:300px;
+    height:171px;
+}
+
+
+.scrollable .items {
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+.scrollable .items .item-one {
+    color:#52504C;
+    float:left;
+    font-size:26px;
+    height:111px;
+    padding:30px 50px 20px 50px;
+    width:200px;
+}
+
+
+
+.scrollable .items .item-one-by {
+    float:right;
+    margin-top: 5px;
+    font-size: 12px;
+    text-align:right;
+    width:100%;
+}
+
+.scrollable .items .item-one-text-main {
+    float:left;
+    width: 100%;
+}
+
+
+/* active item */
+.scrollable .active {
+    border:2px solid #000;
+    position:relative;
+    cursor:default;
+}
+
+
+.page-toptabs-2col-lbrs-r-misc {
+    float:left;
+    width: 308px;
+    border: #e7e5d9 solid 2px;
+}
+
+
+
+.page-toptabs-2col-lbrs-r-misc-section-title {
+    padding: 15px 0 15px 0;
+    width: 306px;
+    text-align:left;
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-r-misc-category-1st {
+    margin: 0 0 0 24px;
+    width: 260px;
+    font-size: 16px;
+    font-weight:bold;
+    color: #654583;
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-r-misc-category-2nd {
+    margin: 3px 0 0 24px;
+    width: 260px;
+    color: #654583;
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-r-misc-section-names {
+    float:left;
+    background: #f6f5f2;
+    width: 308px;
+}
+
+.page-toptabs-2col-lbrs-r-misc-section-names p {
+    float:left;
+    width: 128px;
+    margin: 10px 0 0 25px;
+    padding:0;
+}
+
+.page-toptabs-2col-lbrs-r-misc-section-names p a{
+    color: #323133;
+}
+
+.page-toptabs-2col-lbrs-r-misc-section-names p.fan-area-on-tour  {
+    float:left;
+    width: 270px;
+    margin: 5px 0 5px 25px;
+    padding:0;
+}
+
+.page-toptabs-2col-lbrs-r-misc-section-names p.fan-area-on-tour  a{
+    color: #323133;
+}
+/*****tabs end****/
+
+/*****news category****/
+#body-news-category-main {
+    background: #ffffff url(/image/front/en-us/body_pic_news_more.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.breadcrumb-extra-space{
+    float:left;
+    margin: 8px auto 0 17px;
+}
+
+.breadcrumb {
+    float:left;
+    height:14px;
+    margin: 0;
+    /*color: #c29845;*/
+    color: #abaaaa;
+    margin:0;
+    font-size: 11px;
+    /*margin:8px auto 0 17px;*/
+}
+
+.breadcrumb a{
+    color: #abaaaa;
+}
+
+
+.news-category-left-image-section {
+    float:left;
+    width:200px;
+    margin:24px auto auto 19px;
+}
+
+.news-category-left-image-section img{
+    float:left;
+    width:200px;
+    /*height:150px;*/
+}
+
+.news-category-left-image-section p{
+    float:left;
+    margin: 5px auto 20px 0;
+
+}
+
+.news-category-right-items-section {
+    float:left;
+    width:500px;
+    text-align:left;
+    margin-top:20px;
+}
+
+.news-category-right-items-section-title {
+    height:18px;
+    float:left;
+    border-bottom:#7f7f7f solid 1px;
+    width:99%;
+    font-size: 14px;
+}
+
+
+.news-category-right-items-section P{
+    float:right;
+    width:500px;
+    margin:5px 0 0 0;
+    padding:0;
+}
+
+.col-2-menu-membership {
+    float:left;
+    width:180px;
+    height:296px;
+    background:url(/image/front/en-us/col-2-menu-membership-bg.jpg);
+    text-align:left;
+    padding:0 40px 0 40px;
+}
+
+.col-2-menu-membership-company {
+    float:left;
+    color: #d1e6d9;
+    font-size: 11px;
+    padding:0;
+    margin-top:23px;
+    font-family:Verdana, Geneva, sans-serif;
+}
+
+.col-2-menu-membership-title {
+    float:left;
+    color: #d1e6d9;
+    font-size: 14px;
+    padding:0;
+    margin-top:2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-2-menu-membership-text-bold {
+    float:left;
+    font-weight:bold;
+    color: #000000;
+    font-size: 10px;
+    padding:0;
+    margin-top:15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-2-menu-membership-text-normal {
+    float:left;
+    font-weight:normal;
+    color: #4d4e27;
+    font-size: 11px;
+    padding:0;
+    margin-top:4px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-2-menu-membership-subscribe {
+    float:left;
+    font-weight:normal;
+    color: #000000;
+    font-size: 14px;
+    padding:0;
+    margin-top:5px;
+    font-family: "Courier New", Courier, monospace;
+
+}
+
+.col-2-menu-membership-subscribe a{
+    text-decoration: underline;
+    color: #000000;
+}
+
+.col-2-menu-membership-email {
+    float:left;
+    padding:0;
+    margin-top:15px;
+
+}
+
+.col-2-menu-membership-email .email{
+    border: #000000 solid 1px;
+    height:17px;
+
+}
+
+/*****end news category****/
+
+
+/*****support page****/
+.body-support {
+    background:transparent url(/image/front/en-us/body-bg-support.jpg) no-repeat scroll center top;
+}
+
+#body-support-main .page-toptabs-2col-lbrs-content {
+    background: #ffffff;
+}
+/*
+.body-support {
+	background-image: #ffffff;
+	height: 601px;
+	text-align:center;
+}
+*/
+
+
+#body-support-main {
+
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+#support-more {
+    position:absolute;
+    width: 170px;
+    height: 30px;
+    margin: 382px auto auto 830px;
+    float:left;
+}
+
+#col-2-right-b-top-category-support-more,
+#col-2-right-b-top-category-videos-more
+{
+    margin-top: 270px;
+    float:left;
+    font-size:14px;
+    margin-left:5px;
+}
+
+
+/*****review page****/
+
+/*****news article****/
+#body-news-article-main {
+    background: #ffffff url(/image/front/en-us/body_pic_news_more.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.news-article-section {
+    float:left;
+}
+
+.news-article-title {
+    font-size:20px;
+    font-weight:bold;
+    float:left;
+    width: 100%;
+    text-align:left;
+    margin-top: 15px;
+}
+
+.news-article-top-pic {
+    float:left;
+    width: 100%;
+    text-align:center;
+}
+
+.news-article-subtitle {
+    font-size:14px;
+    float:left;
+    font-style: italic;
+    width: 100%;
+    text-align:center;
+}
+
+.news-article-source {
+    float:left;
+    width: 100%;
+    text-align:center;
+    text-align:left;
+}
+
+
+.news-article-body {
+    float:left;
+    width: 100%;
+    text-align:left;
+}
+
+.news-article-tags {
+    float:left;
+    width: 100%;
+    text-align:left;
+}
+
+.news-article-action, .misc-article-action {
+    float:right;
+    margin: 7px 21px auto auto;
+    font-size:12px;
+}
+
+
+/*****end news article****/
+
+
+
+/*****fan access****/
+.body-fan-area {
+    height: 624px;
+    text-align:center;
+    background:#ffffff url(/image/front/en-us/body-fan-area-index-bg.jpg) no-repeat top center;
+}
+
+
+#body-fan-area-main {
+
+    height: 876px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+/*****end fan access****/
+
+/*****tours and tickets more****/
+#body-tours-and-tickets-more-main {
+    background: #ffffff url(/image/front/en-us/body_pic_tours_and_tickets_more.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+.tours-and-tickets-cal-content-section-top-bg {
+    background:#ffffff url(/image/front/en-us/tours-and-tickets-cal-content-section-top-bg.jpg) top no-repeat;
+}
+
+
+.content-title-big-tours-and-tickets-more-color{
+    color: #d5e3d2;
+}
+
+
+.content-title-small-tours-and-tickets-more a {
+    color: #665c1b;
+}
+
+#tours-and-tickets-calendar-section  {
+    float:left;
+    height:600px;
+    margin:125px 0 0;
+    text-align:left;
+    width:100%;
+}
+
+#tours-and-tickets-get-ticket {
+    float:left;
+    color: #948a2e;
+    font-weight:bold;
+}
+
+#tours-and-tickets-description {
+    float:left;
+    font-weight:bold;
+}
+
+#tours-and-tickets-country-dropdown {
+    float:left;
+}
+
+#tours-and-tickets-city-dropdown {
+    float:left;
+}
+
+#tours-and-tickets-calendar {
+    float:left;
+}
+
+#tours-and-tickets-company-ny {
+    float:left;
+    margin:0;
+    padding:0;
+    color: #5e9229;
+    font-weight:bold;
+    font-size:11px;
+}
+
+#tours-and-tickets-company-ny a {
+    color: #5e9229;
+}
+
+#tours-and-tickets-company-int {
+    float:left;
+    margin:0;
+    padding:0;
+    color: #c17c28;
+    font-weight:bold;
+    font-size:11px;
+}
+
+#tours-and-tickets-company-int a {
+    color: #c17c28;
+}
+
+#tours-and-tickets-company-touring {
+    float:left;
+    margin:0;
+    padding:0;
+    color: #4a669a;
+    font-weight:bold;
+    font-size:11px;
+}
+
+tours-and-tickets-company-touring a {
+    color: #4a669a;
+}
+/*****end tours and tickets more****/
+
+/*****press releases****/
+#body-press-releases-main {
+    background: #ffffff url(/image/front/en-us/body_pic_press_releases.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#body-press-releases-article-main {
+    background: #ffffff url(/image/front/en-us/body_pic_press_releases.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.press-releases-article-section {
+    float:left;
+    margin: 0;
+}
+
+.press-releases-article-one {
+    float:left;
+    padding:10px 0 20px 0;
+    clear:both;
+    text-align:left;
+    width: 100%;
+}
+
+
+.press-releases-title {
+    float:left;
+    font-size:15px;
+    width: 100%;
+    clear:both;
+}
+
+.press-releases-title a:link,
+.press-releases-title a:visited
+{
+    color: #404040;
+}
+
+.press-releases-title a:hover{
+    color: #1E6CB4;
+    text-decoration:none;
+}
+
+
+.press-releases-source {
+    float:left;
+    font-size:12px;
+    width: 100%;
+    margin-top:2px;
+    clear:both;
+}
+
+
+.press-releases-box-margin {
+    margin-top: 344px;
+}
+
+.press-releases-view-by-type {
+    float:left;
+    color: #cb6525;
+}
+
+.press-releases-view-by-category {
+    float:left;
+    clear:both;
+
+}
+
+.press-releases-view-by-category a{
+    color: #6c3e7f;
+
+}
+
+.press-releases-view-by-full-list a{
+    float:left;
+    font-size:11px;
+}
+
+.press-releases-view-by-full-list a{
+
+    color: #6c3e7f;
+}
+
+.press-releases-view-by-section {
+    float:left;
+    margin: 20px 80px 30px 15px;
+}
+/*****end press release****/
+
+
+
+/*****reviews article****/
+#body-reviews-article-main {
+    background: #ffffff url(/image/front/en-us/body_pic_reviews_article.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.press-reviews-article-section {
+    float:left;
+    margin: 26px 191px 80px 40px;
+}
+/*****end reviews article****/
+
+/*****reviews more****/
+#body-reviews-more-main {
+    background: #ffffff url(/image/front/en-us/body_pic_reviews_article.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.reviews-more-top-box-reviews {
+    float:left;
+    margin: 6px 20px 6px 18px;
+}
+
+.reviews-more-top-box-review-left-img {
+    float:left;
+}
+
+.reviews-more-top-box-review-left-img img{
+    width: 352px;
+    height: 203px;
+}
+
+.reviews-more-top-box-review-right-content {
+    float:right;
+    margin:10px 0px 6px 30px;
+    width:215px;
+    text-align:left;
+}
+
+.reviews-more-top-box-review-right-content-title {
+    color: #381654;
+    font-weight:bold;
+    font-size:12px;
+}
+
+.reviews-more-top-box-review-right-content-description {
+    font-size:10px;
+    color: #341d1c;
+    font-style:italic;
+}
+
+.reviews-more-top-box-review-right-content-img {
+    float:right;
+    margin-top: 30px;
+}
+
+.reviews-more-top-box-review-right-content-img img{
+    width:80px;
+    height:102px;
+}
+
+.reviews-more-main-content-section {
+    float:left;
+    margin: 20px 20px 10px 18px;
+}
+
+.reviews-more-main-content-section-one-review {
+    float:left;
+
+}
+
+.reviews-more-main-content-section-one-review img{
+    float:left;
+    width: 126px;
+}
+
+.reviews-more-main-content-section-one-review-text {
+    float:left;
+    margin-left:54px;
+    text-align:left;
+    width:410px;
+}
+
+.reviews-more-main-content-section-one-review-text-title {
+    float:left;
+    font-weight:bold;
+}
+
+.reviews-more-main-content-section-one-review-text-description {
+    float:left;
+    font-size:12px;
+}
+
+.reviews-more-main-content-section-one-review-text-more {
+    float:left;
+    font-size:11px;
+}
+
+.reviews-more-main-content-section-one-review-text-more a{
+    color:#94c7f4;
+}
+.reviews-more-main-content-company {
+    float:left;
+    width: 190px;
+    overflow:hidden;
+    text-align:left;
+    margin-right:10px;
+    margin-bottom:50px;
+
+}
+
+.reviews-more-main-content-company p {
+    display:block;
+    clear:both;
+    float:left;
+    font-size: 11px;
+    padding:0;
+    margin:3px 0 3px 0;
+}
+
+
+.reviews-more-main-content-company-first {
+    margin-left:0px;
+}
+
+.reviews-more-main-content-company-head {
+    float:left;
+
+}
+.head-media a{
+    color:#8742ba;
+}
+
+.head-arts a{
+    color:#4664d4;
+}
+.head-notable-figures a{
+    color:#619a50;
+}
+/*****end review more****/
+
+/*****reviews category****/
+#body-reviews-category-main {
+    background: #ffffff url(/image/front/en-us/body_pic_reviews_article.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+/*****reviews category****/
+
+
+/*****support more****/
+#body-support-more-main {
+    background: #ffffff url(/image/front/en-us/body_pic_support_more.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#support-more-donation-section {
+    margin: 128px 27px 40px 27px;
+    float: left;
+    width: 588px;
+    text-align:left;
+}
+
+
+#support-more-donation-section p {
+    padding:0;
+    margin:8px 0;
+    float:left;
+}
+
+#support-more-donation-section .big {
+    font-size:14px;
+}
+
+#support-more-donation-section .donation-title {
+    color: #948a2e;
+    font-weight:bold;
+    font-size:14px;
+}
+
+
+#support-more-donation-section .donation-category {
+    font-weight:bold;
+    font-size:14px;
+    margin-bottom:0px;
+}
+
+
+.support-donation-section-top-bg {
+    background:url(/image/front/en-us/support-donation-section-top-bg.jpg) top no-repeat;
+}
+
+.support-donation-title-big-color {
+    color: #e1ddca;
+}
+
+#online-form {
+    float:left;
+}
+
+/*****end support more****/
+
+
+/*****show city****/
+#body-show-city-main {
+    background: #ffffff url(/image/front/en-us/body_pic_show.jpg) no-repeat top left;
+    min-height:1200px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#col-2-right-b-show-main-content-section {
+    float:left;
+    margin:20px 30px 40px 30px;
+    padding:0;
+    text-align:left;
+
+}
+
+#col-2-right-b-show-main-content-section p{
+    float:left;
+    margin-bottom:6px;
+    padding:0;
+    color:#222222;
+    line-height:20px;
+}
+
+.show-content-p-title {
+    float:left;
+    color: #2d0f46;
+    font-weight:bold;
+    font-size:14px;
+    clear:both;
+    width:100%;
+}
+
+.show-content-buy-ticket-now{
+    float:left;
+}
+
+.col-2-left-s-category {
+    position:absolute;
+    margin-top: 350px;
+    margin-left: 98px;
+    float:left;
+}
+
+.col-2-left-s-category p{
+    padding:0;
+    margin:0 0 5px 0;
+    height:17px;
+    font-weight:normal;
+    color: #523f27;
+    float:left;
+    clear:both;
+    width:100%;
+    text-align:left;
+    font-size:13px;
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.col-2-left-s-category p a{
+    color: #523f27;
+}
+
+.white-background {
+    background:#ffffff;
+}
+/*****end show city****/
+
+
+
+/*****show about****/
+
+
+#body-show-about-main {
+    background: #ffffff url(/image/front/en-us/body_pic_show.jpg) no-repeat top left;
+    min-height:800px;
+    width: 1000px;
+    margin: 0 auto;
+}
+/*****end show about****/
+
+/*****show artists****/
+#body-show-artists-main {
+    background: #ffffff url(/image/front/en-us/body_pic_show.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.show-artists-one-artist {
+    float:left;
+    margin-bottom: 23px;
+    color:#323133;
+    margin-bottom:23px;
+}
+
+.show-artists-one-artist a{
+
+    color:#323133;
+}
+
+.show-artists-one-artist img{
+    float:left;
+    width: 104px;
+    height: 153px;
+}
+
+.show-artists-one-artist-text {
+    float:left;
+    width:350px;
+    margin-left:37px;
+}
+
+.show-artists-one-artist-name {
+    float:left;
+    clear:both;
+    width:100%;
+    font-size:14px;
+    margin-bottom:10px;
+}
+
+
+
+.show-artists-one-artist-title {
+    float:left;
+    font-size:12px;
+    font-style:italic;
+    clear:both;
+    width:100%;
+
+
+}
+
+.show-artists-one-artist-description {
+    float:left;
+    font-size:13px;
+}
+/*****end show history****/
+
+
+/*****show artist detail****/
+#body-show-artist-detail-main {
+    background: #ffffff url(/image/front/en-us/body_pic_show.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.show-artist-detail-top-title {
+
+    float:left;
+    font-size:23px;
+    color: #696969;
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+
+.show-artists-one-artist {
+    float:left;
+    margin-bottom: 23px;
+    color:#323133;
+    margin-top:40px;
+    margin-bottom:23px;
+}
+
+.show-artist-detail-one-artist a{
+
+    color:#323133;
+}
+
+.show-artist-detail-one-artist img{
+    float:left;
+}
+
+.show-artist-detail-one-artist-text {
+    float:left;
+    width:350px;
+    margin-left:37px;
+}
+
+.show-artist-detail-one-artist-title {
+    float:left;
+    font-size:15px;
+    clear:both;
+    width:100%;
+    margin-bottom:10px;
+    color: #b88329;
+
+}
+
+.show-artist-detail-one-artist-description {
+    float:left;
+    font-size:13px;
+}
+
+.show-artist-detail-related-content-section {
+    float:left;
+    margin: 0 0 40px 170px;
+    color: #B88329;
+    text-align:left;
+
+}
+
+.show-artist-detail-related-content-section a{
+    color: #B88329;
+
+}
+
+
+.show-artist-detail-related-content-section p{
+    padding:0;
+    margin:0 0 3px 0;
+
+}
+
+.show-artist-detail-related-artists-title {
+    font-weight:bold;
+}
+
+
+/*****end show artist detail****/
+
+
+/*****show page****/
+.body-show {
+    background-image: #ffffff;
+    height: 601px;
+    text-align:center;
+}
+
+
+#body-show-main {
+    background:url(/image/front/en-us/body_pic_show_index.jpg) no-repeat;
+    height: 601px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.show-index-body-img {
+    margin-top: 207px;
+}
+
+/*****end show page****/
+
+/*****show page****/
+.body-show-features {
+    background-image: #ffffff;
+    height: 800px;
+    text-align:center;
+}
+
+
+#body-show-features-main {
+    background:url(/image/front/en-us/body_pic_show_index.jpg) no-repeat;
+    height: 800px;
+    width: 1000px;
+    margin: 0 auto;
+
+}
+
+.show-features-main-content {
+    float:left;
+    margin-top: 207px;
+    margin-left: 46px;
+    width:954px;
+    height:495px;
+    background:#41403d url(/image/front/en-us/show-features-main-content-bg.jpg) no-repeat;
+
+}
+
+
+.show-features-main-content-body {
+    float:left;
+    width:954px;
+    height:460px;
+}
+
+
+.show-features-main-content-footer {
+    float:left;
+    width:954px;
+    height:35px;
+}
+
+.show-features-main-content-footer-button {
+    float:left;
+    width:110px;
+    height:35px;
+    background: #110918;
+    margin-right:5px;
+    color: #9c9a93;
+    text-align:center;
+}
+
+.show-features-main-content-footer-button a{
+    color: #9c9a93;
+}
+
+.show-features-main-content-footer-button a:hover{
+    color: #ffffff;
+}
+
+
+.show-features-main-content-footer-button p{
+    float:left;
+    margin-top: 10px;
+    width: 100%;
+    padding:0;
+
+}
+
+
+.show-features-main-content-footer-button-first{
+    margin-left:490px;
+}
+
+
+.show-features-main-content-left {
+    float:left;
+    margin: 48px 0 14px 14px;
+    width: 512px;
+}
+
+.show-features-main-content-left-head {
+    float:left;
+}
+
+.show-features-main-content-left-body {
+    float:left;
+}
+
+.show-features-main-content-right {
+    float:right;
+    margin: 48px 0 14px auto;
+    width: 370px;
+    text-align:left;
+}
+
+.show-features-main-content-right-head {
+    color: #fefbea;
+    float:left;
+    font-size:20px;
+    font-family:Tahoma, Geneva, sans-serif;
+}
+
+.show-features-main-content-right-content-sub-head {
+    float:left;
+}
+
+.show-features-main-content-right-content-sub-head img{
+    float:left;
+}
+
+.show-features-main-content-right-content-sub-content {
+    float:left;
+}
+/*****end show page****/
+
+
+/*****about us****/
+#body-about-us-main,
+#body-site-map-main,
+#body-contact-us-main,
+#body-terms-and-conditions-main,
+#body-privacy-policy-main
+{
+    background: #ffffff url(/image/front/en-us/body-pic-mis-big.jpg) no-repeat top left;
+    width: 1000px;
+    margin: 0 auto;
+}
+/*****end about us****/
+
+/*******misc pages******/
+.misc-article-section {
+    float:left;
+    margin: 0px 44px 80px 0px;
+    text-align:left;
+    width: 240px;
+}
+
+.misc-article-section p{
+    float:left;
+    font-size:13px;
+    margin:3px 0;
+    overflow:hidden;
+    padding:0;
+
+}
+.misc-article-section .category{
+    float:left;
+    font-size:18px;
+    font-weight:bold;
+    clear:both;
+    width:100%;
+    margin-top:30px;
+}
+
+
+.mic-article-body {
+    float:left;
+    width: 100%;
+    text-align:left;
+}
+
+.misc-article-title {
+    text-align:left;
+    font-size: 20px;
+    font-family:Tahoma, Geneva, sans-serif;
+    font-weight:bold;
+    margin: 320px auto 8px 3px;
+}
+/*******end misc pages******/
+
+
+/*****home index****/
+.body-index {
+    background: #b69c2a url(/image/front/en-us/body-narrow-index.png) repeat-x;
+}
+
+#body-index-main {
+    margin:0 auto;
+    text-align:center;
+}
+
+.mainSite-index {
+    background: #b69c2a;
+}
+
+#footer-index {
+    background: #b69c2a url(/image/front/en-us/bottom-index-bg-narrow.png) repeat-x;
+    min-height:2px;
+
+    padding: 0;
+    text-align:center;
+}
+
+.body-index-flash {
+    background: #b69c2a url(/image/front/en-us/body-narrow-index.png) repeat-x;
+}
+
+#body-index-main-flash {
+    margin:0 auto;
+    text-align:center;
+}
+
+.mainSite-index-flash {
+    background: #b69c2a;
+}
+
+#footer-index-flash {
+    background: #b69c2a url(/image/front/en-us/bottom-index-bg-narrow.png) repeat-x;
+    min-height:2px;
+
+    padding: 0;
+    text-align:center;
+}
+
+/*****end home index****/
+
+/******site map******/
+.misc-article-body-site-map p {
+    display:block;
+    width: 100%;
+    clear:both;
+}
+
+
+/******end site map******/
+
+.misc-article-body-contact-us p {
+    display:block;
+    width: 100%;
+    clear:both;
+}
+
+.misc-article-body-site-map {
+    width: 200px;
+}
+
+object {display:block;}
+
+
+#top-search {
+    margin-top: 15px;
+    background: url(/image/front/index-search-bg.jpg) no-repeat;
+    width: 173px;
+}
+
+#top-search-keyword {
+    background:transparent none repeat scroll 0 0;
+    border:0 none;
+    color:#FEFEFC;
+    font-size:11px;
+    height:20px;
+    margin-right:30px;
+    padding:1px;
+    width:135px;
+}
+
+#top-news-flash {
+    overflow:hidden;
+    padding-right:5px;
+    padding-top:10px;
+    text-align:right;
+}
+
+#top-news-flash a {
+    color: #5d3382;
+    text-decoration: underline;
+}
+
+#top-search-button {
+    margin-left:147px;
+    margin-top:-22px;
+    position:absolute;
+}
+
+#subscriptionResponse {
+    text-align: left;
+}
+/***********footer ****************/
+#footer-content {
+    font-family: Helvetica Neue, Helvetica;
+    height: 203px;
+    width: 1000px;
+    margin:0 auto;
+    background: #bbaa40 url(/image/front/footer-bg-find-ticket.jpg) bottom no-repeat;
+}
+
+#footer-content-page-links {
+    float:left;
+    width: 810px;
+    /* height: 80px; */
+}
+
+#footer-content-page-links-big {
+    float:left;
+    margin: 22px 0 0 30px;
+    color: #855c1d;
+    font-size: 12px;
+}
+
+#footer-content-page-links-big a:link,
+#footer-content-page-links-big a:visited {
+    color: 	#855c1d;
+}
+
+#footer-content-page-links-big a:hover {
+    color: 	#999900;
+}
+
+
+#footer-content-page-links-small {
+    color: #a37b27;
+    font-size:12px;
+}
+
+#footer-content-page-links-small a:link,
+#footer-content-page-links-small a:visited {
+    color: #855C1D;
+}
+
+#footer-content-page-links-small a:hover {
+    /*color: 	#999900;*/
+}
+
+#footer-content-page-misc {
+    float:right;
+    width: 173px;
+    /* height: 80px;*/
+    text-align:left;
+}
+
+#footer-content-page-copyright {
+    color:#855C1D;
+    font-size:12px;
+    text-align:center;
+    line-height: 30px;
+}
+
+#global-lang {
+    margin:0px 0 0 8px;
+    float:left;
+    height: 32px;
+}
+
+
+#footer-content-page-social {
+    float:left;
+    margin-top:5px;
+    width: 215px;
+    height:27px;
+    text-align:right;
+
+}
+
+#footer-content-page-social-hidden-pre-load {
+    display:none;
+}
+
+#footer_content-upper {
+    height: 89px;
+    width: 1000px;
+}
+
+#footer_content-lower {
+    height: 80px;
+    width: 1000px;
+    text-align: center;
+}
+
+#footer-content-seperator {
+    float:left;
+    height:55px;
+    width:1px;
+    background:#D0BB68;
+    margin:15px 0px 13px 0px;
+}
+
+#footer-content-highlights {
+    float:left;
+    text-align: left;
+    width: 410px;
+    margin: 13px 20px 20px 100px;
+}
+
+#footer-content-guestbook {
+    float: left;
+    width: 200px;
+    text-align: left;
+    margin: 13px 20px 13px 20px;
+}
+
+#footer-content-subscription {
+    float: right;
+    width: 200px;
+    margin: 13px 10px 13px 10px;
+}
+
+#bottom-subscription {
+    float: right;
+    background: url(/image/front/index-subscribe-bg.jpg) no-repeat;
+    width: 153px;
+}
+
+#bottom-subscription-email {
+    background:transparent none repeat scroll 0 0;
+    border:0 none;
+    color:#FEFEFC;
+    font-size:11px;
+    height:20px;
+    margin-right:24px;
+    padding:1px;
+    width:121px;
+}
+
+#bottom-subscription-button {
+    position: absolute;
+    float: right;
+}
+
+#footer-content-subscriptionResponse {
+    font-size: 11px; 
+    color: #855C1D;
+    margin: 5px 0 0 51px;
+    width: 149px;
+    text-align: left;
+}
+
+#footer-content-share-your-experience {
+    margin-top: 7px;
+}
+/***********footer end ************/
+
+/***********global lang start ************/
+
+#global-lang-map {
+    margin:19px 0 0 70px;
+    float:left;
+    width: 60px;
+    height: 25px;
+}
+
+#global-lang-text {
+    float:left;
+    width: 123px;
+    height: 30px;
+    color: #ae94ea;
+    font-size: 13px;
+    text-align:left;
+    margin:0;
+}
+
+#global-lang-text-top a:link,
+#global-lang-text-top  a:visited
+{
+    color: #ae94ea;
+}
+
+#global-lang-text-top  a:hover {
+    color: 	#c4b2f4;
+    text-decoration:none;
+}
+
+
+
+#global-lang-icon-up {
+    margin:25px 0 0 0;
+    float:left;
+    width: 17px;
+    height: 25px;
+}
+
+
+.global-lang-popup-wrapper {
+    display: none;
+}
+
+
+#global-lang-text.hovering #global-lang-popup {
+    display: block;
+    z-index:999;
+}
+
+#global-lang-text #global-lang-popup {
+    position: absolute;
+    margin-top: 0;
+    margin-left: -15px;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica;
+    font-size:12px;
+    color: #ffffff;
+    text-align:left;
+}
+
+.global-lang-popup-title {
+    float:left;
+    font-weight:bold;
+    font-size:13px;
+    height:28px;
+    color: #ffffff;
+    width: 162px;
+}
+
+.global-lang-popup-item {
+    color:#E8E2EE;
+    float:left;
+    font-size:13px;
+    height:23px;
+    margin:5px 0 0 8px;
+    width:145px;
+}
+
+.global-lang-popup-item a:link,
+.global-lang-popup-item a:visited
+{
+    color: #E8E2EE;
+
+}
+
+.global-lang-popup-item a:hover {
+    color: 	#ffffff;
+    text-decoration:none;
+}
+
+#global-lang-popup {
+    background:transparent url(/image/front/global-lang-popup.png) no-repeat center bottom;
+    height:129px;
+    width:121px;
+}
+
+.global-lang-popup-title p {
+    padding:0;
+    padding-left:20px;
+    margin-left:5px;
+    margin-top: 10px;
+}
+
+.global-lang-popup-item p {
+    padding:0;
+    padding-left:20px;
+    margin-left:5px;
+    margin-top: 5px;
+}
+
+.global-lang-popup-item .current {
+    background:url(/image/arrow.gif) no-repeat scroll left center;
+}
+
+#lang-separator {
+    float:left;
+    height:18px;
+    width:1px;
+    background:#876db8;
+    margin:7px 6px 0 0px;
+}
+/***********global lang end ************/
+
+/******page with top tabs and 2 cols, left bigger right smaller**********/
+.page-toptabs-2col-lbrs-main {
+    min-height:1000px;
+    width: 1000px;
+    margin: 0 auto;
+    padding-bottom:0px;
+}
+
+.page-toptabs-2col-lbrs-content {
+    width: 933px;
+    min-height: 1150px;
+    float:right;
+    padding:0 30px 80px 37px;
+    margin-top:-175px;
+    text-align:left;
+    background: transparent url(/image/front/bg-border-bottom.jpg) no-repeat scroll center bottom;
+
+}
+
+.page-toptabs-2col-lbrs-left-core-content {
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab {
+    width: 960px;
+    height: 40px;
+    background: url(/image/front/artists-index-content-top-bg.jpg) no-repeat;
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab ul {
+    margin: 0;
+    padding: 0 0 0 6px;
+    float:left;
+    list-style-type:none;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab ul li{
+    margin: 5px 5px 0 5px;
+    padding: 8px 10px 12px 10px;
+    height: 15px;
+    float:left;
+    font-weight:bold;
+    font-size:14px;
+    color: #45176e;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab ul a{
+    color: #45176e;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab ul li.active{
+    background: #ffffff;
+}
+
+.page-toptabs-2col-lbrs-content-page-Introduction {
+    font-size:14px;
+    margin-top:15px;
+    padding:0;
+    clear:both;
+}
+
+.page-toptabs-2col-lbrs-content-page-title {
+    font-size:24px;
+    font-weight:bold;
+    float:left;
+    margin-top:15px;
+    padding:0;
+    clear:both;
+}
+
+
+.page-toptabs-2col-lbrs-content-left {
+    float:left;
+    min-height:600px;
+    width:580px;
+}
+
+.page-toptabs-2col-lbrs-content-right {
+    float:right;
+    width:300px;
+}
+
+.page-toptabs-2col-lbrs-content-video {
+    float:left;
+    margin-top: 17px;
+}
+
+.page-toptabs-2col-lbrs-content-newsletter {
+    float:left;
+    height: 12px;
+    width: 289px;
+    padding: 8px 0 13px 23px;
+    background: url(/image/front/artists-newsletter-bg.jpg) repeat-x;
+}
+
+.page-toptabs-2col-lbrs-content-newsletter-email {
+    border: #ffffff solid 1px;
+    margin-top: -3px;
+    font-size:12px;
+}
+
+.regularFont {
+    font-weight: normal;
+}
+
+.page-toptabs-2col-lbrs-content-left p{
+    padding-right: 0px;
+    margin: 0 0 10px 0px;
+    font-size: 14px;
+}
+
+.page-toptabs-2col-lbrs-content-left-artists-biography p {
+    font-size: 13px;
+}
+
+
+.page-toptabs-2col-lbrs-content-left small{
+    float:left;
+    font-size: 10px;
+}
+
+.page-toptabs-2col-lbrs-content-left .level1-title {
+    float:left;
+    font-size: 14px;
+    font-weight:bold;
+    width: 100%;
+}
+
+.page-toptabs-2col-lbrs-content-left .level2-title {
+    float:left;
+    font-weight: bold;
+    width: 100%;
+
+
+}
+
+.page-toptabs-2col-lbrs-content-left-city-tickets-content-left .level2-title {
+    margin-left:20px;
+}
+
+
+/******end of page with top tabs and 2 cols, left bigger right smaller**********/
+
+/**********artists****************/
+.body-artists,
+.body-artists-biography
+{
+    background: #F9F6ED url(/image/front/body-bg-golden-simple.jpg) no-repeat top center;
+}
+
+#body-artists-main {
+}
+
+
+
+.artists-index-content-page-title {
+    font-size:30px;
+    font-weight:bold;
+    color: #45186e;
+    float:left;
+    margin-top:15px;
+    padding:0;
+    clear:both;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-sub,
+.artists-index-content-page-tab-2nd {
+    width: 567px;
+    height:35px;
+    float:left;
+    border-bottom: #e8e7e7 solid 1px;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-sub-content-wrapper {
+    border-color:#E8E7E7;
+    border-style:solid;
+    border-width:0 1px 1px 1px;
+    float:left;
+    width:535px;
+    padding: 15px;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-sub-content-wrapper p {
+    float:none;
+}
+.page-toptabs-2col-lbrs-content-top-tab-sub ul,
+.artists-index-content-page-tab-2nd ul {
+    margin: 0;
+    padding: 0;
+    float:left;
+    list-style-type:none;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-sub ul li,
+.artists-index-content-page-tab-2nd ul li{
+    margin: 5px 5px 0 0px;
+    padding: 7px 10px 7px 10px;
+    height: 15px;
+    float:left;
+    font-size:12px;
+    color: #4e4e4e;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-sub ul a,
+.artists-index-content-page-tab-2nd ul a{
+    color: #4e4e4e;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-sub ul li.active,
+.artists-index-content-page-tab-2nd ul li.active{
+    background:#ffffff;
+    border-top:#e8e7e7 solid 1px;
+    border-right:#e8e7e7 solid 1px;
+    border-left:#e8e7e7 solid 1px;
+    border-bottom:#ffffff solid 1px;
+}
+
+
+.artists-index-content-page-people-info-one {
+    color:#323133;
+    float:left;
+    width: 499px;
+    /*height: 147px;*/
+    overflow:hidden;
+    margin-left:0;
+    text-align:left;
+    padding: 10px 21px 15px 14px;
+}
+
+.artists-index-content-page-people-info .odd{
+    background: #f7f5fd;
+}
+
+
+
+.artists-index-content-page-people-info-one img{
+    float:left;
+    height:153px;
+    width:104px;
+}
+
+.artists-index-content-page-people-info-text {
+    float:left;
+    margin-left:37px;
+    width:350px;
+}
+
+.artists-index-content-page-people-info-text-name {
+    clear:both;
+    float:left;
+    font-size:18px;
+    margin-bottom:3px;
+    width:100%;
+    font-weight:bold;
+    color: #323133;
+}
+
+.artists-index-content-page-people-info-text-name a{
+    color: #323133;
+}
+
+
+
+.artists-index-content-page-people-info-text-position {
+    clear:both;
+    float:left;
+    font-size:12px;
+    font-style:italic;
+    width:100%;
+    font-weight:bold;
+    margin-bottom:3px;
+}
+
+.artists-index-content-page-people-info-description {
+    float:left;
+    font-size:12px;
+}
+
+.artists-index-content-page-people-info-button-more {
+    margin-top:14px;
+    float: right;
+    /*
+	background: url(/image/front/artists-one-read-more-bg.gif);
+	*/
+    width: 91px;
+    height: 19px;
+    text-align:center;
+}
+
+
+.artists-index-content-related-artists {
+    float:left;
+    width: 308px;
+    border: #e7e5d9 solid 2px;
+}
+
+
+
+.artists-index-content-related-artists-section-title {
+    height:64px;
+    width: 306px;
+    text-align:left;
+}
+
+.artists-index-content-related-artists-category-1st {
+    margin: 13px 0 0 24px;
+    width: 260px;
+    font-size: 16px;
+    font-weight:bold;
+    color: #654583;
+    float:left;
+}
+
+.artists-index-content-related-artists-category-2nd {
+    margin: 3px 0 0 24px;
+    width: 260px;
+    color: #654583;
+    float:left;
+}
+
+.artists-index-content-related-artists-section-names {
+    float:left;
+    background: #f6f5f2;
+    width: 306px;
+}
+
+.artists-index-content-related-artists-section-names p {
+    float:left;
+    width: 128px;
+    margin: 10px 0 0 25px;
+    padding:0;
+}
+
+.artists-index-content-related-artists-section-names p a{
+    color: #323133;
+}
+
+
+
+.artists-index-content-page-people-info-hide {
+    display:none;
+    float:left;
+    font-size:12px;
+}
+
+
+
+/**********artists end************/
+
+/**********city**************/
+
+.body-tours-and-tickets-city-tickets {
+    background:#F7F6EA url(/image/front/body-bg-golden-pattern.jpg) no-repeat top center;
+}
+
+
+
+.page-toptabs-2col-lbrs-content-left-city-tickets-content-left {
+    float:left;
+    width: 312px;
+}
+
+.page-toptabs-2col-lbrs-content-left-city-tickets-content-right {
+    float:left;
+    width: 280px;
+}
+
+a.button-brown,
+.button-brown {
+    background: #cdc18d url(/image/front/button-brown-bg.jpg) repeat-x;
+    border-left: #cdc18d solid 1px;
+    border-right: #cdc18d solid 1px;
+    border-top: #cdc18d solid 0px;
+    border-bottom: #cdc18d solid 0px;
+    margin:0;
+    padding:5px 10px 5px 10px;
+    height: 25px;
+    color: #333333;
+    font-weight:bold;
+    font-size: 12px;
+    font-family: Helvetica Neue, Helvetica;
+    text-align:center;
+    cursor:pointer;
+}
+
+
+
+.body-tours-and-tickets-city-maps {
+    background: #F7F6EA url(/image/front/en-us/body-tours-and-tickets-city-bg.jpg) no-repeat top center;
+}
+
+.page-toptabs-2col-lbrs-content-left .top-right-actions {
+    float:right;
+    margin-top:0px;
+    font-size: 12px;
+    width: 140px;
+}
+
+.body-tours-and-tickets-city-offers {
+    background:#F7F6EA url(/image/front/en-us/body-tours-and-tickets-city-bg.jpg) no-repeat top center;
+}
+
+.city-offers-one {
+    float:left;
+    width: 450px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.city-offers-one img {
+    float:left;
+    margin-left:23px;
+    width: 100px;
+
+}
+
+.city-offers-one .city-offers-one-text {
+    float:left;
+    margin-left:23px;
+    width: 300px;
+
+}
+/**********city end *********/
+
+/*********show introduction ******/
+.body-show-about-the-show
+{
+    background: transparent url(/image/front/en-us/body-bg-features.jpg) no-repeat top center;
+}
+.body-show-about-the-company
+{
+    background: transparent url(/image/front/en-us/body-bg-about-the-company.jpg) no-repeat top center;
+}
+.body-show-shen-yun-openings
+{
+    background: transparent url(/image/front/en-us/body-bg-shen-yun-openings.jpg) no-repeat top center;
+}
+
+.body-show-history,
+.body-yellow-cloud
+{
+    background: transparent url(/image/front/en-us/body-bg-classic-chinese-dance.jpg) no-repeat top center;
+}
+
+.page-toptabs-2col-lbrs-left-show-about-the-show,
+.page-toptabs-2col-lbrs-left-show-about-the-company,
+.page-toptabs-2col-lbrs-left-show-history
+
+{
+    float:left;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.page-toptabs-2col-lbrs-left-show-about-the-show p,
+.page-toptabs-2col-lbrs-left-show-about-the-company p,
+.page-toptabs-2col-lbrs-left-show-history p
+
+{
+    float:none;
+}
+/*********show introduction end ***/
+
+/********reviews************/
+.reviews-featured-article-info-button-more-category-reviews {
+    color:#E77637;
+    float:right;
+    height:19px;
+    text-align:right;
+    width:180px;
+    font-size: 12px;
+    margin-top: -10px;
+    margin-right: 20px;
+}
+
+
+.body-reviews-v2 {
+    background: #ffffff url(/image/front/en-us/body-reviews-bg.jpg) no-repeat top center;
+}
+
+.body-reviews-index-v2 {
+    background: #f7f6ea url(/image/front/en-us/body-news-v2-bg.jpg) no-repeat top center;
+    min-width: 1000px;
+}
+
+.block-left-col-reviews-hd-video img {
+    margin-left:27px;
+}
+
+.body-reviews-detail-v2 {
+    background: #f7f6ea url(/image/front/body-bg-yellow-cloud-mongolian-dancers.jpg) no-repeat top center;
+    min-width: 1000px;
+}
+
+
+.page-toptabs-2col-lbrs-content-review {
+    margin-top: 237px;
+    border: #e3e6f11 solid 1px;
+}
+
+.page-toptabs-2col-lbrs-content-review-top-img {
+    float:left;
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align:center;
+}
+
+
+.page-toptabs-2col-lbrs-content-one-col {
+    float:left;
+    margin-left:21px;
+    margin-top:30px;
+    width:943px;
+}
+
+.page-toptabs-2col-lbrs-content-one-col-core-content {
+    border-color:#E8E7E7;
+    border-style:solid;
+    border-width:0 1px 1px;
+    float:left;
+    margin-top:-1px;
+    width:915px;
+}
+
+.tab-sub-full {
+    width:915px;
+}
+
+.reviews-quote p {
+    float: left;
+    width: 835px;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 50px;
+}
+
+.reviews-featured-article-info {
+    float:left;
+    border: #e8e7e7 solid 1px;
+    border-top: #e8e7e7 solid 0px;
+    margin-top:-1px;
+    width: 565px;
+}
+
+
+.reviews-featured-article-info-one {
+    float:left;
+    width: 560px;
+    overflow:hidden;
+    text-align:left;
+}
+
+.reviews-featured-article-info .odd{
+    background: #f7f5fd;
+}
+
+
+
+.reviews-featured-article-info-one img{
+    float:left;
+    width:196px;
+    overflow:hidden;
+}
+
+.reviews-featured-article-info-text {
+    float:left;
+    margin-left:20px;
+    width:340px;
+}
+
+.reviews-featured-article-info-text-title {
+    clear:both;
+    float:left;
+    font-size:18px;
+    margin-bottom:3px;
+    width:100%;
+    font-weight:bold;
+    color: #404040;
+}
+
+
+.reviews-featured-article-info-text-title a:link,
+.reviews-featured-article-info-text-title a:visited
+{
+    color: #404040;
+}
+
+.reviews-featured-article-info-text-title a:hover
+{
+    color:#1E6CB4;
+    text-decoration: none;
+}
+
+
+.reviews-featured-article-info-text-name {
+    clear:both;
+    float:left;
+    font-size:12px;
+    width:100%;
+    margin-top: 10px;
+
+}
+
+.reviews-featured-article-info-description {
+    float:left;
+}
+
+.reviews-featured-article-info-description p{
+    float:left;
+    font-size:12px;
+    margin-top: 10px;
+}
+
+.reviews-featured-article-info-button-more {
+    float: left;
+    width: 91px;
+    height: 19px;
+    text-align:left;
+    font-size: 12px;
+}
+
+.content-separator {
+    border-top:1px solid #E6E6E7;
+    float:left;
+    height:1px;
+    margin-bottom:20px;
+    margin-top:20px;
+    width:580px;
+}
+
+.reviews-separator {
+    border-top:1px solid #E6E6E7;
+    float:left;
+    height:1px;
+    margin-bottom:20px;
+    margin-top:20px;
+    width:560px;
+}
+
+.page-toptabs-2col-lbrs-content-right .quote-category {
+    width: 100%;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+.page-toptabs-2col-lbrs-content-right .quote-category-color1 {
+    color: #8742ba;
+}
+
+.page-toptabs-2col-lbrs-content-right .quote-category-color2 {
+    color: #4664d4;
+}
+
+.page-toptabs-2col-lbrs-content-right .quote-category-color3 {
+    color: #4d8c3a;
+}
+
+
+.page-toptabs-2col-lbrs-content-right-quote p {
+    float: left;
+    width: 145px;
+    margin: 0 10px 10px 0;
+    font-size: 11px;
+    over-flow:hidden;
+    padding: 0;
+    color: #75777a;
+}
+
+.page-toptabs-2col-lbrs-content-right-quote p a:link,
+.page-toptabs-2col-lbrs-content-right-quote p a:visited{
+    color: #75777a;
+}
+
+.page-toptabs-2col-lbrs-content-right-quote p a:hover{
+    color: #4e8fcc;
+}
+
+
+a.reviews-featured-category-more {
+    color: #e77637;
+    text-decoration:underline;
+}
+
+.page-toptabs-2col-lbrs-content-left-reviews-quote {
+    border-right: none;
+}
+
+.tours-cities-at-footer {
+    width: 100%;
+    background: #f7f6ea;
+}
+
+.tours-cities-at-footer-main-wrapper {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.tours-cities-at-footer-main {
+    background:#FDFDFA none repeat scroll 0 0;
+    border:1px solid #E6E6C9;
+    font-family:Helvetica Neue,Helvetica;
+    margin-left:30px;
+    padding-bottom:35px;
+    padding-left:60px;
+    width:910px;
+}
+
+.tours-cities-at-footer-main-top-title {
+    float: left;
+    margin-top: 37px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #e87f2c;
+}
+
+.tours-cities-at-footer-main-one-col {
+    float:left;
+    width: 120px;
+    margin-right: 10px;
+    text-align:left;
+
+}
+
+.tours-cities-at-footer-main-one-col p{
+    float:left;
+    width: 100%;
+    margin: 2px 0 2px 0;
+    padding: 0;
+    color: #adb2bb;
+    font-size: 11px;
+}
+
+.tours-cities-at-footer-main-one-col p a:link,
+.tours-cities-at-footer-main-one-col p a:visited{
+    color: #486789;
+}
+
+.tours-cities-at-footer-main-one-col p a:hover{
+    color: #4e8fcc;
+}
+
+
+
+.tours-cities-at-footer-main-one-col p.category{
+    color: #cdcdcd;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.tours-cities-at-footer-main-one-col p.category a{
+    color: #486789;
+    font-size: 12px;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-misc {
+    float:right;
+    font-size:14px;
+    margin-right:20px;
+    margin-top:13px;
+
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-misc a{
+    color:#45176E;
+
+}
+/********reviews end********/
+
+/********fan area***********/
+.body-fan-area-on-tour,
+.body-fan-area-downloads,
+.body-fan-area-gift-shop
+{
+    background:transparent url(/image/front/en-us/body-fan-area-sub-bg.jpg) no-repeat center top;
+}
+
+.body-fan-area-on-tour .page-toptabs-2col-lbrs-content,
+.body-fan-area-downloads .page-toptabs-2col-lbrs-content,
+.body-fan-area-gift-shop .page-toptabs-2col-lbrs-content
+{
+    background: #ffffff;
+}
+/********fan area end ******/
+
+/********videos v2 *********/
+.body-videos-v2 {
+    background:transparent url(/image/front/body-bg-golden-simple.jpg) no-repeat top center;
+    min-width: 1000px;
+}
+
+#body-videos-v2-main {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+.videos-v2-index-flash-video {
+    float:left;
+    margin:1px 40px 0 22px;
+    width:629px;
+    height: 354px;
+}
+
+.videos-v2-index-scroll-video-imgs {
+    float:left;
+    margin-left: 33px;
+    margin-top:0px;
+    height: 180px;
+    width: 943px;
+    /*background: url(/image/front/videos-v2-scroll-bg.jpg) no-repeat bottom center;*/
+}
+
+.videos-v2-index-category {
+    float:left;
+    margin-left: 62px;
+    margin-top:175px;
+    z-index: 10;
+    position: relative;
+}
+
+.videos-v2-index-category a{
+    color: #303030;
+}
+
+.videos-v2-index-scroll-video-more-info {
+    float:left;
+    width: 260px;
+    text-align:left;
+}
+
+.videos-v2-index-scroll-video-more-info .left-col {
+    float: left;
+    width: 176px;
+    color: #6f6f6f;
+    text-align:left;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.videos-v2-index-scroll-video-more-info .center-col {
+    float: left;
+    width: 11px;
+    height: 46px;
+
+    background: url(/image/front/videos-v2-index-video-more-info-v-sep.gif);
+}
+
+.videos-v2-index-scroll-video-more-info .right-col {
+    float: left;
+    width: 274px;
+    margin-left: 83px;
+    font-size: 11px;
+    color: #6f6f6f;
+    text-align:left;
+    margin-top: 5px;
+}
+
+.videos-v2-index-scroll-video-more-title {
+    font-weight:bold;
+    color: #383838;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.videos-v2-index-scroll-video-more-time {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.video-index-top-description {
+    font-size: 12px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #8c774b;
+}
+
+#body-top-videos-index-page-title-image {
+    margin-top: 50px;
+}
+/********videos v2 end *****/
+
+/********behind the scenes**********/
+
+.body-behind-the-scenes {
+    background:#f7f6ea url(/image/front/en-us/body-behind-the-scenes-bg.jpg) no-repeat scroll center top;
+}
+
+#body-behind-the-scenes-main .page-toptabs-2col-lbrs-content {
+    background: #ffffff;
+}
+
+.body-behind-the-scenes-dance {
+    background:#f7f6ea url(/image/front/en-us/body-behind-the-scenes-dance-bg.jpg) no-repeat scroll center top;
+    min-width:1000px;
+}
+
+.body-behind-the-scenes-music {
+    background:#f7f6ea url(/image/front/en-us/body-behind-the-scenes-music-bg.jpg) no-repeat scroll center top;
+    min-width:1000px;
+}
+
+.body-behind-the-scenes-soloists {
+    background:#f7f6ea url(/image/front/en-us/body-behind-the-scenes-soloists-bg.jpg) no-repeat scroll center top;
+    min-width:1000px;
+}
+
+.body-behind-the-scenes-production {
+    background:#f7f6ea url(/image/front/en-us/body-behind-the-scenes-production-bg.jpg) no-repeat scroll center top;
+    min-width:1000px;
+}
+
+/********behind the scenes end******/
+
+
+
+/********dropdown menu**************/
+ul#top-nav-clean-menu .dropdown-wrapper {
+    display: none;
+}
+
+
+ul#top-nav-clean-menu li.hovering .dropdown-wrapper {
+    display: block;
+    z-index:999;
+}
+
+ul#top-nav-clean-menu li.has-dropdown .dropdown-wrapper
+{
+    position: absolute;
+    margin-top: 32px;
+    padding: 0;
+    font-family: Helvetica Neue, Helvetica;
+    font-size:12px;
+    text-align:left;
+}
+
+ul#top-nav-clean-menu li.has-dropdown .dropdown-wrapper a
+{
+    margin:0;
+    padding: 0;
+    font-family:"Helvetica";
+    text-indent:0;
+    float:none;
+    display: inline;
+}
+
+
+.dropdown-wrapper p {
+    margin:3px 0 5px 18px;
+    padding: 0;
+    float:left;
+    clear: both;
+    color: #e8e2ee;
+    line-height: 14px;
+}
+
+
+.dropdown-wrapper p.category {
+
+    font-size: 13px;
+    font-weight: bold;
+    color: #e8e2ee;
+}
+
+ul#top-nav-clean-menu li.has-dropdown .dropdown-wrapper a:link,
+ul#top-nav-clean-menu li.has-dropdown .dropdown-wrapper a:visited,
+.dropdown-wrapper p a:link,
+.dropdown-wrapper p a:visited {
+    color: #e8e2ee;
+}
+ul#top-nav-clean-menu li.has-dropdown .dropdown-wrapper a:hover,
+.dropdown-wrapper p a:hover {
+    color: #ffffff;
+    text-decoration:none;
+}
+
+.dropdown-wrapper p.secondLevel {
+    margin:2px 0 2px 33px;
+
+}
+
+.dropdown-wrapper p img{
+    margin-left:5px;
+}
+
+
+
+
+#dropdown-tours-and-tickets-label-GT {
+    position: absolute;
+    top: 15px;
+    left:20px;
+}
+
+
+#dropdown-tours-and-tickets-label-C {
+    position: absolute;
+    top: 39px;
+    left:20px;
+}
+
+#dropdown-tours-and-tickets-label-WT {
+    position: absolute;
+    top: 56px;
+    left:20px;
+}
+
+#dropdown-tours-and-tickets-select-country {
+    position: absolute;
+    top: 14px;
+    left:110px;
+}
+
+#dropdown-tours-and-tickets-select-city {
+    position: absolute;
+    top: 44px;
+    left:110px;
+}
+
+#dropdown-tickets {
+    background: url(/image/front/menu-dropdown-bg-tours-and-tickets.png) repeat center bottom;
+    width: 110px;
+    margin-left: -19px;
+}
+
+
+#dropdown-about-us {
+    background:  url(/image/front/menu-dropdown-bg-about-us.png) repeat-x top left;
+    width: 208px;
+    margin-left:23px;
+}
+
+#dropdown-news {
+    background:  url(/image/front/menu-dropdown-bg-news.png) repeat-x top left;
+    width: 112px;
+    margin-left:293px;
+}
+
+
+#dropdown-learn {
+    background:  url(/image/front/en-us/menu-dropdown-bg-learn.png) repeat-x top left;
+    width: 306px;
+    margin-left:126px;
+}
+/********dropdown menu end**********/
+
+/*******photos gallery**************/
+.body-photos {
+    background:#f7f6ea url(/image/front/en-us/body-videos-v2-bg.jpg) no-repeat top center;
+    min-width: 1000px;
+}
+
+#body-photos-main {
+    min-height:400px;
+    width: 1000px;
+    min-height: 800px;
+    margin: 0 auto;
+}
+
+#photo-gallery-slide{
+    margin: 20px 0 60px 110px;
+    float: left;
+}
+/*******photos gallery end**********/
+
+/***********fan area*************/
+#fan-area-index-on-tour-link {
+    position: absolute;
+    height: 112px;
+    width: 224px;
+    margin-top:48px;
+    margin-left: 500px;
+}
+
+#fan-area-index-downloads-link {
+    position: absolute;
+    height: 112px;
+    width: 224px;
+    margin-left:420px;
+    margin-top:62px;
+}
+
+#fan-area-index-gift-shop-link {
+    position: absolute;
+    height: 112px;
+    width: 224px;
+    margin-left:655px;
+    margin-top:62px;
+}
+
+.body-fan-area-downloads-one {
+    float:left;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 30px;
+    width: 196px;
+}
+
+.body-fan-area-downloads-one img{
+    float:left;
+    width: 196px;
+}
+
+.body-fan-area-downloads-one .download-link{
+    float:left;
+    width: 196px;
+    color: #52504C;
+}
+
+.body-fan-area-downloads-one .download-link a{
+    color: #52504C;
+}
+
+
+.fan-area-gift-shop-left-section-head {
+    float:left;
+    font-size: 14px;
+    font-weight:bold;
+    color: #45186e;
+    background: url(/image/front/fan-area-gift-shop-left-section-header-bg.jpg) repeat-x;
+    height: 29px;
+}
+
+.fan-area-gift-shop-left-section-head p{
+    padding:0;
+    float:left;
+    margin:8px 0 8px 17px;
+}
+
+.fan-area-gift-shop-left-catrgory-section-head {
+    width: 285px;
+}
+
+.fan-area-gift-shop-gift-head {
+    width: 577px;
+}
+.fan-area-gift-shop-gift {
+    float:left;
+}
+
+.fan-area-gift-shop-gift-body {
+    font-size: 12px;
+    margin-top:1px;
+    float:left;
+    width: 577px;
+    height: 167px;
+    background: url(/image/front/en-us/fan-area-gift-shop-gift-bg.jpg) no-repeat;
+}
+.fan-area-gift-shop-left-catrgory-section {
+    float:left;
+    width: 285px;
+    height: 192px;
+    margin-right: 8px;
+    margin-bottom: 20px;
+}
+.fan-area-gift-shop-left-catrgory-section {
+    float:left;
+}
+
+.fan-area-gift-shop-left-catrgory-section-body {
+    margin-top:1px;
+    padding: 10px;
+    float:left;
+    width: 263px;
+    height: 140px;
+    border: #d3ccb9 solid 1px;
+}
+
+.fan-area-gift-shop-gift-body-title {
+    float:left;
+    font-size: 14px;
+    font-weight:bold;
+    color: #45186e;
+    margin-top: 14px;
+    margin-left: 293px;
+}
+
+.fan-area-gift-shop-gift-body-description {
+    float:left;
+    margin-top: 27px;
+    margin-left: 293px;
+    margin-right: 10px;
+}
+
+.fan-area-gift-shop-left-catrgory-section-body .picture {
+    float:left;
+    width: 110px;
+    height: 150px;
+    overflow:hidden;
+
+}
+
+.fan-area-gift-shop-left-catrgory-section-body .picture img{
+    float:left;
+    width: 110px;
+}
+
+.fan-area-gift-shop-left-catrgory-section-body p {
+    float:left;
+    width: 120px;
+    margin:0;
+    margin-left: 20px;
+    padding: 0;
+    line-height:16px;
+}
+
+
+.page-toptabs-2col-lbrs-left-fan-area-on-tour .title {
+    float:left;
+    margin: 20px 0 10px 0;
+    font-size: 23px;
+    font-weight:bold;
+    width: 98%;
+}
+
+.page-toptabs-2col-lbrs-left-fan-area-on-tour .date {
+    float:left;
+    margin: 0px 0 20px 0;
+    font-size: 18px;
+    font-weight:bold;
+    color: #818386;
+    width: 98%;
+}
+
+.page-toptabs-2col-lbrs-left-fan-area-on-tour {
+    float:left;
+    margin: 0 10px 0 10px;
+}
+
+.page-toptabs-2col-lbrs-left-fan-area-on-tour p {
+    float:none;
+}
+
+/***********fan area end*************/
+
+.body-global-tabs-layout {
+    background:#F7F6EA url(/image/front/en-us/body-global-tabs-bg.jpg) no-repeat scroll center top;
+    min-width: 1000px;
+}
+
+/************index html *************/
+.body-index-html {
+    background:transparent url(/image/front/en-us/body-index-html-bg.jpg) no-repeat scroll center top;
+    min-width: 1000px;
+    height: 446px;
+    text-align:center;
+}
+
+.body-index-html-high {
+    background:transparent url(/image/front/en-us/body-index-html-bg-high.jpg) no-repeat scroll center top;
+    min-width: 1000px;
+    height: 577px;
+    text-align:center;
+}
+
+.index-html-image-top-gap {
+    height: 130px;
+    width: 100%;
+}
+
+.index-html-image-top-gap-high {
+    height: 176px;
+    width: 100%;
+}
+
+.index-html-image-rotator-wrapper {
+    margin:auto;
+    width: 854px;
+    background:transparent;
+}
+
+.index-html-image-rotator-wrapper-high {
+    margin:auto;
+    width: 1000px;
+    background:transparent;
+}
+
+#index-html-image-rotator-wrapper {
+    margin:auto;
+    width: 870px;
+    background:transparent;
+}
+
+#index-html-image-top-gap {
+    height: 154px;
+    width: 100%;
+}
+
+#index-html-latest-news-top-gap {
+    height: 0px;
+    width: 100%;
+}
+
+#index-html-latest-news {
+    margin:5px auto;
+    width: 870px;
+    height: 30px;
+    background: url('/image/front/en-us/index-html-latest-news-bg.png');
+}
+
+.scrollable-index-html-latest-news {
+    height:30px;
+    margin-left:410px;
+    overflow:hidden;
+    padding-top:7px;
+    position:relative;
+    text-align:left;
+    width:500px;
+}
+
+.items-index-html-latest-news {
+    width:20000em;
+    position:absolute;
+    clear:both;
+}
+
+.item-one-index-html-latest-news {
+    background:transparent url(/image/front/index-html-latest-news-arrow.png) no-repeat 0px 0px;
+    color:#4E339E;
+    float:left;
+    font-size:13px;
+    height:30px;
+    padding-left:20px;
+    width:500px;
+    overflow:hidden;
+    margin-top: 1px;
+
+}
+
+.item-one-index-html-latest-news a {
+    color:#4e339e;
+}
+
+/************index html end**********/
+
+.page-toptabs-col-1-core-content {
+    float:left;
+    margin-left:21px;
+    margin-top:30px;
+    width:926px;
+}
+
+.page-toptabs-col-1-core-content .top-right-actions {
+    float: left;
+    width: 100%;
+    text-align:right;
+}
+
+/************* news v2***************/
+.body-news-index-v2 {
+    background: #F9F6ED url(/image/front/body-bg-yellow-cloud-mongolian-dancers.jpg) no-repeat top center;
+}
+
+.news-index-section-headlines {
+    float:left;
+}
+
+.news-index-section-featured-news {
+    float:left;
+}
+
+.news-index-section-featured-videos {
+    float:left;
+}
+
+
+
+.news-index-left-section-top-bar {
+    float:left;
+    font-size:18px;
+    font-weight:bold;
+    height:18px;
+    padding-bottom:5px;
+    padding-top:3px;
+    text-align:left;
+    width:600px;
+}
+
+
+#news-top-category {
+    text-align:left;
+    font-size: 13px;
+    color: #878b8e;
+    margin: 320px auto 8px 3px;
+}
+
+#news-more-headline-pictures-news-section {
+    width: 300px;
+    height: 240px;
+    float:left;
+    margin: 2px auto 2px 18px;
+}
+
+#news-more-headline-text-news-section {
+    width: 215px;
+    height: 240px;
+    float:left;
+    margin: 2px auto 2px 38px;
+    text-align:left;
+}
+
+#news-more-headline-text-news-section p{
+    float:left;
+    font-size:13px;
+    margin:3px 0;
+    overflow:hidden;
+    padding:0 0 0 20px;
+
+}
+
+#news-more-headline-text-news-section .video {
+    background:transparent url(/image/front/en-us/video_icon.jpg) no-repeat scroll 0px 4px;
+}
+
+#news-more-see-all-post {
+    color: #e45e27;
+    float: right;
+    margin: 5px 30px auto auto;
+    font-size: 14px;
+    font-style:italic;
+}
+
+#news-more-see-all-post a {
+    color: #e45e27;
+}
+
+#news-more-picture-news-section {
+    float:left;
+    margin: 0;
+    width:560px;
+}
+
+.one-picture-news {
+    float:left;
+    width:560px;
+    padding:0;
+    margin-bottom:2px;
+}
+
+.one-picture-news img {
+    float:left;
+    width: 196px;
+    overflow:hidden;
+}
+
+.one-picture-news-text {
+    width: 340px;
+    overflow:hidden;
+    float:left;
+    text-align:left;
+    margin-left:20px;
+}
+
+.one-picture-news-title {
+    font-size:18px;
+    font-weight:bold;
+}
+
+.one-picture-news-title a:link,
+.one-picture-news-title a:visited
+{
+    color: #404040;
+}
+
+.one-picture-news-title a:hover
+{
+    color: #1E6CB4;
+    text-decoration:none;
+}
+
+
+.one-picture-news-description {
+    float: left;
+    font-size: 12px;
+    line-height:20px;
+}
+
+.one-picture-news-description p {
+    margin:0;
+    font-size: 13px;
+}
+
+.one-picture-news-source {
+    margin:10px 0;
+    font-size: 12px;
+}
+
+#news-more-featured-video-head {
+    float: left;
+    width:556px;
+    margin-left: 50px;
+    padding-bottom:23px;
+    border-bottom:#c8d1dc solid 1px;
+}
+
+#news-more-featured-video-head-title {
+    float:left;
+    font-size:28px;
+}
+
+#news-more-featured-video-head-more {
+    float:right;
+    margin-top:10px;
+}
+
+#news-more-featured-video-section {
+    float:left;
+}
+
+#news-more-featured-video-section img{
+    width:156px;
+    oveflow:hidden;
+}
+
+
+.news-more-featured-video-one {
+    border-right:1px solid #C8D1DC;
+    float:left;
+    height:190px;
+    margin-right:20px;
+    margin-top:10px;
+    padding-right:20px;
+    width:160px;
+}
+
+
+.news-more-featured-video-one-third {
+    float:left;
+    height:190px;
+    width:160px;
+    margin-top:10px;
+    border-right:none;
+}
+
+.news-more-featured-video-one img, .news-more-featured-video-one-third img {
+    margin: 0px 15px 15px 0;
+}
+
+.news-more-featured-video-one-title {
+    text-align:left;
+    margin:10px 25px 15px 0;
+}
+
+.news-more-featured-video-one-title a:hover{
+    color: #1e6cb4;
+}
+
+#news-more-featured-video-bar {
+    float:left;
+    width:572px;
+    height:24px;
+    background:url(/image/front/en-us/news-more-featured-video-bar.jpg) no-repeat;
+    margin: 26px auto 40px 45px;
+    text-align:center;
+    padding-top:5px;
+    font-size: 14px;
+
+}
+
+.news-more-picture-news-section-more-link {
+    float: right;
+    font-size: 12px;
+    margin-right: 40px;
+}
+
+
+.col-2-right-s-news-section {
+    margin: 0 20px 0 20px;
+    float:left;
+}
+.col-2-right-s-news-section-top-gap {
+    height: 35px;
+    width: 100%;
+    float:left;
+}
+
+.col-2-right-s-news-section-head {
+    font-weight:bold;
+}
+
+.col-2-right-s-news-section-items p a {
+    font-size: 11px;
+    color: #737373;
+    line-height: 13px;
+}
+
+.body-news-detail-v2,
+.body-news-category-v2,
+.body-reviews-category-v2,
+.body-reviews-index-v2 {
+    background:#F7F6EA url(/image/front/body-bg-yellow-cloud-mongolian-dancers.jpg) no-repeat scroll center top;
+    min-width: 1000px;
+}
+
+.block-left-col-reviews-hd-video img {
+    margin-left:27px;
+}
+
+.body-press-releases-index-v2 {
+    background: transparent url(/image/front/en-us/body-bg-press-releases.jpg) no-repeat top center;
+    min-width: 1000px;
+}
+
+.press-releases-title-level1 {
+    float:left;
+    font-size: 19px;
+    font-weight: bold;
+    color: #404040;
+    margin-bottom:20px;
+}
+
+.body-press-releases-detail-v2 {
+    background: transparent url(/image/front/en-us/body-bg-press-releases.jpg) no-repeat top center;
+    min-width: 1000px;
+}
+.body-press-releases-media-archive {
+    background: #f7f6ea url(/image/front/en-us/body-news-v2-bg.jpg) no-repeat top center;
+    min-width: 1000px;
+}
+
+.press-releases-media-archive-section {
+    float:left;
+    margin-right: 20px;
+    color: #767676;
+}
+
+.archive-search {
+    margin-right: 60px;
+}
+
+.media-archive-one-item {
+    float:left;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
+.archive-odd {
+    background: #f7f5fd;
+}
+
+
+.media-archive-one-item-title {
+    float:left;
+    margin-left: 15px;
+    font-size: 13px;
+}
+
+
+.media-archive-one-item-date {
+    float:left;
+    margin-left: 15px;
+}
+
+.archive-button {
+    float:right;
+    margin-top: 10px;
+}
+/************* news v2 end***********/
+
+.body-tours-and-tickets-city  {
+    background:url("/image/front/en-us/body-tours-and-tickets-bg.jpg") no-repeat scroll center top transparent;
+    height:560px;
+    min-width:1000px;
+}
+
+.page-toptabs-2col-lbrs-content-top-tab-breadcrumb {
+    margin: 30px 0 20px 20px;
+    float:left;
+}
+
+/******** IE 7 & 8 nav bug fix *******/
+ul#top-nav-clean-menu li {
+    display: inline;
+}
+ul#top-nav-clean-menu li.has-dropdown {
+    
+}
+ul#top-nav-clean-menu li.has-dropdown .dropdown-wrapper
+{
+    padding: 0;
+    white-space:nowrap;
+}
+
+.page-toptabs-2col-lbrs-content-left-news-index-v2 {
+    margin-top:12px;
+}
+
+.content-image-align-left {
+    float:left;
+    margin: 0 20px 20px 0;
+}
+
+.content-image-align-right {
+    float:right;
+    margin: 0 0 20px 20px;
+}
+
+
+
+.page-toptabs-2col-lbrs-left-fan-area-on-tour .title a{
+    color: #404040;
+}
+
+.body-blog-index {
+    background:#F7F6EA url(/image/front/body-bg-yellow-cloud-mongolian-dancers.jpg) no-repeat scroll center top;
+    min-width:1000px;
+}
+
+.body-blog-article {
+    background:#F7F6EA url(/image/front/body-bg-yellow-cloud-mongolian-dancers.jpg) no-repeat scroll center top;
+    min-width:1000px;
+}
+
+#calendar-list .link a{
+    color: #76499f;
+}
+
+#calendar-list-disclaimer {
+    padding-top:10px;
+    width: 580px;
+    margin-top: 20px;
+    border-top: solid 1px #bfc1c2;
+    font-size: 10px;
+
+}
+
+#simple-calendar-head {
+    width: 600px;
+    height: 30px;
+    font-size:15px;
+    border-bottom:1px solid #BFC1C2;
+}
+
+#simple-calendar-head-month {
+    color: #404040;
+    width: 420px;
+    text-align:center;
+    float:left;
+    font-weight:bold;
+}
+
+#simple-calendar-head-prev {
+    width: 80px;
+    float:left;
+}
+
+#simple-calendar-head-next {
+    width: 80px;
+    float:right;
+    text-align:right;
+    margin-right:20px;
+}
+
+#simple-calendar-month-body {
+    width: 530px;
+}
+
+.simple-calendar-month-body-even {
+    width: 580px;
+    height: 18px;
+    padding:5px 0 5px 0;
+    background: #f7f5fd;
+}
+
+.simple-calendar-month-body-odd {
+    width: 600px;
+    height: 18px;
+    padding:5px 0 5px 0;
+}
+
+.simple-calendar-month-body-even-location {
+    float:left;
+    margin-left:10px;
+    text-align:left;
+    width:350px;
+    margin-top: 3px;
+}
+
+.simple-calendar-month-body-even-location a{
+    color: #404040;
+}
+
+.simple-calendar-upcoming-body-line-location a {
+    color: #404040;
+}
+
+.simple-calendar-month-body-even-date {
+    float:left;
+    text-align:right;
+    width:210px;
+}
+
+#simple-calendar-upcoming-head {
+    width: 460px;
+    margin-left:20px;
+}
+
+#simple-calendar-upcoming-body {
+    width: 530px;
+}
+
+#simple-calendar-upcoming-head {
+    width: 530px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.simple-calendar-upcoming-body-line {
+    width: 530px;
+    height: 24px;
+    clear:both;
+}
+
+.simple-calendar-upcoming-body-line-location {
+    width: 210px;
+    text-align:left;
+    float: left;
+    margin-left:20px;
+}
+
+
+.simple-calendar-upcoming-body-line-misc {
+    width: 160px;
+    text-align:right;
+    float: right;
+}
+
+.simple-calendar-upcoming-body-line-misc a {
+    color: #6E4297;
+}
+
+
+.page-toptabs-2col-lbrs-content-left-city-tickets-content-left p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.page-toptabs-2col-lbrs-content-left img,
+#news-index-section-headlines-picture img
+{
+    padding: 0;
+}
+
+/***new right column***/
+#page-toptabs-2col-lbrs-content-top-section {
+    width: 996px;
+    height: 363px;
+    margin-top:-235px;
+    margin-left: -27px;
+}
+
+
+#page-toptabs-2col-lbrs-content-breadcrumb-small-header {
+    width: 940px;
+    height: 20px;
+    padding-top:15px;
+}
+
+.page-toptabs-2col-lbrs-content-right-block {
+    width: 300px;
+    min-height: 65px;
+    background: #ffffff url(/image/front/right-block-bg.jpg) no-repeat top left;
+    float:left;
+    padding-top: 15px;
+}
+
+.right-block-title-half {
+    color: #383480;
+    font-size: 14px;
+    width: 93px;
+    float: left;
+}
+
+.right-block-title-full {
+    color: #383480;
+    font-size: 14px;
+    float: left;
+}
+
+#right-block-item-image {
+    float:left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 164px;
+}
+
+
+.right-block-category-title {
+    float:left;
+    width: 93px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.right-block-category-title a{
+    color: #1E6CB4;
+}
+
+.right-block-article-title {
+    float: left;
+    width: 207px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.right-block-article-title a:link,
+.right-block-article-title a:visited
+{
+    color: #404040;
+}
+
+.right-block-article-title a:hover
+{
+    color: #1E6CB4;
+    text-decoration:none;
+}
+/***end of new right column ***/
+
+/******blog v2*********/
+.article-tags-section-title,
+.article-related-section-title {
+    color: #949494;
+    font-size: 12px;
+}
+
+.article-tags {
+    font-size: 12px;
+    font-weight:normal;
+    width: 500px;
+}
+
+.article-related {
+    width: 560px;
+    padding: 20px;
+    background: #f8f8ed;
+}
+
+.article-related-items{
+    padding: 0;
+    list-style-type:none;
+    margin:0;
+}
+
+.article-related-items li {
+    margin-top: 5px;
+}
+
+
+#blog-detail-blogger-profile {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.blog-detail-blog-artist-info-profile-link {
+    margin-top: 2px;
+    font-weight: bold;
+}
+
+
+.blog-detail-blogger-profile-img {
+    float:left;
+    width: 79px;
+    height: 79px;
+    overflow:hidden;
+}
+
+.blog-detail-blog-artist-info {
+    float: left;
+    width: 230px;
+    margin-left: 15px;
+}
+
+.blog-detail-blog-artist-info-profile-intro {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.content-detail-time {
+    margin-top: 5px;
+    color: #949494;
+    font-size: 12px;
+}
+
+.page-toptabs-2col-lbrs-content-page-title-blog {
+    clear:both;
+    float:left;
+    font-size:24px;
+    font-weight:bold;
+    margin-top:5px;
+    padding:0;
+}
+
+.page-toptabs-2col-lbrs-content-page-title-blog a:link,
+.page-toptabs-2col-lbrs-content-page-title-blog a:visited {
+    color: #404040;
+}
+
+.page-toptabs-2col-lbrs-content-page-title-blog a:hover {
+    color: #1E6CB4;
+    text-decoration:none;
+}
+
+
+.right-col-featured-blogger-profile-img {
+    float:left;
+    width: 79px;
+    height: 79px;
+    overflow:hidden;
+}
+
+.right-col-featured-blogger-profile-info {
+    float: left;
+    width: 180px;
+    margin-left: 25px;
+}
+
+.right-col-featured-blogger-profile-name {
+    font-size: 12px;
+}
+
+.right-col-featured-blogger-profile-title {
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+
+.right-col-featured-blogger-profile-intro {
+    margin-top: 5px;
+    font-size: 11px;
+}
+
+#right-col-about-this-blog-description {
+    font-size: 12px;
+    line-height:16px;
+}
+
+#right-col-about-this-blog-description-subscribe {
+    float:right;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.blog-article-separator {
+    width: 580px;
+    border-top: solid 1px #e9e5e2;
+    margin: 40px 0 20px 0;
+}
+
+.on-tour-blog-view-comments img {
+    border:0;
+    margin-bottom:-4px;
+}
+
+.on-tour-blog-view-comments {
+    float: right;
+    font-weight:bold;
+    font-size: 12px;
+    margin-top:-1px;
+}
+
+.blog-index-include-social-icons {
+    float:right;
+    font-size: 12px;
+    font-weight:bold;
+    margin-right: 10px;
+}
+
+.blog-index-include-social-icons img{
+    height: 14px;
+}
+/******end bog v2******/
+
+#page-toptabs-2col-lbrs-content-top-section-full {
+    width: 1000px;
+    height: 363px;
+    margin-top:-235px;
+}
+
+#page-toptabs-2col-lbrs-content-top-section-non-full {
+    width: 996px;
+    height: 363px;
+    margin-top:-235px;
+    margin-left: -28px;
+}
+
+#page-toptabs-1col-content-breadcrumb,
+#page-toptabs-2col-lbrs-content-breadcrumb {
+    width: 940px;
+    height: 20px;
+    padding-top: 35px;
+
+}
+
+.page-toptabs-2col-lbrs-content-right-block {
+    width: 300px;
+    min-height: 65px;
+    background: transparent url(/image/front/right-block-bg.jpg) no-repeat top left;
+    float:left;
+    padding-top: 15px;
+}
+
+.page-toptabs-2col-lbrs-content-right-block-white {
+    width: 300px;
+    min-height: 65px;
+    background: transparent url(/image/front/right-block-bg-white.jpg) no-repeat top left;
+    float:left;
+    padding-top: 15px;
+}
+
+.page-toptabs-2col-lbrs-content-right-block-yellow {
+    width: 300px;
+    min-height: 65px;
+    background: transparent url(/image/front/right-block-bg-yellow.jpg) no-repeat top left;
+    float:left;
+    padding-top: 15px;
+}
+
+
+.right-block-title-half {
+    color: #67549E;
+    font-size: 14px;
+    width: 93px;
+    float: left;
+}
+
+.right-block-title-full {
+    color: #67549E;
+    font-size: 14px;
+    float: left;
+}
+
+#right-block-item-image {
+    float:left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    height: 164px;
+}
+
+
+.right-block-category-title {
+    float:left;
+    width: 93px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.right-block-category-title a{
+    color: #3473cc;
+}
+
+.right-block-article-title {
+    float: left;
+    width: 207px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+
+
+.block-content-body-top {
+    height:356px;
+    margin:0 auto;
+    overflow:hidden;
+    width:984px;
+}
+
+/******artists v2*********/
+.artists-index-content-col {
+    width: 160px;
+    margin-right: 30px;
+    float:left;
+    min-height: 400px;
+}
+
+.artists-index-content-col-category-level1 {
+    font-size: 18px;
+    clear:both;
+    margin-bottom: 20px;
+}
+
+.artists-index-content-col-category-level2 {
+    font-size: 12px;
+    clear:both;
+    margin-bottom: 10px;
+}
+
+#artists-biography-top-person-image {
+    height: 300px;
+    width: 226px;
+    overflow:hidden;
+    position: absolute;
+    margin-top: 43px;
+    margin-left: 30px;
+}
+
+#artists-biography-top-person-intro-text {
+    width: 300px;
+    overflow:hidden;
+    position: absolute;
+    margin-top: 90px;
+    margin-left: 290px;
+    text-align:left;
+    color: #000000;
+}
+
+#artists-biography-top-person-intro-text-name {
+    font-size: 28px;
+    font-weight: bold;
+    font-family:"Trajan Pro","Helvetica";
+}
+
+#artists-biography-top-person-intro-text-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#artists-biography-top-person-intro-text-born {
+    font-size: 14px;
+}
+
+#artists-biography-top-person-intro-text-debut {
+    font-size: 14px;
+}
+
+#artists-biography-top-person-intro-text-video-profile {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+#artists-biography-top-person-intro-text-video-profile a:link,
+#artists-biography-top-person-intro-text-video-profile a:visited,
+#artists-biography-top-person-intro-text-video-profile a:hover
+{
+    color: #392f86;
+}
+
+
+#artists-biography-top-person-intro-text-blog {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#artists-biography-top-person-intro-text-blog a
+{
+    color: #392f86;
+}
+.artists-biography-one p {
+    line-height: 11px;
+}
+
+.article-related ul li {
+    font-size: 12px;
+}
+
+#artists-biography-other-members-orchestra {
+    font-size: 13px;
+}
+
+#artists-biography-other-members-orchestra a:link,
+#artists-biography-other-members-orchestra a:visited
+{
+    color: #404040;
+}
+
+#artists-biography-other-members-orchestra a:hover {
+    color: #1E6CB4;
+    text-decoration: none;
+}
+
+
+.page-toptabs-2col-lbrs-left-core-content ul {
+    padding:0;
+    margin: 0 0 0 15px;
+    list-style-position:outside;
+    list-style-type:disc;
+    font-size: 14px;
+}
+
+.page-toptabs-2col-lbrs-content-left-artists-biography ul {
+    font-size: 13px;
+}
+
+.artists-index-content-col ul {
+    list-style-type:none;
+    margin:0 0 20px 0;
+    padding:0;
+}
+
+.artists-index-content-col ul li {
+    line-height: 20px;
+}
+
+
+.artists-index-content-col ul li a:link,
+.artists-index-content-col ul li a:visited
+{
+    color: #404040;
+}
+
+.artists-index-content-col ul li a:hover
+{
+    color: #1E6CB4;
+    text-decoration:none;
+}
+
+
+
+#artists-biography-other-members {
+    margin-left:590px;
+    margin-top:90px;
+    position:absolute;
+    width:400px;
+}
+
+#artists-biography-misc-link {
+
+}
+
+#artists-biography-misc-link p{
+    font-size: 13px;
+}
+
+#artists-biography-misc-link p a:link,
+#artists-biography-misc-link p a:visited
+{
+    color: #404040;
+}
+
+#artists-biography-misc-link p a:hover {
+    color: #1E6CB4;
+    text-decoration: none;
+}
+
+.artists-biography-one {
+    width: 70px;
+    margin: 0 10px 10px 0;
+    float:left;
+    height: 85px;
+}
+
+.artists-biography-one p{
+    font-size: 10px;
+    margin-bottom: 0;
+    margin-top: 3px;
+}
+
+.artists-biography-one img {
+    padding: 0px;
+    border: none;
+}
+
+.artists-biography-one a:link,
+.artists-biography-one a:visited
+{
+    color: #404040;
+}
+
+.artists-biography-one a:hover {
+    color: #1E6CB4;
+}
+
+.page-toptabs-1col-content-with-big-header {
+    padding:0 30px 40px;
+    text-align:left;
+    width:940px;
+}
+
+.page-toptabs-2col-lbrs-content-with-big-header {
+    width: 933px;
+    padding:0 30px 80px 37px;
+    text-align:left;
+    background: transparent url(/image/front/bg-border-bottom.jpg) no-repeat scroll center bottom;
+    min-height: 1100px;
+    margin-top: -266px;
+    float:right;
+}
+/******end artists v2*********/
+
+.right-block-latest-reviews-title {
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight:bold;
+}
+
+.right-block-latest-reviews-date {
+    font-size: 11px;
+    margin-top: 5px;
+
+}
+
+.right-block-latest-reviews-title {
+    color: #551d7c;
+}
+
+.right-col-featured-blogger-profile {
+    margin: 10px 0 10px 0;
+    clear:both;
+    float:left;
+    width: 300px;
+}
+
+.one-picture-news-more {
+    float:left;
+    margin-top: 10px;
+}
+
+.news-article-misc {
+    font-size: 13px;
+
+}
+
+#right-block-donate-support-sy a
+{
+    color: #404040;
+}
+
+.body-features-index {
+    background:transparent url(/image/front/en-us/body-bg-features.jpg) no-repeat scroll center top;
+}
+
+.body-features-detail,
+.body-features-category
+{
+    background:#F7F6EA url(/image/front/body-bg-yellow-cloud-mongolian-dancers.jpg) no-repeat scroll center top;
+    min-width: 1000px;
+}
+
+#city-tickets-top-theater {
+    width: 300px;
+    text-align:left;
+    float:left;
+    margin: 50px 0 0 30px;
+}
+
+#city-tickets-top-schedule {
+    width: 600px;
+    margin: 50px 0 0 40px;
+    float:left;
+}
+
+.page-toptabs-2col-lbrs-content-left-city-tickets-content-left p {
+    font-size: 12px;
+    clear:both;
+}
+
+.city-ticket-indent-1 {
+    margin-left: 20px;
+    width:240px;
+}
+
+.page-toptabs-2col-lbrs-content-left .level1-title {
+    margin-top: 0px;
+}
+
+.city-tickets-theater-name-link {
+    font-weight:bold;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.link-black-blue a:link,
+.link-black-blue a:visited
+{
+    color: #404040;
+}
+
+.link-black-blue a:hover{
+    color: #1E6CB4;
+    text-decoration:none;
+}
+
+.city-tickets-seating-charts {
+    margin-top: 10px;
+}
+
+.city-tickets-theater-address {
+    font-size: 13px;
+    margin-top:3px;
+}
+
+#city-tickets-top-city-name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align:left;
+    font-family: "Trajan Pro", "Helvetica";
+}
+
+#city-tickets-top-schedule-detail {
+    border-top: 2px solid #927d57;
+    width: 600px;
+    height: 250px;
+    background: #e8d28b;
+    opacity:0.7;
+    margin-top: 2px;
+}
+
+#city-tickets-seating-charts {
+    width: 300px;
+    float:left;
+    margin-top:5px;
+}
+
+#city-tickets-ticket-info {
+    float:left;
+    width: 250px;
+    margin:5px 0 0 30px;
+}
+
+#city-tickets-additional-info {
+    width: 600px;
+    float:left;
+    margin-top:15px;
+
+}
+
+.city-tickets-top-schedule-text-date {
+    float:left;
+    width: 165px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #7c6742;
+    margin: 15px 0 0 20px;
+    text-align:left;
+}
+
+.city-tickets-top-schedule-text-time {
+    float:left;
+    width: 93px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #7c6742;
+    text-align:left;
+    margin: 15px 0 0 0;
+}
+
+.city-tickets-top-schedule-date {
+    float:left;
+    width: 165px;
+    font-size: 13px;
+    margin: 15px 0 0 20px;
+    text-align:left;
+    color: #000000;
+    border-bottom: 1px solid #927d57;
+}
+
+.city-tickets-top-schedule-time {
+    float:left;
+    width: 93px;
+    font-size: 13px;
+    text-align:left;
+    margin: 15px 0 0 0;
+    color: #000000;
+    border-bottom: 1px solid #927d57;
+}
+
+#artists-index-top-artists-display {
+    width: 520px;
+    float:left;
+    text-align:left;
+}
+
+#artists-index-top-artists-category-current {
+    float:left;
+    margin-top: 40px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.artists-index-top-artists-one {
+    float:left;
+    width: 90px;
+    height: 121px;
+    overflow:hidden;
+    margin-left: 30px;
+}
+
+.artists-index-top-artists-one-name {
+    font-size: 12px;
+    margin-top: 3px;
+
+}
+
+#artists-index-top-artists-category {
+    width: 310px;
+    margin-left: 140px;
+    float:left;
+    text-align:left;
+}
+
+#artists-index-top-artists-page-title {
+    margin-top: 50px;
+}
+
+#artists-index-top-artists-category-list {
+    margin-top: 35px;
+    margin-left: 5px;
+}
+
+.artists-index-top-artists-category-list-one {
+    font-size: 16px;
+    margin: 12px 0;
+}
+
+.artists-index-top-artists-category-list-separator {
+    background: transparent url(/image/front/artists-index-top-artists-category-list-separator.png) top left;
+    width: 198px;
+    height: 2px;
+}
+
+#top-nav-2nd {
+    background: transparent url(/image/front/top-nav-2nd-bg.png) repeat-x;
+    height: 31px;
+    position: relative;
+    top: 0px;
+    width: 100%;
+
+}
+
+#top-nav-2nd-inner {
+    margin:0 auto;
+    padding-top:9px;
+    text-align:center;
+    width:888px;
+}
+
+.top-menu-2nd-one-item {
+    font-size: 13px;
+    margin-right: 30px;
+}
+
+.top-menu-2nd-one-item a {
+    color: #6c4ca2;
+    text-decoration:none;
+}
+
+.top-menu-2nd-one-item-current a{
+    color: #6c4ca2;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+
+.wide td {
+    padding:5px;
+    vertical-align:top;
+    font-size:13px;
+    line-height: 20px;
+}
+
+.wide th {
+    padding:5px;
+    vertical-align:top;
+    font-size:14px;
+    font-weight:bold;
+    text-align:left;
+}
+
+#message {
+    -moz-border-radius-bottomleft:3px;
+    -moz-border-radius-bottomright:3px;
+    -moz-border-radius-topleft:3px;
+    -moz-border-radius-topright:3px;
+    background-color:#FFFFE0;
+    border:1px solid #E6DB55;
+    clear:both;
+    margin:10px 0 0;
+    padding:10px;
+}
+
+.saleBold {
+    margin-top: 30px;
+    font-weight: bold;
+    color: green;
+}
+
+.level2-title {
+    font-size: 13px;
+    font-weight:bold;
+
+}
+
+.page-toptabs-2col-lbrs-content-left-support .page-toptabs-2col-lbrs-content-page-title{
+    color: #404040;
+}
+
+.page-toptabs-2col-lbrs-content-left-support ul {
+    margin:0 0 10px 15px;
+    padding:0;
+}
+
+.page-toptabs-2col-lbrs-content-left-support ul li{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.page-toptabs-2col-lbrs-content-left-support ul li,
+.page-toptabs-2col-lbrs-content-left-support p{
+    font-size: 13px;
+}
+
+.page-toptabs-2col-lbrs-content-left-contact-us-v2 p {
+    font-size: 13px;
+}
+
+.video-index-one {
+    float:left;
+    width: 145px;
+    height: 130px;
+    overflow:hidden;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.video-index-one a:hover{
+    color: #1E6CB4;
+}
+
+.video-index-one img {
+    width: 139px;
+}
+
+.video-index-one .video-index-one-overlay img {
+    width: 36px;
+    height: 36px;
+}
+
+
+.video-index-one-margin-left {
+    margin-left: 50px;
+}
+
+#video-index-video-news-link {
+    width: 940px;
+    float:left;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top:1px solid #E6E6E7;
+    font-size: 14px;
+    font-weight:bold;
+}
+
+.video-index-one-overlay{
+    width: 139px;
+    height: 78px;
+    position: absolute;
+    margin: -80px 0 0 0;
+}
+
+.video-index-one-overlay-play{
+    margin-left: 50px;
+    margin-top: 20px;
+    display:none;
+}
+
+#videos-top-player {
+    border:0 none;
+    display:block;
+    width:629px;
+    height:354px
+}
+
+
+#page-toptabs-2col-lbrs-content-with-big-header-top-bg {
+    width: 1000px;
+    height: 266px;
+    background: #ffffff url(/image/front/bg-border-top.jpg) no-repeat top center;
+}
+
+#page-toptabs-2col-lbrs-content-with-big-header-content-wrapper {
+    background: #FFFFFF url(/image/front/bg-border-center-repeat.jpg) repeat-y scroll 0 0;
+}
+
+.page-toptabs-2col-lbrs-content-top-section-title-in-img {
+    height:100px;
+    margin-left:30px;
+    margin-top:87px;
+    position:relative;
+    width:400px;
+    float:left;
+}
+
+#title-in-img-blog-index,
+#title-in-img-blog-article
+{
+    background:transparent url(/image/front/en-us/title-in-img-artists-blog.png) no-repeat scroll left bottom;
+}
+
+#title-in-img-reviews-index-v2,
+#title-in-img-reviews-detail-v2,
+#title-in-img-reviews-category-v2
+{
+    background:transparent url(/image/front/en-us/title-in-img-reviews.png) no-repeat scroll left bottom;
+}
+
+#title-in-img-news-index-v2,
+#title-in-img-news-detail-v2,
+#title-in-img-news-category-v2
+{
+    background:transparent url(/image/front/en-us/title-in-img-news.png) no-repeat scroll left bottom;
+}
+
+#title-in-img-features-detail,
+#title-in-img-features-category
+{
+    background:transparent url(/image/front/en-us/title-in-img-behind-the-scenes.png) no-repeat scroll left bottom;
+}
+
+#page-toptabs-2col-lbrs-content-with-small-header-top-bg {
+    width: 1000px;
+    height: 185px;
+    background: #ffffff url(/image/front/bg-border-top-small-head.jpg) no-repeat;
+}
+
+#page-toptabs-2col-lbrs-content-with-small-header-content-wrapper {
+    background: transparent url(/image/front/bg-border-center-repeat.jpg) repeat-y scroll 0 0;
+    margin-top: 60px;
+    float:left;
+}
+
+.body-site-map-v2 {
+    background:url("/image/front/en-us/body-bg-site-map.jpg") no-repeat scroll center top
+}
+
+.body-contact-us-v2 {
+    background:url("/image/front/en-us/body-bg-contact-us.jpg") no-repeat scroll center top
+}
+
+.body-privacy-policy-v2 {
+    background:url("/image/front/en-us/body-bg-privacy-policy.jpg") no-repeat scroll center top
+}
+
+.body-terms-and-conditions-v2 {
+    background:url("/image/front/en-us/body-bg-terms-conditions.jpg") no-repeat scroll center top
+}
+
+
+#top-ticket-finder {
+    width: 629px;
+    height: 262px;
+    background: transparent url(/image/front/top-ticket-finder-bg.jpg) top left;
+    float:left;
+    margin: 60px 0 0 0;
+}
+
+#top-world-tour-map {
+    width: 324px;
+    height: 106px;
+    float:left;
+    margin: 61px 0 0 15px;
+}
+
+#top-upcoming-shows {
+    width: 300px;
+    height: 118px;
+    background: transparent url(/image/front/en-us/top-upcoming-shows-bg.jpg) top left;
+    float:left;
+    margin: 17px 0 0 15px;
+    padding: 10px 20px;
+}
+
+#top-ticket-finder {
+    text-align:left;
+
+}
+
+#top-ticket-finder-text-ticket-finder {
+    font-size: 20px;
+    margin: 25px 0 0 25px;
+    float:left;
+    clear:both;
+    font-family: Gill Sans MT Pro;
+}
+
+#tours-and-tickets-selection {
+    font-size:14px;
+    margin-left:68px;
+    margin-top:10px;
+    text-align:left;
+    float:left;
+}
+
+#tours-and-tickets-selection-country {
+    float:left;
+    height: 30px;
+    font-size: 13px;
+}
+
+#tours-and-tickets-selection-city {
+    float:left;
+    height: 30px;
+    font-size: 13px;
+}
+
+#top-ticket-finder-text-select-country {
+    float:left;
+    width: 100px;
+    text-align:right;
+}
+
+#top-ticket-finder-select-country-select {
+    float: left;
+    width: 224px;
+}
+
+#top-ticket-finder-text-select-city {
+    float:left;
+    width: 100px;
+    text-align:right;
+}
+
+#top-ticket-finder-select-city-select {
+    float: left;
+    width: 224px;
+}
+
+
+.top-ticket-finder-city-around {
+    float:left;
+    width: 260px;
+    height: 52px;
+    margin-top: 10px;
+}
+
+.top-ticket-finder-city-around img {
+    float:left;
+}
+
+.top-ticket-finder-city-around-text {
+    float:left;
+    width: 180px;
+    float:left;
+    margin-left: 10px;
+}
+
+.top-ticket-finder-city-around-text-city {
+    font-size: 14px;
+}
+
+.top-ticket-finder-city-around-text-date {
+    margin-top: 10px;
+    font-size: 9px;
+}
+
+.top-ticket-finder-city-around-text-theater {
+    margin-top: 2px;
+    font-size: 9px;
+}
+
+#top-ticket-finder-text-interested-in {
+    float:left;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+#top-ticket-finder-text-interested-in-text {
+    float:left;
+    font-size: 11px;
+}
+
+
+
+.top-upcoming-shows-city {
+    float:left;
+    font-size:12px;
+    margin-bottom:3px;
+    margin-right:8px;
+    text-align:left;
+    width:140px;
+}
+
+.top-ticket-finder-city-around-img {
+    width: 70px;
+    height: 66px;
+    overflow:hidden;
+    float:left;
+}
+
+#artists-index-top-artists-category-current {
+    float:left;
+    font-size:20px;
+    margin-left:30px;
+    margin-top:45px;
+}
+
+#artists-bio-top-artists-display-pagination{
+    float:right;
+    margin-top: -10px;
+    margin-right:8px;
+}
+
+
+#artists-index-top-artists-display-pagination{
+    float:right;
+    margin-top: -10px;
+    margin-right:39px;
+}
+
+#artists-index-top-artists-category-sub {
+    float:left;
+    font-size:12px;
+    margin-left:20px;
+    margin-top:50px;
+}
+
+#artists-index-top-artists-category-sub span {
+    margin-right: 12px;
+}
+
+.news-more-featured-video-one-img {
+    width: 160;
+    height: 104px;
+    overflow:hidden;
+}
+
+.news-more-featured-video-one-img img{
+    height: 100px;
+}
+
+.on-tour-blog-more {
+    font-size: 14px;
+}
+
+.videos-v2-index-scroll-video-hd-links {
+    margin-top: 20px;
+}
+
+#body-tours-and-tickets-calendar-main .page-toptabs-2col-lbrs-content-with-big-header {
+    min-height: 600px;
+}
+
+#body-blog-article-main .page-toptabs-2col-lbrs-content {
+    min-height: 1250px;
+}
+
+.global-img-wrapper,
+.page-toptabs-2col-lbrs-content-left img,
+.top-ticket-finder-city-around-img img,
+.right-col-featured-blogger-profile img,
+#city-tickets-top-theater img,
+#artists-biography-top-person-image img,
+#right-block-item-image img,
+.video-index-one-thumb {
+    border: 1px solid #cccccc;
+    padding: 1px;
+}
+
+#page-toptabs-2col-lbrs-content-right-block-intro-video {
+    float:left;
+    width: 299px;
+    height: 165px;
+    /*background: url(/image/front/column-right-shenyun-intro-video-bg.jpg);*/
+    background: url(/image/front/intro-video.jpg);
+}
+
+#page-toptabs-2col-lbrs-content-right-block-intro-video-watch-link {
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 140px;
+}
+
+#page-toptabs-2col-lbrs-content-right-block-intro-video-watch-link a {
+    color: #ffffff;
+}
+
+#page-toptabs-2col-lbrs-content-right-block-intro-video-more-link {
+    position: absolute;
+    margin-left: 30px;
+    margin-top: 216px;
+}
+
+#page-toptabs-2col-lbrs-content-right-block-intro-video-more-link a {
+    color: #7b897f;
+}
+
+#column-right-shenyun-intro-video-link {
+    position: absolute;
+}
+
+#menu-shenyun2012 {
+    position: absolute;
+    margin: -39px 0 0 80px;
+    z-index: 10;
+}
+
+.body-frequently-asked-questions {
+    background-image: url("/image/front/en-us/content-body-bg-FAQ.jpg");
+}
+
+#learn-dropdown-col-1 {
+    width: 135px;
+    float: left;
+}
+
+#learn-dropdown-col-2 {
+    width: 135px;
+    float: left;
+}
+
+.ticket-finder-include-social-icons {
+    float:right;
+    font-size: 12px;
+    font-weight:bold;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.ticket-finder-include-social-icons img{
+    height: 14px;
+}
+
+/********Ticket Finder Version**************/
+
+#top-logo-link {
+    float:left;
+    height:59px;
+    width: 1000px;
+    background: #ac8847 url(/image/front/en-us/top-logo-link-bg-find-ticket.jpg) no-repeat top left;
+}
+
+#top-logo-left {
+    float:left;
+    height:59px;
+    width: 300px;
+}
+
+#top-logo-center {
+    float:left;
+    height:59px;
+    width: 530px;
+}
+
+#top-logo-right {
+    float:left;
+    height:59px;
+    width: 170px;
+    margin-top: 4px;
+}
+
+#menu-ticket-finder {
+    position: absolute;
+    margin: -14px 0 0 20px;
+    vertical-align: top;
+    top:0; 
+    left:0;
+}
+
+#image_ticket-map_finder {
+    margin-left: 15px;
+}
+
+#menu-select-city {
+    float:left;
+    position: absolute;
+    margin: 7px 0 0 20px;
+    top:0; 
+    left:0;
+}
+
+#menu-select-city-dropdown {
+    background: url("/image/front/tickets-select-city-dropdown.png");
+    margin: 5px 0px 0px -21px;
+    top:20px;
+    left: 5px;
+    width: 276px;
+    height: 446px;
+    float: left;
+    display: inline;
+    position: absolute;
+    z-index: 100;
+}
+
+#menu-select-city-dropdown .content {
+    margin: 15px 20px 15px 20px; 
+    text-align: left; 
+    vertical-align: top;
+}
+
+#scrollable-city-list {width: 236px; margin: 10px 0 10px 0px; clear: both;}
+#scrollable-city-list .viewport { width: 216px; height: 316px; overflow: hidden; position: relative; }
+#scrollable-city-list .overview { position: absolute; left: 0; top: 0; padding: 0; margin: 0; }
+#scrollable-city-list .thumb .end,
+#scrollable-city-list .thumb { background-color: #003D5D; }
+#scrollable-city-list .scrollbar { background: transparent no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+#scrollable-city-list .track { background: transparent no-repeat 0 100%; height: 100%; width:13px; position: relative; padding: 0 1px; }
+#scrollable-city-list .thumb { background: transparent url(/image/front/bg-scrollbar-thumb-y.png) no-repeat 50% 100%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px; }
+#scrollable-city-list .thumb .end { background: transparent url(/image/front/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+#scrollable-city-list .disable{ display: none; }
+
+#scrollable-city-list  .overview .title {color: #987801; font-size: 12px; font-weight: bold;}
+#scrollable-city-list a.item:link {color: #999999; font-size: 11px; text-decoration:none;}
+#scrollable-city-list a.item:visited {color: #999999; font-size: 11px; text-decoration:none;}
+#scrollable-city-list a.item:hover {color: #999999; font-size: 11px; text-decoration:none;}
+#scrollable-city-list a.item:active {color: #999999; font-size: 11px; text-decoration:none;}
+
+#menu-select-city-dropdown a:link {color: #000000; text-decoration:none}
+#menu-select-city-dropdown a:visited {color: #000000; text-decoration:none}
+#menu-select-city-dropdown a:hover {color: #000000; text-decoration:none}
+#menu-select-city-dropdown a:active {color: #000000; text-decoration:none}
+
+/********End Ticket Finder Version**************/
