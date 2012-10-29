@@ -668,14 +668,14 @@ a:hover.btn-brown {
 	width: 212px;
 	position: absolute;
 	top: -6px;
-	background: #3a175a;
-	background: -moz-linear-gradient(left,  #3a175a 0%, #3a165a 20%, #603c59 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3a175a), color-stop(20%,#3a165a), color-stop(100%,#603c59));
-	background: -webkit-linear-gradient(left,  #3a175a 0%,#3a165a 20%,#603c59 100%);
-	background: -o-linear-gradient(left,  #3a175a 0%,#3a165a 20%,#603c59 100%);
-	background: -ms-linear-gradient(left,  #3a175a 0%,#3a165a 20%,#603c59 100%);
-	background: linear-gradient(to right,  #3a175a 0%,#3a165a 20%,#603c59 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a175a', endColorstr='#603c59',GradientType=1 );
+	background: #3a165a;
+	background: -moz-linear-gradient(left,  #3a165a 0%, #5e3685 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#3a165a), color-stop(100%,#5e3685));
+	background: -webkit-linear-gradient(left,  #3a165a 0%,#5e3685 100%);
+	background: -o-linear-gradient(left,  #3a165a 0%,#5e3685 100%);
+	background: -ms-linear-gradient(left,  #3a165a 0%,#5e3685 100%);
+	background: linear-gradient(to right,  #3a165a 0%,#5e3685 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a165a', endColorstr='#5e3685',GradientType=1 );
 	-webkit-border-radius: 5px 5px 0px 0px;
     border-radius: 5px 5px 0px 0px;
 
