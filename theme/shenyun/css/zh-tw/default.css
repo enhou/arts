@@ -9,7 +9,12 @@
 .mid-btn {
 	padding: 17px 19px 1px;
 }
-
+.index-header-top .wrapper .logo {
+	width: 183px;
+	height: 40px;
+	background: url(/theme/shenyun/image/index-header-top-logo-tw.png) no-repeat 0 10px;
+	margin: 0 0 0 410px;
+}
 .show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .column-b {
 	padding: 0 20px 0 0;
 }
