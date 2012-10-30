@@ -968,7 +968,7 @@ dd.cta {
 }
 
 .finderFoot .laber {
-	float: left;
+	display: inline;
 	font-size: 11px;
 	font-weight: bold;
 	padding: 1px 6px 0;
@@ -979,12 +979,13 @@ dd.cta {
 	font-size: 11px;
 	color: #c0b6cc;
 	padding: 0 7px;
-	display: inline-block;
+	display: inline;
+
 }
 
 .finderFoot .wrap a.otherLink span {
 	color: #c0b6cc;
-	display: inline-block;
+	
 }
 
 .finderFoot .wrap a.otherLink:hover span {
