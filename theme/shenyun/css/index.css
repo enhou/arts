@@ -435,13 +435,13 @@
 }
 .show-box-content .wrapper .sidebar .sidebar-video-body {
 	width: 275px;
-	height: 100%;
+	height: 159px;
 	border: 1px #a68d60 solid;
 }
 
 .show-box-content .wrapper .sidebar .sidebar-video-body .video-popup {
 	width: 275px;
-	height: 100%;
+	height: 159px;
 	overflow: hidden;
 }
 .show-box-content .wrapper .sidebar .sidebar-video-body .video-popup img{
