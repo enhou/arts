@@ -530,26 +530,25 @@
 
     <script type="text/javascript">
         
-	var optionsClicked=false;
-	//$('#optionsDivContainer').html(optionData);
-	function toggleMoreEventsDiv() {
-		optionsClicked=(optionsClicked==true)?false:true;
-		if (optionsClicked) {
-                    $('#index-event-list-more').hide('slow');
-                    $('#index-event-list-more-text').html('顯示全部');
-                    //$('#viewall-arrow').show('fast');
-                    
-                    $('#viewall-arrow').css('display', 'inline');
-		}
-		else {
-	
-                    $('#index-event-list-more').show('slow');
-                    $('#index-event-list-more-text').html('顯示部分');
-                    //$('#viewall-arrow').hide('fast');
-                    $('#viewall-arrow').css('display', 'none');
-		}
+	var optionsClicked = false;
+					//$('#optionsDivContainer').html(optionData);
+					function toggleMoreEventsDiv() {
+						optionsClicked = (optionsClicked == true) ? false : true;
+						if (optionsClicked) {
+							$('#index-event-list-more').hide('slow');
+							$('#index-event-list-more-text').html('顯示全部');
+							$('.viewall-wrapper').removeClass('open');
 
-	}
+							$('#viewall-arrow').css('display', 'inline');
+						} else {
+
+							$('#index-event-list-more').show('slow');
+							$('#index-event-list-more-text').html('顯示部分');
+							$('.viewall-wrapper').addClass('open');
+						}
+
+					}
+
         
         
         function loadAreaEvent() {
@@ -2237,19 +2236,7 @@
                 </div>
             </article>
             <aside class="sidebar right">
-                <!--
-<div class="sidebar-box shadow-c1 clearfix">
-                    <div class="sidebar-video-body left">
- 
-                        
-                        <a target="_blank" href="http://syso.ntdtv.com"  alt="Shen Yun Symphony Orchestra">
-                            <img src="/theme/shenyun/image/cta-index-syso.jpg"/>
-                        </a>
 
-                        
-                    </div>
-                </div>
--->
                 
                 
                 
@@ -2258,7 +2245,7 @@
  
                         
                         <a href="/index/popup-trailer-video" popup="ajax" alt="Shen Yun 2013 Trailer"  class="video-popup">
-                            <img src="/theme/shenyun/image/index-aside-sy-trailer.jpg"/>
+                            <img src="/theme/shenyun/image/index-aside-sy-trailer-tw.jpg"/>
                         </a>
 
                         

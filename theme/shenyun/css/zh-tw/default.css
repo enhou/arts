@@ -28,9 +28,7 @@
 }
 
 #menu-select-city-purple {
-    width: 180px;
-    float: left;
-    position: relative;
+    width: 180px;    
 }
 #menu-select-city-purple:before {    
     width: 180px;    

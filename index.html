@@ -530,15 +530,14 @@
 						if (optionsClicked) {
 							$('#index-event-list-more').hide('slow');
 							$('#index-event-list-more-text').html('View all performances');
-							//$('#viewall-arrow').show('fast');
+							$('.viewall-wrapper').removeClass('open');
 
 							$('#viewall-arrow').css('display', 'inline');
 						} else {
 
 							$('#index-event-list-more').show('slow');
 							$('#index-event-list-more-text').html('View Less');
-							//$('#viewall-arrow').hide('fast');
-							$('#viewall-arrow').css('display', 'none');
+							$('.viewall-wrapper').addClass('open');
 						}
 
 					}
@@ -1708,10 +1707,12 @@
 
 											<div class="tour-listing-footer text-align-center left">
 												<div class="viewall-wrapper">
-													<a onclick="toggleMoreEventsDiv()" class="viewall hand"> <span class="viewall-title font17px open-sans purple uppercase bold">
-														<div id="index-event-list-more-text">
-															
-														</div> </span> <span class="viewall-arrow" id="viewall-arrow" style="display: none; "> </span> </a>
+													<a onclick="toggleMoreEventsDiv()" class="viewall hand"> 
+													<span class="viewall-title font17px open-sans purple uppercase bold">
+														<div id="index-event-list-more-text"></div> 
+													</span> 
+													<span class="viewall-arrow" id="viewall-arrow" style="display: none; "> </span> 
+													</a>
 												</div>
 											</div>
 
@@ -1727,7 +1728,7 @@
 									</div>
 
 								</div>
-								
+								<div class="vspace10"></div>
 								<div class="vspace10"></div>
 
 								<div class="sidebar-box shadow-c1 clearfix">

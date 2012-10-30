@@ -426,13 +426,27 @@
 	top: 32px;
 	margin-left: 10px;
 }
-
+.show-box-content .wrapper .tour-listing-box-shadow .tour-listing-box-paper .tour-listing-footer .open .viewall .viewall-arrow {
+	border-top: none;
+	border-bottom: 6px solid #9a7b7a;
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	
+}
 .show-box-content .wrapper .sidebar .sidebar-video-body {
 	width: 275px;
-	height: 159px;
+	height: 100%;
 	border: 1px #a68d60 solid;
 }
 
+.show-box-content .wrapper .sidebar .sidebar-video-body .video-popup {
+	width: 275px;
+	height: 100%;
+	overflow: hidden;
+}
+.show-box-content .wrapper .sidebar .sidebar-video-body .video-popup img{
+	width: 275px;
+}
 .video-link {
 	padding: 10px 0 0px;
 	color: #949494;
