@@ -12,7 +12,7 @@ $(document).ready(function() {
 	});
 
 	$(document).mouseup(function() {
-		$("#search-icon").removeClass('open');		
+		$("#search-icon").removeClass('open');
 	});
 
 	//menu-dropdown
@@ -78,69 +78,20 @@ $(document).ready(function() {
 	$('.drop-country').hide();
 
 	$(".video-popup").fancybox();
-	
-	
+
 	$('.index-show-box').before('<div class="hline1px"></div>');
-	
+
 	//highlights vertical slide
-        $('#slide-news').vTicker({
-            speed: 500,
-            pause: 3000,
-            showItems: 1,
-            animation: 'fade',
-            mousePause: false,
-            height: 0,
-            direction: 'up'
-        });
-        
-					var optionsClicked = false;
-					//$('#optionsDivContainer').html(optionData);
-					function toggleMoreEventsDiv() {
-						optionsClicked = (optionsClicked == true) ? false : true;
-						if (optionsClicked) {
-							$('#index-event-list-more').hide('slow');
-							$('#index-event-list-more-text').html('View all performances');
-							//$('#viewall-arrow').show('fast');
+	$('#slide-news').vTicker({
+		speed : 500,
+		pause : 3000,
+		showItems : 1,
+		animation : 'fade',
+		mousePause : false,
+		height : 0,
+		direction : 'up'
+	});
 
-							$('#viewall-arrow').css('display', 'inline');
-						} else {
-
-							$('#index-event-list-more').show('slow');
-							$('#index-event-list-more-text').html('View Less');
-							//$('#viewall-arrow').hide('fast');
-							$('#viewall-arrow').css('display', 'none');
-						}
-
-					}
-
-					function loadAreaEvent() {
-						var url = '/event/ajax-list-by-area/area/' + $("#index-event-area").val() + '/sort/' + $("#index-event-sort").val();
-						$.ajax({
-							url : url,
-							success : function(data) {
-								$('#tour-listing-body').html(data);
-							}
-						});
-					}
-
-					function setCurrentArea(value, name) {
-						$("#index-event-area").val(value);
-						$("#index-event-area-current").text(name);
-						loadAreaEvent();
-						$('.drop-country').hide();
-					}
-
-					function setSortBy(choice) {
-						$("#index-event-sort").val(choice);
-						var cssLeft = '80px';
-						if (choice == 'date') {
-							var cssLeft = '80px';
-						} else {
-							var cssLeft = '228px';
-						}
-						$('.tour-listing-header .header-arrow').css('left', cssLeft);
-						loadAreaEvent();
-					}
-
+	
 
 });

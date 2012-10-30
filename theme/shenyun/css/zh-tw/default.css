@@ -24,13 +24,27 @@
 }
 
 #top-nav-clean-menu-purple {
-	margin: 0 0 0 100px;
+	margin: 0 0 0 130px;
+}
+
+#menu-select-city-purple {
+    width: 180px;
+    float: left;
+    position: relative;
+}
+#menu-select-city-purple:before {    
+    width: 180px;    
+    top: -6px;
 }
 
 #menu-select-city-purple .tix-finder {
-	width: 100px;
+	width: 80px;
 	padding: 8px 0 10px 24px;
 	letter-spacing: 0.08em;
+}
+
+#menu-select-city-purple .tix-map {
+    margin: 4px 8px 0 0;
 }
 
 #top-nav-clean-menu-purple .levl-1 {

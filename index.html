@@ -519,172 +519,218 @@
 
 				</nav>
 			</header>
+			
 			<div id="body" class="body-index-html">
 
 				<script type="text/javascript">
-					$(document).ready(function(){
+					var optionsClicked = false;
+					//$('#optionsDivContainer').html(optionData);
+					function toggleMoreEventsDiv() {
+						optionsClicked = (optionsClicked == true) ? false : true;
+						if (optionsClicked) {
+							$('#index-event-list-more').hide('slow');
+							$('#index-event-list-more-text').html('View all performances');
+							//$('#viewall-arrow').show('fast');
+
+							$('#viewall-arrow').css('display', 'inline');
+						} else {
+
+							$('#index-event-list-more').show('slow');
+							$('#index-event-list-more-text').html('View Less');
+							//$('#viewall-arrow').hide('fast');
+							$('#viewall-arrow').css('display', 'none');
+						}
+
+					}
+
+					function loadAreaEvent() {
+						var url = '/event/ajax-list-by-area/area/' + $("#index-event-area").val() + '/sort/' + $("#index-event-sort").val();
+						$.ajax({
+							url : url,
+							success : function(data) {
+								$('#tour-listing-body').html(data);
+							}
+						});
+					}
+
+					function setCurrentArea(value, name) {
+						$("#index-event-area").val(value);
+						$("#index-event-area-current").text(name);
+						loadAreaEvent();
+						$('.drop-country').hide();
+					}
+
+					function setSortBy(choice) {
+						$("#index-event-sort").val(choice);
+						var cssLeft = '80px';
+						if (choice == 'date') {
+							var cssLeft = '80px';
+						} else {
+							var cssLeft = '228px';
+						}
+						$('.tour-listing-header .header-arrow').css('left', cssLeft);
+						loadAreaEvent();
+					}
+
 					//init loading events
 					$(document).ready(function() {
-					loadAreaEvent();
-					toggleMoreEventsDiv();
+						loadAreaEvent();
+						toggleMoreEventsDiv();
 
 					});
 
 					$(document).ready(function() {
 
-					$("[popup]").fancybox({
-					'hideOnContentClick' : false,
-					'type' : 'ajax'
-					});
+						$("[popup]").fancybox({
+							'hideOnContentClick' : false,
+							'type' : 'ajax'
+						});
 
-					var current_resolution = 'no';
-					var win_height = $(window).height();
-					var win_width = $(window).width();
+						var current_resolution = 'no';
+						var win_height = $(window).height();
+						var win_width = $(window).width();
 
-					function set_resolution() {
-					if ((win_width >= 1024) && (win_height >= 700) && (current_resolution != 'high')) {
-					set_highres();
-					} else if (((win_width < 1024) || (win_height < 700)) && (current_resolution != 'low')) {// use lower resolution one
-					set_low_res();
-					}
-					};
+						function set_resolution() {
+							if ((win_width >= 1024) && (win_height >= 700) && (current_resolution != 'high')) {
+								set_highres();
+							} else if (((win_width < 1024) || (win_height < 700)) && (current_resolution != 'low')) {// use lower resolution one
+								set_low_res();
+							}
+						};
 
-					function set_highres() {
-					$('#body').removeClass('body-index-html').addClass('body-index-html-high');
-					$('#index-html-image-rotator-wrapper-div').removeClass('index-html-image-rotator-wrapper').addClass('index-html-image-rotator-wrapper-high');
-					$('#index-html-image-top-gap-div').removeClass('index-html-image-top-gap').addClass('index-html-image-top-gap-high');
+						function set_highres() {
+							$('#body').removeClass('body-index-html').addClass('body-index-html-high');
+							$('#index-html-image-rotator-wrapper-div').removeClass('index-html-image-rotator-wrapper').addClass('index-html-image-rotator-wrapper-high');
+							$('#index-html-image-top-gap-div').removeClass('index-html-image-top-gap').addClass('index-html-image-top-gap-high');
 
-					$('.index-html-image-rotator').attr('style', 'position: relative; width: 1000px; height: 380px;');
+							$('.index-html-image-rotator').attr('style', 'position: relative; width: 1000px; height: 380px;');
 
-					$('#rotator_1').attr({
-					"src" : "/image/front/index_rotating_1920_and_1080_1.jpg",
-					width : 1000,
-					height : 380,
-					style : ""
-					});
-					$('#rotator_2').attr({
-					"src" : "/image/front/index_rotating_1920_and_1080_2.jpg",
-					width : 1000,
-					height : 380,
-					style : ""
-					});
-					$('#rotator_3').attr({
-					"src" : "/image/front/index_rotating_1920_and_1080_3.jpg",
-					width : 1000,
-					height : 380,
-					style : ""
-					});
-					$('#rotator_4').attr({
-					"src" : "/image/front/index_rotating_1920_and_1080_4.jpg",
-					width : 1000,
-					height : 380,
-					style : ""
-					});
-					$('#rotator_5').attr({
-					"src" : "/image/front/index_rotating_1920_and_1080_5.jpg",
-					width : 1000,
-					height : 380,
-					style : ""
-					});
-					$('#rotator_6').attr({
-					"src" : "/image/front/index_rotating_1920_and_1080_6.jpg",
-					width : 1000,
-					height : 380,
-					style : ""
-					});
-					$('#rotator_7').attr({
-					"src" : "/image/front/index_rotating_1920_and_1080_7.jpg",
-					width : 1000,
-					height : 380,
-					style : ""
-					});
-					//$('#index-html-latest-news').css('margin', '25px auto').css('width', '1000px');
-					current_resolution = 'high';
-					//$('#current_resolution').html('high res=' + current_resolution);
-					};
+							$('#rotator_1').attr({
+								"src" : "/image/front/index_rotating_1920_and_1080_1.jpg",
+								width : 1000,
+								height : 380,
+								style : ""
+							});
+							$('#rotator_2').attr({
+								"src" : "/image/front/index_rotating_1920_and_1080_2.jpg",
+								width : 1000,
+								height : 380,
+								style : ""
+							});
+							$('#rotator_3').attr({
+								"src" : "/image/front/index_rotating_1920_and_1080_3.jpg",
+								width : 1000,
+								height : 380,
+								style : ""
+							});
+							$('#rotator_4').attr({
+								"src" : "/image/front/index_rotating_1920_and_1080_4.jpg",
+								width : 1000,
+								height : 380,
+								style : ""
+							});
+							$('#rotator_5').attr({
+								"src" : "/image/front/index_rotating_1920_and_1080_5.jpg",
+								width : 1000,
+								height : 380,
+								style : ""
+							});
+							$('#rotator_6').attr({
+								"src" : "/image/front/index_rotating_1920_and_1080_6.jpg",
+								width : 1000,
+								height : 380,
+								style : ""
+							});
+							$('#rotator_7').attr({
+								"src" : "/image/front/index_rotating_1920_and_1080_7.jpg",
+								width : 1000,
+								height : 380,
+								style : ""
+							});
+							//$('#index-html-latest-news').css('margin', '25px auto').css('width', '1000px');
+							current_resolution = 'high';
+							//$('#current_resolution').html('high res=' + current_resolution);
+						};
 
-					function set_low_res() {
-					current_resolution = 'low';
-					$('#body').removeClass('body-index-html-high').addClass('body-index-html');
-					$('#index-html-image-rotator-wrapper-div').removeClass('index-html-image-rotator-wrapper-high').addClass('index-html-image-rotator-wrapper');
+						function set_low_res() {
+							current_resolution = 'low';
+							$('#body').removeClass('body-index-html-high').addClass('body-index-html');
+							$('#index-html-image-rotator-wrapper-div').removeClass('index-html-image-rotator-wrapper-high').addClass('index-html-image-rotator-wrapper');
 
-					$('.index-html-image-rotator').attr('style', 'position: relative; width: 850px; height: 297px;');
-					$('#index-html-image-top-gap-div').removeClass('index-html-image-top-gap-high').addClass('index-html-image-top-gap');
+							$('.index-html-image-rotator').attr('style', 'position: relative; width: 850px; height: 297px;');
+							$('#index-html-image-top-gap-div').removeClass('index-html-image-top-gap-high').addClass('index-html-image-top-gap');
 
-					$('#rotator_1').attr({
-					"src" : "/image/front/index_rotating_1024_and_1280_1.jpg",
-					width : 850,
-					height : 297,
-					style : ""
-					});
-					$('#rotator_2').attr({
-					"src" : "/image/front/index_rotating_1024_and_1280_2.jpg",
-					width : 850,
-					height : 297,
-					style : ""
-					});
-					$('#rotator_3').attr({
-					"src" : "/image/front/index_rotating_1024_and_1280_3.jpg",
-					width : 850,
-					height : 297,
-					style : ""
-					});
-					$('#rotator_4').attr({
-					"src" : "/image/front/index_rotating_1024_and_1280_4.jpg",
-					width : 850,
-					height : 297,
-					style : ""
-					});
-					$('#rotator_5').attr({
-					"src" : "/image/front/index_rotating_1024_and_1280_5.jpg",
-					width : 850,
-					height : 297,
-					style : ""
-					});
-					$('#rotator_6').attr({
-					"src" : "/image/front/index_rotating_1024_and_1280_6.jpg",
-					width : 850,
-					height : 297,
-					style : ""
-					});
-					$('#rotator_7').attr({
-					"src" : "/image/front/index_rotating_1024_and_1280_7.jpg",
-					width : 850,
-					height : 297,
-					style : ""
-					});
-					//$('#index-html-latest-news').css('margin', '5px auto').css('width', '1000px');
-					//$('#current_resolution').html('low res=' + current_resolution);
-					}
+							$('#rotator_1').attr({
+								"src" : "/image/front/index_rotating_1024_and_1280_1.jpg",
+								width : 850,
+								height : 297,
+								style : ""
+							});
+							$('#rotator_2').attr({
+								"src" : "/image/front/index_rotating_1024_and_1280_2.jpg",
+								width : 850,
+								height : 297,
+								style : ""
+							});
+							$('#rotator_3').attr({
+								"src" : "/image/front/index_rotating_1024_and_1280_3.jpg",
+								width : 850,
+								height : 297,
+								style : ""
+							});
+							$('#rotator_4').attr({
+								"src" : "/image/front/index_rotating_1024_and_1280_4.jpg",
+								width : 850,
+								height : 297,
+								style : ""
+							});
+							$('#rotator_5').attr({
+								"src" : "/image/front/index_rotating_1024_and_1280_5.jpg",
+								width : 850,
+								height : 297,
+								style : ""
+							});
+							$('#rotator_6').attr({
+								"src" : "/image/front/index_rotating_1024_and_1280_6.jpg",
+								width : 850,
+								height : 297,
+								style : ""
+							});
+							$('#rotator_7').attr({
+								"src" : "/image/front/index_rotating_1024_and_1280_7.jpg",
+								width : 850,
+								height : 297,
+								style : ""
+							});
+							//$('#index-html-latest-news').css('margin', '5px auto').css('width', '1000px');
+							//$('#current_resolution').html('low res=' + current_resolution);
+						}
 
-					//If user reset window size
+						//If user reset window size
 
-					$(window).resize(function() {
-					win_height = $(window).height();
-					win_width = $(window).width();
-					set_resolution();
-					$('.index-html-image-rotator').cycle('destroy');
-					$('.index-html-image-rotator').cycle({
-					fx : 'fade',
-					timeout : 5000
-					});
-					});
+						$(window).resize(function() {
+							win_height = $(window).height();
+							win_width = $(window).width();
+							set_resolution();
+							$('.index-html-image-rotator').cycle('destroy');
+							$('.index-html-image-rotator').cycle({
+								fx : 'fade',
+								timeout : 5000
+							});
+						});
 
-					// Initial set up.
-					set_resolution();
+						// Initial set up.
+						set_resolution();
 
-					$('.index-html-image-rotator').cycle({
-					fx : 'fade',
-					timeout : 5000,
-					delay : 200
-					});
-
-					});
+						$('.index-html-image-rotator').cycle({
+							fx : 'fade',
+							timeout : 5000,
+							delay : 200
+						});
 
 					});
 
 				</script>
-
 				<div id="index-html-image-top-gap-div" class='index-html-image-top-gap'>
 					&nbsp;
 				</div>
@@ -1664,7 +1710,7 @@
 												<div class="viewall-wrapper">
 													<a onclick="toggleMoreEventsDiv()" class="viewall hand"> <span class="viewall-title font17px open-sans purple uppercase bold">
 														<div id="index-event-list-more-text">
-															View Less
+															
 														</div> </span> <span class="viewall-arrow" id="viewall-arrow" style="display: none; "> </span> </a>
 												</div>
 											</div>
@@ -1681,7 +1727,7 @@
 									</div>
 
 								</div>
-								<div class="vspace5"></div>
+								
 								<div class="vspace10"></div>
 
 								<div class="sidebar-box shadow-c1 clearfix">
