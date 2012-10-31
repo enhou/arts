@@ -1,0 +1,716 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    font-family: Helvetica, Helvetica Neue, Arial, Verdana, sans-serif;
+    background: #3a175b;
+    margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+    padding: 0;
+    text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+    color: #404040;
+    font-size:13px;
+}
+
+.body {
+    background:#f5f3e5 url(../../../image/front/en-us/body-bg-general.jpg) no-repeat scroll center top;
+}
+
+p {
+    line-height:20px;
+}
+
+/*default links*/
+a:link {
+    text-decoration: none;
+    color: #1e6cb4;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #1e6cb4;
+}
+
+a:hover {
+    text-decoration: underline;
+    /*color: #999900;*/
+}
+
+
+.dark-link a:link {
+    text-decoration: none;
+    color: #404040;
+}
+
+.dark-link a:visited {
+    text-decoration: none;
+    color: #404040;
+}
+
+.dark-link a:hover {
+    text-decoration: none;
+    color: #404040;
+}
+
+.light-dark {
+    color: #888888;
+}
+
+.light-grey {
+    color: #abaaaa;
+}
+.pagination {
+    margin-top:20px;
+    float:left;
+}
+
+.hand {cursor:pointer;cursor:hand}
+
+.underline {
+    text-decoration: underline;
+}
+
+.clearNoFloat {
+    clear: both;
+    float: none;
+}
+img {
+    border:0;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.input-box {
+    height:17px;
+    border:#000000 solid 1px;
+}
+
+.left{
+    float:left;
+}
+
+.right{
+    float:right;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.vspace5 {
+    float:left;
+    clear:both;
+    height:5px;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.vspace10 {
+    float:left;
+    clear:both;
+    height:10px;
+    width:100%;
+    padding:0;
+    margin:0;
+}
+
+.items-paginator {
+    float:left;
+    height:30px;
+    margin-top: 20px;
+}
+
+.paginate-displaying{
+    margin-right:15px;
+    font-family:Georgia,"Times New Roman","Bitstream Charter",Times,serif;
+    font-style:italic;
+    font-size: 12px;
+    color:#777777;
+}
+
+.pageViewT {
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    border:1px solid;
+    padding:3px 6px;
+    text-decoration:none;
+    -moz-background-clip:border;
+    -moz-background-inline-policy:continuous;
+    -moz-background-origin:padding;
+    background:#dfdfdf;
+    border-color:#E3E3E3;
+    font-size:12px;
+}
+
+.pageViewT:hover {
+    border-color:#D54321;
+    color:#D54E21;
+
+}
+
+.pageViewTDisable {
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -moz-border-radius-topleft:5px;
+    -moz-border-radius-topright:5px;
+    border:1px solid;
+    padding:3px 6px;
+    text-decoration:none;
+    font-weight:bold;
+    font-size:12px;
+    line-height: 25px;
+}
+
+
+
+#container {
+    width: 100%;  /* this will create a container 80% of the browser width */
+    background: #FFFFFF;
+    margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+    /* border: 1px solid #000000; */
+    text-align: left; /* this overrides the text-align: center on the body element. */
+}
+#header {
+    background-color: #DDDDDD;
+    background-image: url(../../../image/front/top_nav_bg_narrow.jpg);
+    background-repeat: repeat-x;
+    height: 60px;
+    padding: 0;
+    text-align:center;
+}
+
+#top-nav-clean {
+    width: 1000px;
+    height:91px;
+    margin:0 auto;
+}
+
+#footer {
+    background-color: #bbaa40;
+    background-image: url(../../../image/front/bottom_nav_bg_narrow.jpg);
+    height: 103px;
+    padding: 0;
+    text-align:center;
+}
+
+/***********footer ****************/
+#footer-content {
+    font-family: Helvetica Neue, Helvetica;
+    height: 103px;
+    width: 1000px;
+    margin:0 auto;
+    background: #bbaa40 url(../../../image/front/footer-bg.jpg) bottom no-repeat;
+}
+
+#footer-content-page-links {
+    float:left;
+    width: 810px;
+    /* height: 80px; */
+}
+
+#footer-content-page-links-big {
+    float:left;
+    margin: 22px 0 0 30px;
+    color: #855c1d;
+    font-size: 12px;
+}
+
+#footer-content-page-links-big a:link,
+#footer-content-page-links-big a:visited {
+    color: 	#855c1d;
+}
+
+#footer-content-page-links-big a:hover {
+    color: 	#999900;
+}
+
+
+#footer-content-page-links-small {
+    float:left;
+    margin: 20px 0 0 30px;
+    color: #a37b27;
+    font-size:12px;
+}
+
+#footer-content-page-links-small a:link,
+#footer-content-page-links-small a:visited {
+    color: #855C1D;
+}
+
+#footer-content-page-links-small a:hover {
+    /*color: 	#999900;*/
+}
+
+#footer-content-page-misc {
+    float:right;
+    width: 173px;
+    /* height: 80px;*/
+    text-align:right;
+}
+
+#footer-content-page-copyright {
+    color:#855C1D;
+    float:left;
+    font-size:12px;
+    height:23px;
+    margin-left:30px;
+    margin-top:10px;
+    position:relative;
+    text-align:left;
+    width:500px;
+}
+
+#footer-content-page-search {
+    float:left;
+    width: 175px;
+    height: 43px;
+    text-align:right;
+}
+
+#global-lang {
+    margin:0px 0 0 8px;
+    float:left;
+    height: 32px;
+}
+
+
+#footer-content-page-social {
+    float:left;
+    margin-top:5px;
+    width: 215px;
+    height:27px;
+    text-align:right;
+
+}
+
+#footer-content-page-social-hidden-pre-load {
+    display:none;
+}
+
+/***********footer end ************/
+
+#footer-content-page-search {
+    float:left;
+    width: 175px;
+    height: 43px;
+    text-align:right;
+}
+
+#footer-content-page-links-small-right {
+    float: right;
+    font-size: 12px;
+    margin: 20px 0 0 30px;
+    
+}
+
+#footer-content-page-links-small-right a{
+    color: #855C1D;
+}
+
+#top-search {
+    margin-top: 15px;
+    background: url(../../../image/front/index-search-bg.jpg) no-repeat;
+    width: 173px;
+}
+
+#top-search-keyword {
+    background:transparent none repeat scroll 0 0;
+    border:0 none;
+    color:#FEFEFC;
+    font-size:13px;
+    height:20px;
+    margin-right:30px;
+    padding:1px;
+    width:135px;
+}
+
+#body {
+    text-align:center;
+    /* background-color: #f5f3e5; */
+    background-color: #f8f6ea;
+}
+
+#index-left-col {
+    float: left;
+    width: 262px;
+    height: 550px;
+    margin-left: 10px;
+}
+
+#home-section-bg {
+    width: 262px;
+    height: 395px;
+    background: url('../image/home-section-bg.png') no-repeat;
+
+
+}
+
+#index-sy-logo {
+    margin-top: 39px;
+    margin-left: -10px;
+}
+
+
+#index-left-col a {
+    color: #404040;
+}
+
+.body-microsite-video-index{
+	position:relative;
+	background: url("../image/video_images/video-body-bg-new.png") no-repeat scroll center top transparent;
+    	margin: 0 auto;
+    	padding: 0;
+    	min-height: 486px;
+	width:1000px;
+}
+
+.layout-body-main-content {
+    margin: 0 auto;
+    padding: 0;
+    min-height: 486px;
+    width:1000px;
+}
+
+
+.body-microsite-index {
+    
+    height: 550px;
+    background: url("../image/home-body-bg.jpg") no-repeat scroll center top transparent;
+    
+}
+
+
+.body-microsite-worldmap {
+    
+    height: 550px;
+    background: url("../image/city-body-bg.jpg") no-repeat scroll center top transparent;
+    
+}
+
+#index-interested-in-text {
+    color: #675748;
+    margin-top: 26px;
+    margin-left: 22px;
+    font-size: 13px;
+    float: left;
+}
+
+.layout-col-2-menu-item {
+    height: 20px;
+    margin-bottom: 3px;
+}
+
+#map-upcoming-show-in-text {
+
+    margin-top: 40px;
+    margin-left: 22px;
+    font-size: 13px;
+    float: left;
+    color: #675748;
+}
+
+#index-nearby-city-featured,
+.index-nearby-city-small
+{
+    margin-top: 5px;
+}
+
+#index-nearby-city-featured img,
+.index-nearby-city-small img,
+.index-nearby-city-small-date
+{
+    margin-top: 2px;
+}
+
+.index-nearby-city-small {
+    margin-top: 5px;
+}
+
+#index-nearby-city-featured img{
+    width: 140px;
+}
+
+.index-nearby-city-small img {
+    width: 100px;
+}
+
+#city-small-img {
+    float: left;
+    margin-top: 15px;
+    margin-left: 23px;    
+}
+
+#index-nearby-city-featured-title
+{
+    float: left;
+    margin-top: 18px;
+    margin-left: 12px;
+    font-weight: bold;
+    font-size: 12px;
+    text-color: rgb:(0,0,0);
+}
+
+#index-nearby-city-featured-date {
+	float: left;
+	margin-top: 4px;
+	margin-left: 12px;
+	font-size: 11px;
+}
+
+#index-nearby-city-featured-theater-name {
+	float: left;
+	margin-top: 4px;
+	margin-left: 12px;
+	font-size: 11px;
+        width: 110px;
+	text-align: left;
+}
+#more-shows a,
+#show-month a{
+    color: #404040;
+}
+
+#map-upcoming-past-icon {
+    margin-top: 20px;
+}
+.index-nearby-city-small-title
+{
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 9px;
+}
+
+#just-under-index-left-col {
+        position: relative;
+        width: 200px;
+        height: 550px;
+}
+
+#index-select-country {
+}
+
+#country-right-col {
+	width:214px;
+	height: 18px;
+	font-size: 11px;
+	background-color:rgb(254,208,178);
+	margin-top: 8px;
+}
+
+#city-right-col {
+	width:214px;
+	height: 18px;
+	font-size: 11px;
+	background-color:rgb(254,208,178);
+	margin-top: 5px;
+}
+
+#index-select-city {
+}
+
+
+#index-right-col {
+    float: left;
+    width: 700px;
+    margin-left: 20px;
+    height: 550px;
+}
+
+#index-find-tickets {
+    float: left;
+    margin: 37px auto auto 476px;
+    display: none;
+}
+
+#index-find-tickets a{
+    color: #ffffff;
+}
+
+#index-hotline {
+    float: left;
+    margin: 25px auto auto 20px;
+    font-weight: bold;
+    color: #ffffff;    
+}
+
+#index-shenyun2012-text {
+    position: absolute;
+    margin-top: 83px;
+    margin-left: 407px;
+    float: left;
+}
+
+#index-video-play-button {
+    position: absolute;
+    margin-top: 204px;
+    margin-left: 350px;
+    float: left;
+}
+
+#index-map {
+    float: left;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+#tkt-finder-img {
+    float: left;
+    margin-top: 55px;
+    margin-left: 20px;
+}
+
+#layout-col-2-body-main-content-top {
+    height: 110px;
+    width: 1000px;
+    color: #ffd2a7;
+}
+
+
+#layout-col-2-body-main-content-top a{
+    color: #ffe5c8;
+}
+
+
+#layout-col-2-body-main-content-middle {
+    position: relative;
+    width: 1000px;
+    height: 470px;
+}
+
+#part-disclaimer {
+    position: absolute;
+    width: 213px;
+    font-size: 11px;
+    text-align: left;
+    color: white;
+    top: 250px;
+    color: #FFE5C8;
+}
+
+#part-disclaimer a {
+    color: #FFE5C8;
+}
+
+#disclaimer-data {
+    width: 400px;
+    text-align: left;
+    line-height: 20px;
+    padding: 10px;
+}
+
+#layout-col-2-body-main-content-bottom {
+    position: absolute;
+    width: 223px;
+    height: 90px;
+    font-size: 11px;
+    text-align: left;
+    color: white;
+    top: 300px;
+    visibility:hidden;
+}
+
+.layout-col-2-body {
+    height: 580px;
+    background: url("../image/city-body-bg.jpg") no-repeat scroll center top transparent;
+    
+}
+
+#layout-col-2-top-image-text {
+    position: relative;
+    width: 1000px;
+    height: 60px;
+}
+
+#layout-col-2-shenyun-logo {
+    margin-left: 30px;
+    float: left;
+    clear: left;
+    margin-top: 39px;
+}
+
+#layout-col-2-breadcrumb {
+    float: left;
+    font-size: 11px;
+    margin: 42px 0 0 0;
+    width: 270px;
+}
+
+#layout-col-2-sy2012-logo {
+    float: right;
+    height: 40px;
+    margin-top: 0px;
+    width: 60px;
+}
+
+#layout-col-2-find-tickets {
+    float: left;
+    margin-left: 20px;
+    margin-top: 36px;
+}
+
+#layout-col-2-find-tickets_map {
+    position: absolute;
+    right: 110px;
+    top: 103px;
+}
+
+.flashmap {
+   margin-top: 45px;
+}
+
+#layout-col-2-hotline {
+    float: right;
+    height: 40px;
+    margin-top: 5px;
+    width: 120px;
+}
+
+#layout-col-2-body-main-content-middle-left {
+    position: absolute;
+    top: 65px;
+    left: 30px;
+}
+
+#layout-col-2-body-main-content-middle-right {
+    background: transparent url(../image/layout-col-2-body-main-content-middle-right-bg.png) top left no-repeat;
+    float: left;
+    width: 690px;
+    height: 500px;
+}
+
+#layout-col-2-body-main-content-middle-left-city-name {
+	float: left;
+        font-size:22px;
+        color:white;
+	font-weight:bold;
+	margin-top: 6px;
+}
+
+#city-bottom-city-name {
+        position:absolute;
+        top:430px;
+        right:35px;
+}
+
+#layout-col-2-powered-by img {
+    height: 22px;
+    margin-top: 9px;
+}
+
+#layout-col-2-live-chat {
+    float: left;
+    margin-left: 160px;
+    margin-top: 33px;
+}
+
+#livehat-spaces {
+    float: left;
+    margin-top: 33px;
+    margin-left: 160px;
+    width:78px;
+}
+/* Localized */

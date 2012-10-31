@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.header {
+	clear: both;
+	height: 90px;
+	width: 1040px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+.headerwrap {
+	clear: both;
+	height: 90px;
+	width: 100%;
+	background-image: url(../../../image/flashmap/topbg.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+}
+.flashmap {
+	width: 100%;
+	clear: both;
+	#background-image: url(../../../image/flashmap/yellowbg.jpg);
+	#background-repeat: repeat-x;
+	#background-position: 0px 0px;
+        overflow: hidden;
+	height: 446px;
+        position: relative;
+}
+
+.footer {
+	clear: both;
+	height: 70px;
+	width: 100%;
+	background-image: url(../../../image/flashmap/mapfoot.jpg);
+	background-repeat: repeat-x;
+	background-position: 0px 0px;
+	position: absolute;
+}
+.footernei {
+	background-image: url(../../../image/flashmap/footmenu.jpg);
+	background-repeat: no-repeat;
+	height: 70px;
+	width: 1024px;
+	overflow: hidden;
+}
+
+.flashovernei {
+	clear: both;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 100%;
+	text-indent: -5000px;
+}
+.flashdownnavi {
+	height: 159px;
+	width: 100%;
+	margin-top: -159px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-image: url(../../../image/flashmap/mapdownnavi.png);
+	background-position: center top;
+	position: absolute;
+}
+.flashdownnaviwrap {
+	margin-top: 53px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	width: 372px;
+}
+.smallmapdown {
+	background-image: url(../../../image/flashmap/ditubiao.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	height: 43px;
+	margin-top: -5px;
+	position: absolute;
+	display: block;
+visibility:hidden;
+}
+.smalldownnei {
+	height: 22px;
+	margin-top: 12px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+#homebox {
+    position: absolute; 
+    left:564px; 
+    top: 42px; 
+    width: 201px; 
+    height: 18px; 
+    background-color: #9B7804; 
+    color: #ffffff;
+}
+
+#viewcitybox {
+    position: absolute; 
+    left:564px; 
+    top: 360px; 
+    width: 201px; 
+    height: 18px; 
+    background-color: #9B7804; 
+    color: #ffffff;
+}   
+
+/* Localized */

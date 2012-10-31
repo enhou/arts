@@ -1,0 +1,728 @@
+#city-home-section-bg-1-2 {
+	position:relative;
+	float:left;
+	margin-top:-60px;
+	margin-left: 280px;
+}
+
+#city-home-section-bg-3-4 {
+	float:left;
+	margin-left: 280px;
+}
+
+#layout-col-2-body-main-content-middle-right-microsite-city-index {
+	position:relative;
+}
+
+.img-txt {
+	font-size:14px;
+	color:rgb(75,51,0);
+	margin-top:4px;
+	font-weight: bold;
+}
+
+.tkt-img-txt {
+	font-size:14px;
+	color:rgb(75,51,0);
+	margin-top:4px;
+	font-weight: bold;
+}
+
+.img-txt-sp {
+	position:absolute;
+	font-size:14px;
+	color:rgb(75,51,0);
+	top:150px;
+	left:92px;
+	font-weight: bold;
+}
+
+.img-txt-sp2 {
+	position:absolute;
+	font-size:14px;
+	color:rgb(75,51,0);
+	top:130px;
+	left:360px;
+	font-weight: bold;
+	width:150px;
+}
+
+#city-venue-info-img {
+	position:absolute;
+	top:18px;
+	left:328px;
+}
+
+#city-ceating-chart-img {
+	position:absolute;
+	top:17px;
+	left:637px;
+}
+
+#city-ticketing-info-img {
+	position:absolute;
+	top:212px;
+	left:327px;
+}
+
+#city-plan-your-visit-img {
+	position:absolute;
+        cursor: pointer;
+        cursor: hand;
+	top:212px;
+	left:638px;
+}
+
+#layout-col-2-body-main-content-middle {
+	position:relative;
+}
+
+.index-nearby-city-small-theater-name {
+	width:140px;
+	margin-left:30px;
+}
+
+#schedule-date {
+        position:absolute;
+        top:215px;
+        left:330px;
+	width: 247px;
+}
+
+#show-month {
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+	color:black;
+	font-size:13px;
+	font-weight:bold;
+}
+
+#show-time {
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+	color:black;
+	font-size:13px;
+
+}
+
+.show-time {
+	float:left;
+	margin-top:5px;
+	margin-left:10px;
+	color:black;
+	font-size:13px;
+
+}
+
+#more-shows {
+	float:left;
+	margin-top:5px;
+	margin-left:187px;
+	color:black;
+	font-size:13px;
+}
+
+#city-venue-info-section-bg {
+	position:relative;
+	float:right;
+	width:607px;
+	height: 373px;
+	margin-right:90px;
+	margin-top: -15px;
+}
+
+#city-venue-info-section-img-big {
+	position:absolute;
+	top:40px;
+	left:25px;
+}
+
+#venue-title {
+	position:absolute;
+	top:15px;
+	left:24px;
+	color: #323133;
+	font-size:14px;
+	font-weight:bold;
+}
+
+#about-venue {
+	position:absolute;
+	top:16px;
+	left:115px;
+	color:black;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#city-venue-info-section-img-1 {
+	position:absolute;
+	top:235px;
+	left:20px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#city-venue-info-section-img-2 {
+	position:absolute;
+	top:235px;
+	left:75px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#city-venue-info-section-img-3 {
+	position:absolute;
+	top:235px;
+	left:130px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#city-venue-info-section-img-4 {
+	position:absolute;
+	top:235px;
+	left:185px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#city-venue-info-section-img-5 {
+	position:absolute;
+	top:235px;
+	left:240px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#theater-name-address {
+	position:absolute;
+	top:200px;
+	left:25px;
+}
+
+#theater-name {
+	font-weight:bold;
+	font-size:12px;
+	color:black;
+	width:250px;
+	text-align:left;
+}
+
+#theater-address {
+	margin-top:5px;
+	font-size:11px;
+	color:black;
+        width:250px;
+	text-align:left;
+}
+
+#go-to-map {
+	margin-top:15px;
+	font-size:12px;
+	color:rgb(136,148,203);
+	text-align:left;
+}
+
+#city-venue-info-section-text-bg {
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+
+#city-venue-info-text {
+    color: black;
+    height: 310px;
+    left: 290px;
+    overflow: auto;
+    padding-right: 10px;
+    position: absolute;
+    text-align: left;
+    top: 22px;
+    width: 295px;
+
+
+}
+
+#change-info-button {
+	visibility:hidden;
+}
+
+#menu-s-information {
+	position:absolute;
+	top:28px;
+	left:210px;
+}
+
+#menu-s-service {
+	position:absolute;
+	top:45px;
+	left:210px;
+}
+
+#city-news-video-section {
+	position:absolute;
+	top:38px;
+	left:420px;
+	color:black;
+}
+
+
+#city-news-info-section-img-big {
+        overflow-y:auto;
+        height:390px;
+        width:570px;
+        scrollbar-face-color:#ffffff;
+        scrollbar-arrow-color:#11467F;
+	position:absolute;
+	top:25px;
+	left:20px;
+}
+
+#city-venue-info-section-k {
+	position:absolute;
+	top:23px;
+	left:28px;
+	width:544px;
+	height:375px;
+
+}
+
+#city-venue-service-scroll {
+	position:absolute;
+	top:23px;
+	left:46px;
+	width:524px;
+	height:375px;
+        overflow:auto;
+	text-align:left;
+	color:black;
+
+}
+
+#city-ticketing-section-bg {
+	position:relative;
+	float:right;
+	width:607px;
+	height: 373px;
+	margin-right:90px;
+	margin-top: -15px;
+}
+
+#city-ticket-information-title {
+        color: #323133;
+	position:absolute;
+	top:15px;
+	left:25px;
+
+	font-weight:bold;
+	font-size:14px;
+}
+
+#city-ticketing-section-bg-1 {
+	position:absolute;
+	top:80px;
+	left:25px;
+}
+
+#date-time-bar {
+	position:absolute;
+	top:47px;
+	left:25px;
+	width: 555px;
+}
+
+#city-ticket-information-date-title {
+	position:absolute;
+	top:100px;
+	left:65px;
+        color:#9b782a;
+        font-weight:bold;
+        font-size:20px;
+}
+
+#city-ticket-information-time-title {
+	position:absolute;
+	top:100px;
+	left:320px;
+        color:#9b782a;
+        font-weight:bold;
+        font-size:20px;
+}
+
+#city-ticket-information-scroll {
+	position:absolute;
+	height:255px;
+	width:600px;
+        overflow:auto;
+	top:81px;
+	left:2px;
+}
+
+#change-ticket-button {
+	visibility:hidden;
+}
+
+#city-seating-chart-section-bg {
+        float: right;
+        margin-right: 90px;
+        margin-top: -15px;
+        position: relative;
+        width: 607px;
+}
+
+#seating-chart-title {
+	position:absolute;
+	top:15px;
+	left:25px;
+        font-weight:bold;
+        font-size:14px;
+        color: #323133;
+}
+
+#city-seating-chart-img {
+	position:absolute;
+	top:45px;
+	left:25px;
+    width: 310px;
+    height: 175px;
+    overflow: hidden;
+}
+
+#additional-information-title {
+	position:absolute;
+	top:360px;
+	left:30px;
+	font-weight:bold;
+	font-size:16px;
+	color:black;
+}
+
+#additional-information-text {
+	position:absolute;
+	top:390px;
+	left:30px;
+	font-size:16px;
+	color:black;
+}
+
+#buy-ticket-information {
+	position:absolute;
+	top:28px;
+	left:375px;
+	text-align:left;
+	color:black;
+        width:225px;
+        height: 300px;
+        overflow: auto;
+}
+
+#buy-ticket-information p.buy-ticket-online-phone {
+	font-size:12px;
+	margin-top:-5px;
+}
+
+#buy-ticket-information p.buy-ticket-online-book-by-phone {
+	font-weight:bold;
+	font-size:13px;
+	margin-top:-5px;
+}
+
+#buy-ticket-information p.buy-ticket-online-link {
+	font-size:13px;
+	margin-top:-5px;
+}
+
+#buy-ticket-information p.buy-ticket-online-book {
+	font-size:13px;
+	margin-top:-5px;
+}
+
+#buy-ticket-information p.buy-ticket-online-note {
+	font-weight:bold;
+	font-size:13px;
+	margin-top:-5px;
+}
+
+#buy-ticket-information p.buy-ticket-online-price-title {
+	font-weight:bold;
+	font-size:13px;
+}
+
+#buy-ticket-information p.buy-ticket-online-phone-prices {
+	width:150px;
+	font-size:12px;
+	margin-top:-5px;
+}
+
+#change-seat-button {
+	visibility:hidden;
+}
+
+#city-map-section-bg {
+	position:relative;
+	float:right;
+        width:607px;
+        height: 435px;
+        margin-right:90px;
+        margin-top: -15px;
+}
+
+#plan-your-vist-text {
+	position:absolute;
+	top:15px;
+	left:25px;
+        font-weight:bold;
+        font-size:14px;
+        color: #323133;
+}
+
+#map-title {
+	position:absolute;
+	top:45px;
+	left:25px;
+        color:#9b782a;
+        font-size:14px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#city-map-saction-x-1 {
+	position:absolute;
+	top:45px;
+	left:73px;
+	font-weight:bold;
+	width:2px;
+}
+
+#parking-title {
+	position:absolute;
+	top:45px;
+	left:96px;
+        color:#9b782a;
+        font-size:14px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#city-map-saction-x-2{
+	position:absolute;
+	top:45px;
+	left:163px;
+	font-weight:bold;
+	width:2px;
+}
+
+#nearby-hotel-title{
+	position:absolute;
+	top:45px;
+	left:186px;
+        color:#9b782a;
+        font-size:14px;
+        cursor: pointer;
+        cursor: hand;
+}
+
+#city-map-saction-x-3 {
+	position:absolute;
+	top:22px;
+	left:418px;
+	font-weight:bold;
+	width:2px;
+	visibility:hidden;
+}
+
+#atm-title{
+	position:absolute;
+	top:20px;
+	left:435px;
+        color:#9b782a;
+        font-size:17px;
+        font-weight:bold;
+        cursor: pointer;
+        cursor: hand;
+	visibility:hidden;
+}
+
+#city-plan-your-visit-img-big {
+	position:absolute;
+	top:75px;
+	left:25px;
+}
+
+#get-direction-input {
+	position:absolute;
+	bottom:17px;
+	left:133px;
+	font-weight:bold;
+	color:#9b782a;
+	font-size:10px;
+}
+
+#get-direction-input input {
+	border-style:solid;
+	border-color:#FFFFFF;
+	background-color:rgb(192,169,119);
+	height:15px;
+	width:300px;
+	color:#FFFFFF;
+}
+
+#get-direction-title {
+	position:absolute;
+	bottom:30px;
+	left:30px;
+        color:#9b782a;
+        font-size:14px;
+        font-weight:bold;
+}
+
+#go-button {
+	position:absolute;
+	bottom:28px;
+	right:140px;
+}
+
+.parking-dining-hotel-atm-scroll {
+	position:absolute;
+	top:80px;
+	left:40px;
+	width:520px;
+	height:290px;
+        overflow:auto;
+	text-align:left;
+	color:black;
+        padding-right: 10px;
+}
+
+#dining-hotel-info h2,
+#parking-info h2 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 20px;
+
+}
+#city-plan-your-visit-img-big {
+        display:block;
+}
+
+#parking-info {
+        display:none;
+}
+
+#dining-hotel-info {
+        display:none;
+}
+
+#atm-info {
+        display:none;
+}
+
+#change-plan-button {
+	visibility:hidden;
+}
+
+#layout-col-2-presented-by {
+        position: absolute;
+        top: 35px;
+        left: 0px;
+        font-size: 13px;
+	color: white;
+	width: 213px;
+	text-align: left;
+        line-height: 15px;
+/**
+    float: left;
+    height: 56px;
+    width: 350px;
+    margin-left: 50px;
+**/
+}
+
+#powered-text {
+	position: absolute;
+	top: 213px;
+	width: 213px;
+}
+
+#powered-by {
+	float:left;
+
+}
+
+#powered-by-text {
+	float:left;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+        letter-spacing: .08em;
+	margin-left: 7px;
+	margin-top: -3px;
+}
+
+#six-menues {
+        position: absolute;
+        top: 95px;
+        left: 0px;
+}
+
+#layout-col-2-powered-by {
+        position: absolute;
+        top: 7px;
+        right: 85px;
+/**
+    float: left;
+    height: 56px;
+    width: 260px;
+    margin-top: 8px;
+    margin-left: 330px;
+**/
+}
+
+#change-sponsor-button {
+	visibility:hidden;
+}
+
+#change-news-button {
+	visibility:hidden;
+}
+
+#city-home-section-bg-1-2-3-4 {
+        position: absolute;
+	top: 0px;
+        right: 90px;
+}
+
+#seating-theater-name-address {
+        position: absolute;
+        top: 240px;
+        left: 25px;
+	width: 300px;
+	text-align: left;
+}
+
+#seating-theater-address {
+	font-size: 12px;
+	margin-top: 3px;
+}
+
+#seating-theater-name {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#seating-go-to-venue {
+	font-size: 13px;
+	font-weight: bold;
+	margin-top: 3px;
+}
+
+#map-view-city-listing {
+    margin-left: 80px;
+    margin-top: 30px;
+    text-align: left;
+}
+
+#tktb-img{float: left; margin-top:-3px;}

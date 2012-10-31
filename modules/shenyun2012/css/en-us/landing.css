@@ -1,0 +1,10 @@
+.gtBox a.getTix{ width:201px; height:70px; margin:24px 0 0; display:block; background:url(../../image/en-us/gettix.jpg) no-repeat 0 0;-webkit-box-shadow: 1px 5px 5px 0px rgba(93, 59, 33, .37);
+-moz-box-shadow: 1px 5px 5px 0px rgba(93, 59, 33, .37);
+box-shadow: 1px 5px 5px 0px rgba(93, 59, 33, .37); }
+.getTixD{ 
+    width:191px; height:35px; display:block; background:url(../../image/en-us/gtx.jpg) no-repeat 0 0;
+    -webkit-box-shadow: 1px 5px 5px 0px rgba(93, 59, 33, .37); 
+    -moz-box-shadow: 1px 5px 5px 0px rgba(93, 59, 33, .37); 
+    box-shadow: 1px 5px 5px 0px rgba(93, 59, 33, .37); 
+}
+/* Localized */

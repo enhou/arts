@@ -1,0 +1,738 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shen Yun Performing Arts</title>
+<meta name="description" lang="en-us" content="Shen Yun brings to life 5,000 years of Chinese civilization through classical Chinese dance and music in an exhilarating show you will never forget." />
+<meta name="keywords" content="Shen Yun, Shenyun, Shen, Yun, Shenyun Performing Arts, Performing Arts, Performing, Arts, Chinese dance show tickets, Chinese New Year Spectacular, Chinese Spectacular, Chinese New Year Splendor" />
+<meta name="google-site-verification" content="Ls_xdthXSYrmTGcIoZXWI-OwyfuzSII5kfRdGIJNlrk" />
+
+<link rel="stylesheet" type="text/css" href="../../modules/shenyun2013/css/default.css" />
+<link rel="stylesheet" type="text/css" href="../../modules/shenyun2013/css/en-us/default.css" />
+<script type="text/javascript" src="../../js/jquery/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../../js/flowplayer/flowplayer-3.2.10.min.js"></script>
+<script type="text/javascript" src="../../js/flowplayer/flowplayer.ipad-3.2.9.js"></script>
+
+
+<script type="text/javascript" language="javascript" src="../../js/fancybox2/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+<link rel="stylesheet" href="../../js/fancybox2/jquery.fancybox-v=2.0.6.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../js/fancybox2/jquery.fancybox.pack.js?v=2.0.6"></script>
+<link rel="stylesheet" href="../../js/fancybox2/helpers/jquery.fancybox-thumbs-v=2.0.6.css" type="text/css" media="screen" />
+<script type="text/javascript" src="../../js/fancybox2/helpers/jquery.fancybox-thumbs.js?v=2.0.6"></script>
+
+
+
+<script type="text/javascript" src="../../js/easytabs/jquery.hashchange.min.js" ></script>
+<script type="text/javascript" src="../../js/easytabs/jquery.easytabs.js"></script>
+
+<link rel="stylesheet" type="text/css" href="../../modules/shenyun2013/css/city-group.css" />
+
+<script type="text/javascript">
+(function ($, F) {
+    F.transitions.resizeIn = function() {
+        var endPos   = $.extend({}, F.current.dim, F._getPosition(true));
+        var startPos;
+        
+        startPos = F.tmpWrap.position();
+        
+        startPos.width  = F.tmpWrap.width();
+        startPos.height = F.tmpWrap.height();
+
+        F.inner
+            .css('overflow', 'hidden')
+            .width( F.tmpInner.width())
+            .height( F.tmpInner.height())
+            .css('opacity', 0);
+
+        F.wrap.css(startPos).show();
+
+        F.tmpWrap.trigger('onReset').remove();
+
+        F.wrap.animate(endPos, {
+            duration: F.current.nextSpeed,
+            step    : F.transitions.step,
+            complete: function() {
+                setTimeout(function() {
+                    F.inner.fadeTo("slow", 1, F._afterZoomIn);
+                }, 1);
+            }
+        });
+    };
+ 
+    F.transitions.resizeOut = function() {
+        if (F.tmpWrap) {
+            F.tmpWrap.stop(true).trigger('onReset').remove();
+        }
+                       
+        F.tmpWrap  = F.wrap.stop(true, true);
+        F.tmpInner = F.inner.stop(true, true);
+    };
+
+}(jQuery, jQuery.fancybox));
+
+$(document).ready(function() {
+    //gallery
+    $(".fancybox-thumb")
+        .fancybox({
+        openEffect  : 'fade',
+        closeEffect : 'fade',
+        nextEffect  : 'fade',
+        prevEffect  : 'fade',
+        nextSpeed: 'slow',
+        prevSpeed: 'slow',
+        padding     : 0,
+        margin      : 0,
+            //nextMethod : 'resizeIn',
+            //nextSpeed : 250,
+
+            //prevMethod : 'resizeOut',
+            //prevSpeed : 250,
+            helpers: {
+                title	: {
+                        type: 'outside'
+                },
+                overlay	: {
+                        opacity : 0.8,
+                        css : {
+                            'background-color' : '#000'
+                        }
+                },
+
+                
+                thumbs	: {
+                        width	: 50,
+                        height	: 50
+                } 
+                
+                
+            
+        }        
+    });
+    
+
+
+    $('img').bind('contextmenu', function(e){
+        return false;
+    }); 
+    
+    
+	
+    $("#seating").fancybox({});
+
+    $("#fancybox-iframe1,#fancybox-iframe2,#fancybox-iframe3").fancybox({
+                            'width'			: 650,
+                            'height'			: 1330,
+                            'autoScale'			: false,
+                            'scrolling' :  'no',
+                            'type': 'iframe'
+                    });
+    $('#slider').easytabs();
+
+});
+</script>
+
+
+
+</head>
+
+<body oncontextmenu="return false;">
+<div class="topImgWrap">
+  <div class="topImg2013 cf"> <a href="../../index.html" class="dancer2013"></a>
+    <h3 class="topBar2013 cf"> <a href="../../index.html" class="sypa2013">SHEN YUN PERFORMING ARTS</a> </h3>
+    <div class="topImgNei"> 
+    <h2><a class="logo2013 local" href="http://www.shenyun2013.org/">SHEN YUN 2013</a></h2>
+      <div class="otherSC2013 cAWhite"><a href="../../tickets/list/index.html">Other Shows & Cities</a></div>
+      <a href="../../index.html" class="link"></a> </div>
+  </div>
+</div>
+  
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(".button-buy-ticket").fancybox();
+	});
+</script>
+<div class="mainContainerWrap">
+    <div class="mainContainer">
+        <div class="grid2col">
+            <div class="column first">
+                <div class="leftSidebar">
+                    <div class="gtBox cf">
+                        <div class="gtBoxNei ButtonShadow roundc"> <a href="#popup-buy-ticket" class="getTixGradient2013 button-buy-ticket" onClick="recordOutboundLink(this, 'city-page-ticketing', '', 'get tickets now at left top', 1);return false;">
+                                <div class="getTixWrap2013"><span class="getTixTxt">buy tickets now</span></div>
+                            </a> 
+                        </div>
+                        
+                          <div style="display: none;">
+                            <div id="popup-buy-ticket" style="width:500px;height:280px; ">
+                              <div class="fancyContainerPaper2">
+                                <div class="popupWrap">
+                                  <div class="fanPaper">
+                                    <h2 class="seatingTitile">BUY TICKETS</h2>
+                                    
+                                        
+                                    
+                                    <div style="float:left;">
+                                     
+                                        
+                                        <div class="popup-buy-ticket-city">
+                                            <div class="popup-buy-ticket-city-name">Atlanta Cobb Energy</div>
+                                            <div class="popup-buy-ticket-city-links">
+                                            <a target="_blank" href="http://www.ticketmaster.com/search?tm_link=tm_homeA_header_search&aid=1354996&user_input=shen&q=Shen+Yun" onClick="recordOutboundLink(this, 'city-page-ticketing', 'Atlanta Cobb Energy', 'book online at show info', 1);return false;"><em style="color:#1f49be; text-decoration:underline;">TicketMaster</em></a>                                            </div>                        
+                                            <div class="clear"></div>       
+                                        </div>                        
+                                            
+                                        <div class="popup-buy-ticket-city">
+                                            <div class="popup-buy-ticket-city-name">Atlanta Fox Theatre</div>
+                                            <div class="popup-buy-ticket-city-links">
+                                            <a target="_blank" href="http://ev10.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=SHN&linkID=fta&shopperContext=&caller=&appCode=" onClick="recordOutboundLink(this, 'city-page-ticketing', 'Atlanta Fox Theatre', 'book online at show info', 1);return false;"><em style="color:#1f49be; text-decoration:underline;">evenue.net</em></a>                                            </div>                        
+                                            <div class="clear"></div>       
+                                        </div>                        
+                                                                
+                                                                
+                                    </div>
+                                        
+                                        
+                                 </div>
+                                </div>
+                              </div>
+                            </div>
+                              
+                              
+                          </div>
+                        
+                        
+                    </div>
+
+
+                     
+                        <h2 class="topTitle" style="padding:23px 0 0;">
+                            <a href="#showinfo-atlanta-cobb">Atlanta Cobb Energy</a>
+                        </h2>
+                        <div class="left-col-event-time">
+                            <a href="#showinfo-atlanta-cobb">
+                            Jan 5 - 6, 2013                            </a>
+                        </div>
+                     
+                        <h2 class="topTitle" style="padding:23px 0 0;">
+                            <a href="#showinfo-atlanta-fox">Atlanta Fox Theatre</a>
+                        </h2>
+                        <div class="left-col-event-time">
+                            <a href="#showinfo-atlanta-fox">
+                            Jan 8 - 9, 2013                            </a>
+                        </div>
+                    
+
+
+                </div>
+            </div>
+
+            <div class="column last">
+                <div class="rightCon">
+                    <div id="slider">
+                        <ul class="navigation">
+                            <li id="navigation-intro"><a href="#intro" onclick="$f('player2').stop();"><span class="tabTT">INTRO</span></a></li>
+                            <li id="navigation-reviews"><a href="#reviews" onclick="$f('player1').stop();"><span class="tabTT">REVIEWS</span></a></li>
+                                                            <li id="navigation-showinfo-atlanta-cobb"><a href="#showinfo-atlanta-cobb" onclick="$f('player2').stop();$f('player1').stop();"><span class="tabTT">ATLANTA COBB ENERGY</span></a></li>
+                                                            <li id="navigation-showinfo-atlanta-fox"><a href="#showinfo-atlanta-fox" onclick="$f('player2').stop();$f('player1').stop();"><span class="tabTT">ATLANTA FOX THEATRE</span></a></li>
+                            
+                            <div class="socialMedia"> 
+                                                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style "> <a class="addthis_button_facebook"></a> <a class="addthis_button_twitter"></a> <a class="addthis_button_email"></a> <a class="addthis_button_print"></a> </div>
+                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script> 
+                <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=shenyunsupport"></script>
+                <!-- AddThis Button END -->   
+                                                            </div>
+                        </ul>
+                        <div class="scroll">
+                            <div class="panel tab_boxA" id="intro">
+                                <div class="tabboxNei"> 
+                                  <div class="playBox cf"> <a id="player1" class="player1" style="display:block; width:500px; height:280px;" href="http://media1.shenyunperformingarts.org/video/2013/ENG-30secPromo2013-640x360.mp4"></a> </div>
+                                    <div class="tabCon">
+                                        <div class="tabConPa">
+<p>Shen Yun brings to life 5,000 years of Chinese civilization through classical Chinese dance and music in an exhilarating show you will never forget.</p>
+<p>Shen Yun captures the spirit of a culture long lost. The show moves quickly through regions, dynasties, and legends. Ethnic and folk dances fill the stage with color and energy. Tremendous athleticism, thunderous battle drums, and masterful vocalists are all set to animated backdrops that transport you to another world.</p>
+<p class="imgWrap"><a class="fancybox-thumb" title="CLASSICAL CHINESE DANCE - built on profound traditional aesthetics, tempered over thousands of years into an extensive and independent dance system. Today, it is one of the most vigorous and expressive art forms in the world. This photo features principal dancer Rocky Liao in Shen Yun&rsquo;s 2009 Legend of the Brush. Where did the brush come from? This dance is a glimpse into China&rsquo;s &ldquo;divinely inspired culture.&rdquo;   Photo: Legend of the Brush, 2009. " rel="fancybox-thumb" href="../../data/image/original/2012/03/26/51da85a3c3dfa1f360b48852b64218b2.jpg"><img src="../../data/image/thumb/2012/03/26/51da85a3c3dfa1f360b48852b64218b2.jpg" height="45" /></a> <a class="fancybox-thumb" title="GORGEOUS COSTUMES -- Hundreds of exquisite, handmade garments spanning China&rsquo;s dynasties, regions, and ethnic groups adorn every Shen Yun performance. In Manchurian Elegance, from Shen Yun 2011, the ladies of the Qing Dynasty palace display their exceptional grace.  Photo: Manchurian Elegance, 2011. " rel="fancybox-thumb" href="../../data/image/original/2012/03/26/285a25c17f351708754cdb6d56f3962e.jpg"><img src="../../data/image/thumb/2012/03/26/285a25c17f351708754cdb6d56f3962e.jpg" height="45" /></a> <a class="fancybox-thumb" title="A WINDOW TO ANOTHER WORLD -- Think of Shen Yun as a journey into a long-lost world you cannot see anywhere else&mdash;one moment you&rsquo;re on the dusty plains of an ancient battleground, the next you&rsquo;re soaring high up in the heavens with celestial fairies. Cloud Maidens, from Shen Yun 2011.   Photo:  Cloud Maidens, 2011. " rel="fancybox-thumb" href="../../data/image/original/2012/03/26/656f0dbf9392657eed7feefc486781fb.jpg"><img src="../../data/image/thumb/2012/03/26/656f0dbf9392657eed7feefc486781fb.jpg" height="45" /></a> <a class="fancybox-thumb" title="RESOUNDING DRUMS --Tremendous athleticism and thunderous battle drums are set to animated backdrops that transport you to another time and place. The Tang Court Drummers, from Shen Yun 2008.  Photo: Tang Court Drummers, 2008. " rel="fancybox-thumb" href="../../data/image/original/2012/03/26/414a7497190eaef6b5d75d5a6a11afcf.jpg"><img src="../../data/image/thumb/2012/03/26/414a7497190eaef6b5d75d5a6a11afcf.jpg" height="45" /></a> <a class="fancybox-thumb" title="INSPIRATION - A little pink flower is not your typical symbol of courage. But in Chinese culture, the plum blossom is precisely that. It blooms in the midst of winter, braving frost and bitter cold, reminding us that even during the darkest hour, spring is just around the corner. In every Shen Yun show, ancient traditions come to life with color and energy as in Plum Blossom, from 2011.  Photo: Plum Blossom, 2011. " rel="fancybox-thumb" href="../../data/image/original/2012/03/26/f11bec1411101c743f64df596773d0b2.jpg"><img src="../../data/image/thumb/2012/03/26/f11bec1411101c743f64df596773d0b2.jpg" height="45" /></a> <a class="fancybox-thumb" title="LIVE EAST-WEST ORCHESTRA  -- Shen Yun has the only orchestra in the world that features both classical Western and Chinese instruments as permanent members. The result? Two grand musical traditions producing one refreshing, unforgettable sound.   Photo: Shen Yun Orchestra " rel="fancybox-thumb" href="../../data/image/original/2012/03/26/0ae1dd3954ee840075de1395771b6c9c.jpg"><img src="../../data/image/thumb/2012/03/26/0ae1dd3954ee840075de1395771b6c9c.jpg" height="45" /></a></p>
+<p>It is a grand production with nearly 100 artists, 400 costumes, and the only orchestra in the world featuring both classical Western and Chinese instruments as permanent members.</p>
+<p>Shen Yun is the first company to present classical Chinese dance to the world on a large scale. And it has taken the globe by storm, performing in over 100 cities. Shows in top venues, like New York&rsquo;s Lincoln Center, are sold out.</p>
+<p>Think of it as a journey into a long-lost world you cannot see anywhere else&mdash;from ancient legends to heavenly palaces to the dusty plateaus of the Middle Kingdom. You cannot even find a show     like this in China, where this ancient heritage has been destroyed.                                        But now you can experience it live on stage.</p>
+<p>For thousands of years, Chinese artists cultivated virtue, believing that to create true art worthy of the heavens, there must first be inner purity. Today, Shen Yun&rsquo;s artists follow this noble tradition. The result is a performance of consummate beauty, purity, and goodness. It is a show that nourishes the soul.</p>
+<p>Find out why artists and theatergoers around the world are calling Shen Yun &ldquo;breathtaking,&rdquo; &ldquo;mesmerizing,&rdquo; &ldquo;a miracle,&rdquo; and &ldquo;inspiring.&rdquo; Allow yourself to be taken away to distant lands and ancient legends. See Shen Yun and discover how you, too, can be inspired.</p>
+</div>                                    </div>
+                                    <div class="seeRe"><a href="#reviews">See reviews &raquo; </a></div>
+                                </div>
+                            </div>
+
+
+                            <div class="panel tab_boxA " id="reviews">
+                                <div class="tabboxNei">
+                                    <div class="playBox cf">
+                                        <a id="player2" class="player2" style="display:block; width:500px; height:280px;" href="http://media1.shenyunperformingarts.org/video/2011/ENG-Audience1min-640x360.mp4"></a>
+                                    </div>
+                                    <div class="tabCon">
+                                        <div class="grid2colC">
+                                            <div class="columnN first">
+                                                <div class="reviewBox">
+                                                    <p>&nbsp;</p>
+<!--- 1 --->
+<div style="float:left;margin:0px 20px 30px 0"><img mediaid="3604" src="../../data/image/original/2012/04/04/c254e7753095807e1cca159e48eceb21.jpg" alt="Cate Blanchett" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>"An extraordinary experience...</strong><span style="font-size: 13px;"><br />exquisitely beautiful.&rdquo;</span></span><br /><span style="font-size: 12px;"><em><br />Cate Blanchett, Academy <br />Award-winning actress</em></span></span></p>
+<p>&nbsp;</p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 2 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 40px 0"><img mediaid="3605" src="../../data/image/original/2012/04/04/a05d886123a54de3ca4b0985b718fb9b.jpg" alt="Robert Stromberg" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>"So inspiring, </strong><span style="font-size: 13px;">I think <br />I may have found some ideas <br />for the next <em>Avatar</em> movie."</span></span><br /><em><span style="font-size: 12px;"><br />Robert Stromberg, <br />Academy Award-winning production designer</span></em></span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 12px;"><br /></span></span></p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 3 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 10px 0"><img mediaid="3603" src="../../data/image/original/2012/04/04/6a8018b3a00b69c008601b8becae392b.jpg" alt="Donna Karan" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>&ldquo;A mesmerizing performance&rdquo;</strong></span><br /><span style="font-size: 12px;"><em><br />Donna Karan, creator of DKNY</em></span></span></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 4 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 30px 0"><img mediaid="3609" src="../../data/image/original/2012/04/04/649a066d415bdda4ce2a7088292645e0.jpg" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>&ldquo;5,000 years </strong><span style="font-size: 13px;">of <br />Chinese Music and Dance <br />in One Night"</span></span><br /><span style="font-size: 12px;"><em><br />The New York Times</em></span></span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 12px;"><em><br /></em></span></span></p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 5 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 60px 0"><img mediaid="3610" src="../../data/image/original/2012/04/04/f95ec3de395b4bce25b39ef6138da871.jpg" alt="Ernie Anastos" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>&ldquo;It&rsquo;s superb. </strong><span style="font-size: 13px;">I am going <br />to mention it on the news, because I think it is a great performance and people should see it.&rdquo; </span></span><br /><span style="font-size: 12px;"><em><br />Ernie Anastos,&nbsp;Emmy Award-winning news anchor</em></span></span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 12px;"><em><br /></em></span></span></p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 6 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 60px 0"><img mediaid="3608" src="../../data/image/original/2012/04/04/60a0575ee6ce460e1d86c0e9d281c4f1.jpg" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>&ldquo;The dancers were graceful,</strong> <span style="font-size: 13px;">delicate, and beautiful. There was something pure, bright and very dignified about them.&rdquo;&nbsp;</span></span><br /><span style="font-size: 12px;"><em><br />Anna Liceica,&nbsp;former soloist with American Ballet Theatre</em></span></span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 12px;"><em><br /></em></span></span></p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 7 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 60px 0"><img mediaid="3607" src="../../data/image/original/2012/04/04/967990de5b3eac7b87d49a13c6834978.jpg" alt="Chi Cao" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>"The show was excellent, </strong><span style="font-size: 13px;">the content rich, the stage effects were amazing...  their passion is really touching."</span></span><br /><span style="font-size: 12px;"><em><br /> Chi Cao, principal dancer and actor in </em>Mao&rsquo;s Last Dancer</span><br /><br /></span></p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 8 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 20px 0"><img mediaid="3612" src="../../data/image/original/2012/04/04/d87ca511e2a8593c8039ef732f5bffed.jpg" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>"I am completely enchanted."</strong></span><br /><span style="font-size: 12px;"><em><br />Her Royal Highness <br />Princess Michael of Kent</em></span><br /><br /></span></p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 9 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 50px 0"><img mediaid="3606" src="../../data/image/original/2012/04/04/774b0e07753b0b94d1a1c5b0543b5fe1.jpg" alt="Omega Medina" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>&ldquo;A complete edifying <br />experience</strong> <span style="font-size: 13px;">of the human <br />spirit"</span></span><br /><span style="font-size: 12px;"><em><br />Omega Medina, <br />former manager of Classical Music for the Grammy awards</em></span></span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 12px;"><em><br /></em></span></span></p>
+<hr style="border: 0pt none; color: #cccccc; background-color: #cccccc; height: 1px; width: 250px;" />
+<!--- 10 --->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div style="float:left;margin:0px 20px 50px 0"><img mediaid="3611" src="../../data/image/original/2012/04/04/4cf33e18ede11b79827bc78b7f2075ae.jpg" alt="Joy Behar" width="65" /></div>
+<p><span style="font-size: 14px;"><span style="font-size: 15px;"><strong>&ldquo;A beautiful show...</strong> <span style="font-size: 13px;">fantastic!&rdquo;</span></span><br /><span style="font-size: 12px;"><em><br />Joy Behar,&nbsp;Co-host of ABC&rsquo;s&nbsp;<br /></em>The View</span></span></p>
+<p><span style="font-size: 14px;"><span style="font-size: 12px;"><em><br /></em></span></span></p>                                                </div>
+                                            </div>
+                                            <div class="columnN last">
+                                                <div class="videoSidebar">
+                                                                                                            <div class="vSidebarChild">
+                                                            <div class="vthumnail"><a href="http://media1.shenyunperformingarts.org/video/2012/Fox5News-2012.mp4" onclick="return playVideo(this);"><img src="../../data/image/small/2012/01/13/89d4402dc03d3b7318bbac10203034ab.png" width="157" alt="" /></a></div>
+                                                            <div class="vtxt">
+                                                                <p><a href="http://media1.shenyunperformingarts.org/video/2012/Fox5News-2012.mp4" onclick="return playVideo(this);">FOX 5 NEWS: Behind-The-Scenes At Shen Yun</a></p>
+                                                                <span>January 13, 2012</span> </div>
+                                                        </div>
+                                                                                                            <div class="vSidebarChild">
+                                                            <div class="vthumnail"><a href="http://media1.shenyunperformingarts.org/video/2011/nbcphiladelphia.Shen_Yun_Performing_Arts_Company_NBC_Philadelphia.flv" onclick="return playVideo(this);"><img src="../../data/image/small/2011/02/23/d1a69640d53a32a9fb13e93d1c8f3104.jpg" width="157" alt="" /></a></div>
+                                                            <div class="vtxt">
+                                                                <p><a href="http://media1.shenyunperformingarts.org/video/2011/nbcphiladelphia.Shen_Yun_Performing_Arts_Company_NBC_Philadelphia.flv" onclick="return playVideo(this);">Emcee Kelly Wen on NBC's The 10! Show</a></p>
+                                                                <span>February 23, 2011</span> </div>
+                                                        </div>
+                                                                                                            <div class="vSidebarChild">
+                                                            <div class="vthumnail"><a href="../../data/video/converted/2010/08/28/8a0e1141fd37fa5b98d5bb769ba1a7cc.flv" onclick="return playVideo(this);"><img src="../../data/image/small/2010/08/28/b4a528955b84f584974e92d025a75d1f.jpg" width="157" alt="" /></a></div>
+                                                            <div class="vtxt">
+                                                                <p><a href="../../data/video/converted/2010/08/28/8a0e1141fd37fa5b98d5bb769ba1a7cc.flv" onclick="return playVideo(this);">CNN VIDEO on Shen Yun: Chinese Culture Alive in U.S.</a></p>
+                                                                <span>August 28, 2010</span> </div>
+                                                        </div>
+                                                                                                    </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                             
+                                <div class="panel tab_boxA " id="showinfo-atlanta-cobb">
+                                    <div class="tabboxNei">
+                                        <!--
+                                        <div class="optionalBlock">OPTIONAL CUSTOMIZABLE AREA</div>
+                                        -->
+                                        <div class="showinfoTab-top">
+
+                                            <div class="showinfoTabNei-top">
+                                                <div class="leftshow">
+                                                    <p>Cobb Energy Performing Arts Centre</p>
+                                                </div>
+                                                <div class="rightshow">
+                                                    <div class="showPhoto"><img src="../../data/image/small/2011/11/04/465636eb4a7ff4b267f3b765d07a02da.jpg" alt="" /></div>
+                                                    <div class="showPhotoTxt">
+                                                        <p>2800 Cobb Galleria Parkway, Atlanta, GA 30339</p>
+                                                    </div>
+
+                                                    <div style="display:none">
+                                                        <div id="parking-data" class="fancyContainer">
+                                                                                                                            <p><span style="font-family: arial, helvetica, sans-serif;">There are 1,000 on-site parking spaces; 700 in a four-level deck and 300&nbsp;more in a surface lot.&nbsp; Valet parking is available for The Atlanta Opera and Atlanta Ballet only.<strong>$6 self park fee</strong>/$10 valet (cash only).&nbsp; An additional 600 spaces are available at the Galleria office park across Akers Mill Road at $6.</span></p>                                                                                                                    </div>
+                                                    </div>
+
+                                                    <div style="display:none">
+                                                        <div id="nearby-data" class="fancyContainer">
+                                                                                                                            <p>http://www.cobbenergycentre.com/plan_visit_dining.aspx</p>                                                                                                                                                                                        <p>http://www.cobbenergycentre.com/plan_visit_hotels.aspx</p>                                                                                                                    </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="showinfoTab">
+                                            <div class="showinfoTabNei">
+                                                <div class="leftshow">
+                                                    <p>Performance Dates</p>
+                                                </div>
+                                                <div class="rightshow">
+                                                    <div class="showPhotoTxt sk">
+                                                        <p>
+                                                            Sat January 5, 2013, 7:30pm<br />Sun January 6, 2013, 1:00pm<br />Sun January 6, 2013, 6:00pm<br />                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="showinfoTab">
+                                            <div class="showinfoTabNei">
+                                                <div class="leftshow">
+                                                    <p>Ticket Prices<br />
+
+                                                </div>
+
+                                                <div class="rightshow">
+                                                    <div class="showPhotoTxt sk">
+                                                        <p>$150 , $130 , $100 , $80 , $50                                                            <br />
+
+                                                               
+                                                                <a  id="seating" href="#inline-atlanta-cobb">View Seating Chart</a>
+                                                            <div style="display: none;">
+                                                                <div id="inline-atlanta-cobb" style="width:800px;height:600px; ">
+                                                                    <div class="fancyContainerPaper2">
+                                                                        <div class="popupWrap">
+                                                                            <div class="fanPaper">
+                                                                                <h2 class="seatingTitile">SEATING CHART</h2>
+                                                                                <div class="seatImg cf">
+                                                                                    <img width="740" src="../../data/image/original/2012/08/21/3ce83f544dbe69bb4fb19211fc442c2f.jpg" 
+                                                                                         alt="Shen Yun 2013  Seating Chart"  />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                            </div>   
+
+
+
+                                                                                            <div class="showinfoTab">
+                                                    <div class="showinfoTabNei">
+                                                        <div class="leftshow">
+                                                            <p>ORDERING</p>
+                                                        </div>
+                                                        <div class="rightshow">
+                                                            <div class="showPhotoTxt sk">                              
+
+                                                                <div style="float:left;"><strong>Book Online:</strong>&nbsp; 
+
+                                                                </div>
+                                                                <div style="float:left;">
+
+                                                                    <a target="_blank" href="http://www.ticketmaster.com/search?tm_link=tm_homeA_header_search&aid=1354996&user_input=shen&q=Shen+Yun" onClick="recordOutboundLink(this, 'city-page-ticketing', 'Atlanta Cobb Energy', 'book online at show info', 1);return false;"><em style="color:#1f49be; text-decoration:underline;">TicketMaster</em></a>                                                                
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                <div style="clear:both"></div>                                                                
+                                                            Hotline:
+                                                                                                                            678-681-1868 <br />                                                            
+        
+                                                                Email: <a href="mailto:contact@falundafaga.org" onClick="recordOutboundLink(this, 'city-page-ticketing', 'Atlanta Cobb Energy', 'ticket email at show info', 1);return false;">contact@falundafaga.org</a><br />
+                                                            
+
+                                                            Box Office: <br />
+                                                            770-916-2800<br />
+2800 Cobb Galleria Parkway, <br />
+Atlanta, <br />
+GA 30339                                                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+ 
+                                <div class="panel tab_boxA " id="showinfo-atlanta-fox">
+                                    <div class="tabboxNei">
+                                        <!--
+                                        <div class="optionalBlock">OPTIONAL CUSTOMIZABLE AREA</div>
+                                        -->
+                                        <div class="showinfoTab-top">
+
+                                            <div class="showinfoTabNei-top">
+                                                <div class="leftshow">
+                                                    <p>Fox Theatre</p>
+                                                </div>
+                                                <div class="rightshow">
+                                                    <div class="showPhoto"><img src="../../data/image/small/2012/08/18/4f9c76cf97f84048c5990dd4ef842ea2.jpg" alt="" /></div>
+                                                    <div class="showPhotoTxt">
+                                                        <p>660 Peachtree Street NE, Atlanta, GA 30308</p>
+                                                    </div>
+
+                                                    <div style="display:none">
+                                                        <div id="parking-data" class="fancyContainer">
+                                                                                                                            <p>All lots are privately owned; however, there are many parking lots in the vicinity of the theatre that offer parking for Fox patrons.</p>                                                                                                                    </div>
+                                                    </div>
+
+                                                    <div style="display:none">
+                                                        <div id="nearby-data" class="fancyContainer">
+                                                                                                                            <p>http://www.foxtheatre.org/restaurants.aspx</p>                                                                                                                                                                                        <p>http://www.foxtheatre.org/hotels.aspx</p>                                                                                                                    </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="showinfoTab">
+                                            <div class="showinfoTabNei">
+                                                <div class="leftshow">
+                                                    <p>Performance Dates</p>
+                                                </div>
+                                                <div class="rightshow">
+                                                    <div class="showPhotoTxt sk">
+                                                        <p>
+                                                            Tue January 8, 2013, 7:30pm<br />Wed January 9, 2013, 7:30pm<br />                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="showinfoTab">
+                                            <div class="showinfoTabNei">
+                                                <div class="leftshow">
+                                                    <p>Ticket Prices<br />
+
+                                                </div>
+
+                                                <div class="rightshow">
+                                                    <div class="showPhotoTxt sk">
+                                                        <p>$150, $130, $100, $90, $80, $60, $50                                                            <br />
+
+                                                               
+                                                                <a  id="seating" href="#inline-atlanta-fox">View Seating Chart</a>
+                                                            <div style="display: none;">
+                                                                <div id="inline-atlanta-fox" style="width:800px;height:600px; ">
+                                                                    <div class="fancyContainerPaper2">
+                                                                        <div class="popupWrap">
+                                                                            <div class="fanPaper">
+                                                                                <h2 class="seatingTitile">SEATING CHART</h2>
+                                                                                <div class="seatImg cf">
+                                                                                    <img width="740" src="../../data/image/original/2012/08/21/254ed7d2de3b23ab10936522dd547b78.jpg" 
+                                                                                         alt="Shen Yun 2013  Seating Chart"  />
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                    </div>
+                                                </div>
+                                            </div>   
+
+
+
+                                                                                            <div class="showinfoTab">
+                                                    <div class="showinfoTabNei">
+                                                        <div class="leftshow">
+                                                            <p>ORDERING</p>
+                                                        </div>
+                                                        <div class="rightshow">
+                                                            <div class="showPhotoTxt sk">                              
+
+                                                                <div style="float:left;"><strong>Book Online:</strong>&nbsp; 
+
+                                                                </div>
+                                                                <div style="float:left;">
+
+                                                                    <a target="_blank" href="http://ev10.evenue.net/cgi-bin/ncommerce3/SEGetEventList?groupCode=SHN&linkID=fta&shopperContext=&caller=&appCode=" onClick="recordOutboundLink(this, 'city-page-ticketing', 'Atlanta Fox Theatre', 'book online at show info', 1);return false;"><em style="color:#1f49be; text-decoration:underline;">evenue.net</em></a>                                                                
+                                                                
+                                                                </div>
+                                                                
+                                                                
+                                                                <div style="clear:both"></div>                                                                
+                                                            Hotline:
+                                                                                                                            855-ATL-Tixx (855-285-8499) <br />                                                            
+        
+                                                                Email: <a href="mailto:contact@falundafaga.org" onClick="recordOutboundLink(this, 'city-page-ticketing', 'Atlanta Fox Theatre', 'ticket email at show info', 1);return false;">contact@falundafaga.org</a><br />
+                                                            
+
+                                                            Box Office: <br />
+                                                            Fox Theatre<br />
+660 Peachtree Street NE, Atlanta, <br />
+GA 30308<br />
+Phone: 404-881-2100                                                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footerC cf">
+        <div class="footerC-nei">
+
+            <div class="wantWidget">
+                <h3>Want to learn more about Shen Yun?</h3>
+                <ul>
+                    <li><a href="../../videos/index.html">Videos</a></li>
+                    <li><a href="../../company/about-the-company/index.html">About Shen Yun</a></li>
+                    <li><a href="../../tickets/list/index.html">2013 Tour</a></li>
+                </ul>
+            </div>
+
+            <div class="buyTXBox">
+                <div class="buttonWrap cf">
+                    <div style="height: 5px;width: 50px"></div>
+                    <div class="buttonNei ButtonShadow"> <a href="#popup-buy-ticket" class="button rect roundc button-buy-ticket" onclick="recordOutboundLink(this, 'city-page-ticketing', 'Chicago', 'get tickets now at right bottom', 1);return false;" ><span class="label">buy tickets now</span></a> </div>
+                </div>
+                <div style="height: 24px;width: 50px"></div>
+
+                <div class="clear"></div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function playVideo(videoURL) {
+            $f("player2", {
+                src: "/flash/flowplayer.swf",
+                wmode: "transparent"
+            }, {
+                key: '#$791afb5c1e0376e23e1',
+                clip:  {
+                    autoPlay: true,
+                    autoBuffering: true,
+                    accelerated: true,
+                    url: $(videoURL).attr('href')
+                }            
+            }).ipad();
+            //$(document).scrollTop(240);
+            $('html,body').animate({scrollTop : 240},600);
+            return false;
+        }
+    
+        $(document).ready(function() {
+            //$(window).scrollTop(0);
+            $('html').animate({scrollTop:0}, 'fast');//IE, FF
+            $('body').animate({scrollTop:0}, 'fast');//chrome, don't know if safary works            
+            $f("player1", {
+                src: "/flash/flowplayer.swf",
+                wmode: "transparent"
+            }, {
+                key: '#$791afb5c1e0376e23e1',
+                clip:  {
+                    autoPlay: false,
+                    autoBuffering: true,
+                    accelerated: true
+                }
+            }).ipad();
+             
+       
+            $f("player2", {
+                src: "/flash/flowplayer.swf",
+                wmode: "transparent"
+            }, {
+                key: '#$791afb5c1e0376e23e1',
+                clip:  {
+                    autoPlay: false,
+                    autoBuffering: true,
+                    accelerated: true
+                }            
+            }).ipad();
+        });
+    
+    </script>
+    
+
+    
+    
+<div class="copyright cf">
+  <div class="nei">
+      Copyright &copy;2012 Shen Yun Performing Arts. All Rights Reserved.  </div>
+</div>
+
+
+<script type="text/javascript">
+  function recordOutboundLink(link, category, action, opt_label, opt_value) {
+    _gat._getTrackerByName()._trackEvent(category, action, opt_label, opt_value);
+    if (link.target=='_blank') {
+         window.open(link.href);
+    } else {    
+        setTimeout('document.location = "' + link.href + '"', 500);
+    }
+  }
+</script>
+
+
+		<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-16088546-3']);
+	  _gaq.push(['_setDomainName', '.shenyunperformingarts.org']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+	    
+</body>
+</html>
+<!-- Localized -->
